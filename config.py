@@ -107,60 +107,60 @@ country_dict_3_char = {
     # ==========================================
     # 1. SOUTHEAST ASIA (ASEAN)
     # ==========================================
-    "VNM": "Southeast Asia (Vietnam)",
-    "THA": "Southeast Asia (Thailand)",
-    "SGP": "Southeast Asia (Singapore)", 
-    "IDN": "Southeast Asia (Indonesia)",
-    "MYS": "Southeast Asia (Malaysia)",
-    "PHL": "Southeast Asia (Philippines)",
-    "BRN": "Southeast Asia (Brunei)",
-    "KHM": "Southeast Asia (Cambodia)",
-    "LAO": "Southeast Asia (Laos)",
-    "MMR": "Southeast Asia (Myanmar)",
-    "TLS": "Southeast Asia (Timor-Leste)",
+    "VNM": "Vietnam",
+    "THA": "Thailand",
+    "SGP": "Singapore",
+    "IDN": "Indonesia",
+    "MYS": "Malaysia",
+    "PHL": "Philippines",
+    "BRN": "Brunei",
+    "KHM": "Cambodia",
+    "LAO": "Laos",
+    "MMR": "Myanmar",
+    "TLS": "Timor-Leste",
 
     # ==========================================
     # 2. EUROPE (Eurozone & Major Economies)
     # ==========================================
-    "DEU": "Europe (Germany)",
-    "FRA": "Europe (France)",
-    "ITA": "Europe (Italy)",
-    "ESP": "Europe (Spain)",
-    "NLD": "Europe (Netherlands)",
-    "GBR": "Europe (United Kingdom)",
-    "BEL": "Europe (Belgium)",
-    "AUT": "Europe (Austria)",
-    "PRT": "Europe (Portugal)",
-    "GRC": "Europe (Greece)",
-    "FIN": "Europe (Finland)",
-    "IRL": "Europe (Ireland)",
-    "DNK": "Europe (Denmark)",
-    "SWE": "Europe (Sweden)",
-    "POL": "Europe (Poland)",
-    "CZE": "Europe (Czechia)",
-    "ROU": "Europe (Romania)",
-    "HUN": "Europe (Hungary)",
+    "DEU": "Germany",
+    "FRA": "France",
+    "ITA": "Italy",
+    "ESP": "Spain",
+    "NLD": "Netherlands",
+    "GBR": "United Kingdom",
+    "BEL": "Belgium",
+    "AUT": "Austria",
+    "PRT": "Portugal",
+    "GRC": "Greece",
+    "FIN": "Finland",
+    "IRL": "Ireland",
+    "DNK": "Denmark",
+    "SWE": "Sweden",
+    "POL": "Poland",
+    "CZE": "Czechia",
+    "ROU": "Romania",
+    "HUN": "Hungary",
 
     # ==========================================
     # 3. AMERICAS (North & South America)
     # ==========================================
-    "USA": "Americas (United States)",
-    "CAN": "Americas (Canada)",
-    "MEX": "Americas (Mexico)",
-    "BRA": "Americas (Brazil)",
-    "ARG": "Americas (Argentina)",
-    "COL": "Americas (Colombia)",
+    "USA": "United States",
+    "CAN": "Canada",
+    "MEX": "Mexico",
+    "BRA": "Brazil",
+    "ARG": "Argentina",
+    "COL": "Colombia",
 
     # ==========================================
     # 4. MIDDLE EAST (Strait of Hormuz Region)
     # ==========================================
-    "SAU": "Middle East (Saudi Arabia)", 
-    "ARE": "Middle East (UAE)",          
-    "QAT": "Middle East (Qatar)",
-    "KWT": "Middle East (Kuwait)",
-    "OMN": "Middle East (Oman)",
-    "BHR": "Middle East (Bahrain)",
-    "IRQ": "Middle East (Iraq)"
+    "SAU": "Saudi Arabia",
+    "ARE": "UAE",
+    "QAT": "Qatar",
+    "KWT": "Kuwait",
+    "OMN": "Oman",
+    "BHR": "Bahrain",
+    "IRQ": "Iraq"
 }
 
 
@@ -172,4 +172,65 @@ us_economy_metrics = {
     'Total_Nonfarm_Payrolls': 'PAYEMS',  # Monthly
     'Real_GDP': 'GDPC1',                 # Quarterly
     'Manufacturing_Investment': 'C307RX1Q020SBEA' # Quarterly
+}
+
+dict_3_char = {
+    # SOUTHEAST ASIA
+    "VNM": "Vietnam", "THA": "Thailand", "SGP": "Singapore", "IDN": "Indonesia",
+    "MYS": "Malaysia", "PHL": "Philippines", "BRN": "Brunei", "KHM": "Cambodia",
+    "LAO": "Laos", "MMR": "Myanmar", "TLS": "Timor-Leste",
+    # EUROPE
+    "DEU": "Germany", "FRA": "France", "ITA": "Italy", "ESP": "Spain",
+    "NLD": "Netherlands", "GBR": "United Kingdom", "BEL": "Belgium", "AUT": "Austria",
+    "PRT": "Portugal", "GRC": "Greece", "FIN": "Finland", "IRL": "Ireland",
+    "DNK": "Denmark", "SWE": "Sweden", "POL": "Poland", "CZE": "Czechia",
+    "ROU": "Romania", "HUN": "Hungary", "VAT": "Holy See (Vatican City State)",
+    "UKR": "Ukraine", "TUR": "Türkiye", "XKX": "Kosovo, Republic of",
+    # AMERICAS
+    "USA": "United States", "CAN": "Canada", "MEX": "Mexico", "BRA": "Brazil",
+    "ARG": "Argentina", "COL": "Colombia", "SUR": "Suriname", "SLV": "El Salvador",
+    "SXM": "Sint Maarten (Dutch part)", "TTO": "Trinidad and Tobago", "URY": "Uruguay",
+    "VCT": "Saint Vincent and the Grenadines", "VEN": "Venezuela, Bolivarian Republic",
+    # MIDDLE EAST & CENTRAL ASIA
+    "SAU": "Saudi Arabia", "ARE": "UAE", "QAT": "Qatar", "KWT": "Kuwait",
+    "OMN": "Oman", "BHR": "Bahrain", "IRQ": "Iraq", "SYR": "Syrian Arab Republic",
+    "TJK": "Tajikistan", "TKM": "Turkmenistan", "UZB": "Uzbekistan", "YEM": "Yemen",
+    # AFRICA
+    "SEN": "Senegal", "SOM": "Somalia", "SSD": "South Sudan", "SWZ": "Eswatini",
+    "TCD": "Chad", "TGO": "Togo", "TUN": "Tunisia", "TZA": "Tanzania, United Republic of",
+    "UGA": "Uganda", "ZAF": "South Africa", "ZMB": "Zambia", "ZWE": "Zimbabwe",
+    # OCEANIA & OTHERS / REGIONAL
+    "TON": "Tonga", "TUV": "Tuvalu", "VUT": "Vanuatu", "WSM": "Samoa",
+    "STP": "Sao Tome and Principe", "SUN": "Former U.S.S.R.", "EA": "Euro Area"
+}
+
+# 2. Dictionary 2-character (Alpha-2)
+dict_2_char = {
+    # SOUTHEAST ASIA
+    "VN": "Viet Nam", "TH": "Thailand", "SG": "Singapore", "ID": "Indonesia",
+    "MY": "Malaysia", "PH": "Philippines", "BN": "Brunei", "KH": "Cambodia",
+    "LA": "Laos", "MM": "Myanmar", "TL": "Timor-Leste",
+    # EUROPE
+    "DE": "Germany", "FR": "France", "IT": "Italy", "ES": "Spain",
+    "NL": "Netherlands", "GB": "United Kingdom", "BE": "Belgium", "AT": "Austria",
+    "PT": "Portugal", "GR": "Greece", "FI": "Finland", "IE": "Ireland",
+    "DK": "Denmark", "SE": "Sweden", "PL": "Poland", "CZ": "Czechia",
+    "RO": "Romania", "HU": "Hungary", "VA": "Holy See (Vatican City State)",
+    "UA": "Ukraine", "TR": "Türkiye", "XK": "Kosovo, Republic of",
+    # AMERICAS
+    "US": "United States", "CA": "Canada", "MX": "Mexico", "BR": "Brazil",
+    "AR": "Argentina", "CO": "Colombia", "SR": "Suriname", "SV": "El Salvador",
+    "SX": "Sint Maarten (Dutch part)", "TT": "Trinidad and Tobago", "UY": "Uruguay",
+    "VC": "Saint Vincent and the Grenadines", "VE": "Venezuela, Bolivarian Republic",
+    # MIDDLE EAST & CENTRAL ASIA
+    "SA": "Saudi Arabia", "AE": "UAE", "QA": "Qatar", "KW": "Kuwait",
+    "OM": "Oman", "BH": "Bahrain", "IQ": "Iraq", "SY": "Syrian Arab Republic",
+    "TJ": "Tajikistan", "TM": "Turkmenistan", "UZ": "Uzbekistan", "YE": "Yemen",
+    # AFRICA
+    "SN": "Senegal", "SO": "Somalia", "SS": "South Sudan", "SZ": "Eswatini",
+    "TD": "Chad", "TG": "Togo", "TN": "Tunisia", "TZ": "Tanzania, United Republic of",
+    "UG": "Uganda", "ZA": "South Africa", "ZM": "Zambia", "ZW": "Zimbabwe",
+    # OCEANIA & OTHERS / REGIONAL
+    "TO": "Tonga", "TV": "Tuvalu", "VU": "Vanuatu", "WS": "Samoa",
+    "ST": "Sao Tome and Principe", "SUH": "Former U.S.S.R.", "U2": "Euro Area"
 }

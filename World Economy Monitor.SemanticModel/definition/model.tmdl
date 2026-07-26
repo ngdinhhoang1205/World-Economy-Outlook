@@ -37,7 +37,7 @@ queryGroup 'Query Errors - 7/22/2026 10:51:04 PM'
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["f_gross_domestic_product","f_industrial_production_index","f_consumer_price_index","f_cb_policy_rates","f_unemployment_rate","f_retail_sales","f_PMI","f_trade_balance","Sample File","Parameter1","Transform Sample File","Transform File","f_import_value","Sample File (2)","Parameter2","Transform Sample File (2)","Transform File (2)","f_export_value","Sample File (3)","Parameter3","Transform Sample File (3)","Transform File (3)","Errors in f_export_value"]
+annotation PBI_QueryOrder = ["f_gross_domestic_product","f_industrial_production_index","f_consumer_price_index","f_cb_policy_rates","f_unemployment_rate","f_retail_sales","f_PMI","f_trade_balance","Sample File","Parameter1","Transform Sample File","Transform File","f_import_value","Sample File (2)","Parameter2","Transform Sample File (2)","Transform File (2)","f_export_value","Sample File (3)","Parameter3","Transform Sample File (3)","Transform File (3)","Errors in f_export_value","d_country","f_imf_exports","f_imf_imports"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -60,10 +60,11 @@ ref table d_calendar
 ref table LocalDateTable_35297e2b-eb05-4156-83d9-d2d62e3b524b
 ref table f_import_value
 ref table LocalDateTable_da58b041-c6a4-43ae-b3c8-f12f4a24875a
-ref table LocalDateTable_1df66d2c-e9ef-4337-a7e0-407649cce150
 ref table f_export_value
 ref table LocalDateTable_4a7bf3ce-4222-44d5-a6d8-09c9299768ec
-ref table LocalDateTable_49926afe-7b75-4802-b27b-0d5412b464b7
+ref table d_country
+ref table f_imf_exports
+ref table f_imf_imports
 
 ref cultureInfo en-US
 

@@ -68,3 +68,7 @@ Tài liệu này tổng hợp **9 chỉ số vĩ mô cốt lõi** được chia 
 *   **9. Commodity Price Index**
     *   **Ý nghĩa:** Chỉ số Giá Hàng hóa (Dầu mỏ, Vàng, Nông sản) — phản chiếu áp lực chi phí đầu vào và rủi ro bất ổn địa chính trị.
     *   **Nguồn DBnomics tối ưu:** `WB` (*World Bank - Pink Sheet Commodity Prices*) hoặc `IMF` (*IFS/PCP*).
+
+
+prob: f_gross_domestic_product: domestic currency so we have to convert to USD for standardization
+resolution: EDNA_​USD_​XDC_​RATE

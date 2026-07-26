@@ -75,19 +75,16 @@ table f_export_value
 
 	column period
 		dataType: dateTime
-		formatString: Long Date
+		formatString: yyyy-mm-dd
 		lineageTag: b24157c8-30e8-4b7c-a489-244b119dfa90
 		summarizeBy: none
 		sourceColumn: period
 
-		variation Variation
-			isDefault
-			relationship: 45e35b10-fddf-4ede-a334-9d46c81f8a83
-			defaultHierarchy: LocalDateTable_49926afe-7b75-4802-b27b-0d5412b464b7.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column original_value
 		dataType: double

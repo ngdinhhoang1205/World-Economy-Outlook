@@ -1,5 +1,115 @@
+import os
+import re
 import pandas as pd
+import requests
 from dbnomics import fetch_series
+from dotenv import load_dotenv
+
+load_dotenv()
+
+IMF_API_BASE = "https://api.imf.org/external/sdmx/3.0/data/dataflow"
+IMF_STRUCTURE_BASE = "https://api.imf.org/external/sdmx/3.0/structure/codelist"
+
+
+# IMF regional-department groupings that are (unhelpfully) coded as plain 3-letter
+# IDs, so they pass a naive [A-Z]{3} filter alongside real ISO3 country codes.
+_IMTS_REGIONAL_CODES = {"AFR", "EUR", "APD", "MCD", "WHD"}
+
+
+def get_imts_countries(agency="IMF.STA", codelist_id="CL_IMTS_COUNTRY", version="1.0.0"):
+    """
+    Real ISO3 reporting countries for the IMTS dataflow, straight from IMF's public
+    codelist (no API key needed) — excludes regional/grouping aggregates like G001,
+    GX170, TX799, U019 (which all contain digits) and the handful of IMF regional
+    departments (AFR, EUR, APD, MCD, WHD) that are coded as plain 3-letter IDs.
+    """
+    resp = requests.get(
+        f"{IMF_STRUCTURE_BASE}/{agency}/{codelist_id}/{version}",
+        params={"detail": "full"},
+        headers={"Accept": "application/json"},
+    )
+    resp.raise_for_status()
+    codes = resp.json()["data"]["codelists"][0]["codes"]
+    return sorted(
+        c["id"] for c in codes
+        if re.fullmatch(r"[A-Z]{3}", c["id"]) and c["id"] not in _IMTS_REGIONAL_CODES
+    )
+
+
+def _parse_imf_sdmx_json(payload):
+    """Flatten an SDMX-JSON 3.0 data message (api.imf.org) into a DataFrame."""
+    structure = payload["data"]["structures"][0]
+    series_dims = structure["dimensions"]["series"]
+    time_values = [v["value"] for v in structure["dimensions"]["observation"][0]["values"]]
+
+    rows = []
+    for series_key, series in payload["data"]["dataSets"][0].get("series", {}).items():
+        dim_indexes = [int(i) for i in series_key.split(":")]
+        dim_values = {
+            dim["id"]: dim["values"][idx]["id"]
+            for dim, idx in zip(series_dims, dim_indexes)
+        }
+        for obs_index, obs in series.get("observations", {}).items():
+            rows.append({**dim_values, "period": time_values[int(obs_index)], "value": obs[0]})
+
+    df = pd.DataFrame(rows)
+    if not df.empty:
+        df["value"] = pd.to_numeric(df["value"], errors="coerce")
+    return df
+
+
+def chunked(items, size=150):
+    """Split a list into chunks — IMF's API rejects a key with all ~260 countries joined by '+' (400 Bad Request)."""
+    for i in range(0, len(items), size):
+        yield items[i:i + size]
+
+
+def fetch_imf_api(dataflow_id, key, agency="IMF.STA", version="+", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch data directly from IMF's new SDMX 3.0 API (api.imf.org), bypassing DBnomics.
+    Requires a subscription key from portal.api.imf.org (pass explicitly or set IMF_API_KEY env var).
+
+    key : SDMX dot-separated dimension key, e.g. "VNM.MG_FOB_USD.G001.M" for IMTS.
+    """
+    api_key = api_key or os.environ["IMF_API_KEY"]
+    url = f"{IMF_API_BASE}/{agency}/{dataflow_id}/{version}/{key}"
+    params = {
+        "dimensionAtObservation": "TIME_PERIOD",
+        "attributes": "all",
+        "measures": "all",
+        "includeHistory": "true",
+    }
+    if start_period or end_period:
+        bound = f"ge:{start_period}" if start_period else ""
+        bound += f"+le:{end_period}" if end_period else ""
+        params["c[TIME_PERIOD]"] = bound
+
+    resp = requests.get(
+        url,
+        params=params,
+        headers={"Accept": "application/json", "Ocp-Apim-Subscription-Key": api_key},
+    )
+    resp.raise_for_status()
+    return _parse_imf_sdmx_json(resp.json())
+
+
+def fetch_imts(indicator, country_key="*", frequency="M", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch an IMTS indicator (e.g. MG_FOB_USD, MG_CIF_USD, XG_FOB_USD) across every real
+    bilateral counterpart country, chunked to stay under the API's URL-length limit.
+    Uses get_imts_countries() instead of a '*' wildcard on COUNTERPART_COUNTRY so
+    regional/grouping aggregates (G001, GX170, ...) never enter the result — summing
+    this DataFrame's 'value' per COUNTRY/period gives the correct total, no double-counting.
+    """
+    dfs = []
+    for chunk in chunked(get_imts_countries()):
+        key = f"{country_key}.{indicator}.{'+'.join(chunk)}.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="IMTS", key=key,
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
 
 def fetch_imf_data(country_dict, dataset_code="IFS", metric_suffix="PCPI_IX", frequency="M"):
     """Fetch macroeconomic data from the IMF via DBnomics with dynamic dataset mapping.

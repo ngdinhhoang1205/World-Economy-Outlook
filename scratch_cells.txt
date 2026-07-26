@@ -1,0 +1,115 @@
+=== cell 0 ===
+import matplotlib.pyplot as plt
+import os
+import glob
+import pandas_datareader.data as web
+import requests
+import datetime
+import pandas as pd
+from dbnomics import fetch_series
+from utils import fetch_imf_data, fetch_imf_bulk, fetch_imf_api, _parse_imf_sdmx_json
+from config import country_dict, us_economy_metrics, country_dict_3_char, dict_3_char, dict_2_char
+
+
+=== cell 15 ===
+# # Pillar 4: Trade & Geopolitics
+# # 8.2. Merchandise Import Value
+
+# # ==========================================
+# # 1. CẤU HÌNH & THIẾT LẬP
+# # ==========================================
+# # Đặt True khi muốn CẬP NHẬT DỮ LIỆU MỚI
+# # Đặt False khi bị CRASH/NGẮT MẠNG và muốn CHẠY NỐI TIẾP
+# FORCE_UPDATE = True  
+
+# os.makedirs(im_path, exist_ok=True)
+
+# country_codes = list(country_dict.keys())
+# CHUNK_SIZE = 10
+
+# # ==========================================
+# # 2. TIẾN HÀNH TẢI DỮ LIỆU THEO CHUNK
+# # ==========================================
+# print(f"🚀 Bắt đầu quá trình tải (Chế độ FORCE_UPDATE = {FORCE_UPDATE})...\n")
+
+# for i in range(0, len(country_codes), CHUNK_SIZE):
+#     chunk_codes = country_codes[i : i + CHUNK_SIZE]
+#     batch_num = (i // CHUNK_SIZE) + 1
+#     file_path = os.path.join(im_path, f"im_batch_{batch_num}.csv")
+    
+#     # Kiểm tra điều kiện bỏ qua nếu file đã tồn tại và không ép buộc update
+#     if not FORCE_UPDATE and os.path.exists(file_path):
+#         print(f"⏩ Nhóm {batch_num} ({len(chunk_codes)} nước) đã có file -> Bỏ qua.")
+#         continue
+
+#     print(f"🔄 Đang tải nhóm {batch_num}/{-(len(country_codes) // -CHUNK_SIZE)} ({len(chunk_codes)} nước): {chunk_codes}...")
+    
+#     try:
+#         df_chunk = fetch_series(
+#             provider_code="IMF", 
+#             dataset_code="DOT",
+#             max_nb_series=53188,
+#             dimensions={
+#                 "FREQ": ["M"],
+#                 "REF_AREA": chunk_codes,
+#                 "INDICATOR": ["TMG_FOB_USD"]
+#             }
+#         )
+        
+#         if df_chunk is not None and not df_chunk.empty:
+#             df_chunk = df_chunk[df_chunk['value'].notna()]
+#             df_chunk.to_csv(file_path, index=False, encoding="utf-8-sig")
+#             print(f"   => ✅ Đã lưu: {file_path}")
+#         else:
+#             print(f"   => ⚠️ Nhóm {batch_num} không phản hồi dữ liệu.")
+            
+#     except Exception as e:
+#         print(f"   => ❌ Lỗi ở nhóm {batch_num}: {e}")
+
+# print("\n🎉 Hoàn thành xong bước tải dữ liệu!")
+
+=== cell 16 ===
+# imf_imports = fetch_imf_api(
+#     dataflow_id="IMTS",
+#     key="VNM+USA+DEU.MG_FOB_USD.G001.M",  # '+' joins multiple countries in one call
+#     start_period="2015-01",
+# )
+
+=== cell 20 ===
+# Pillar 4: Trade & Geopolitics
+# 8.2. Merchandise Import Value
+imports_data_1 = fetch_imf_api(
+    dataflow_id="IMTS",
+    key="*.MG_FOB_USD.*.M",   # wildcard counterpart = every partner country
+    # start_period="2010-01",
+    # end_period="2026-03",
+)
+imports_data_1['period'] = pd.to_datetime(imports_data_1['period'], format="%Y-M%m").dt.strftime('%Y-%m')
+import_data_countries = list(imports_data_1['COUNTRY'].unique())
+print(f'fetching the first imports_data for countries: {import_data_countries}')
+imports_data_2 = fetch_imf_api(
+    dataflow_id="IMTS",
+    key="*.MG_CIF_USD.*.M",   # wildcard counterpart = every partner country
+    # start_period="2010-01",
+    # end_period="2026-03",
+)
+imports_data_2 = imports_data_2[~imports_data_2['COUNTRY'].isin(import_data_countries)]
+imports_data_2['period'] = pd.to_datetime(imports_data_2['period'], format="%Y-M%m").dt.strftime('%Y-%m')
+print(f"fetching the second imports_data for countries: {imports_data_2['COUNTRY'].unique()}")
+
+imports_data = pd.concat([imports_data_1, imports_data_2], ignore_index=True)
+imports_data.to_csv(imf_imports_path, index=False, encoding="utf-8-sig")
+
+=== cell 23 ===
+# Pillar 4: Trade & Geopolitics
+# 8.3. Merchandise Import Value
+export_data = fetch_imf_api(
+    dataflow_id="IMTS",
+    key="*.XG_FOB_USD.*.M",   # wildcard counterpart = every partner country
+    start_period="2010-01",
+    end_period="2026-03",
+)
+export_data['period'] = pd.to_datetime(export_data['period'], format="%Y-M%m").dt.strftime('%Y-%m')
+export_data.head(10)
+export_data.to_csv(imf_exports_path, index=False, encoding="utf-8-sig")
+

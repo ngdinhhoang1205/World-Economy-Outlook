@@ -65,18 +65,72 @@ relationship a651a461-01d2-4189-9863-6c9752bf573e
 	fromColumn: f_import_value.original_period
 	toColumn: LocalDateTable_da58b041-c6a4-43ae-b3c8-f12f4a24875a.Date
 
-relationship 80279254-b3a7-4b00-bf73-59de431b1b51
-	joinOnDateBehavior: datePartOnly
-	fromColumn: f_import_value.period
-	toColumn: LocalDateTable_1df66d2c-e9ef-4337-a7e0-407649cce150.Date
-
 relationship da6f87fa-c293-4256-9c04-5a3942baf00c
 	joinOnDateBehavior: datePartOnly
 	fromColumn: f_export_value.original_period
 	toColumn: LocalDateTable_4a7bf3ce-4222-44d5-a6d8-09c9299768ec.Date
 
-relationship 45e35b10-fddf-4ede-a334-9d46c81f8a83
-	joinOnDateBehavior: datePartOnly
+relationship 86737b1b-e5b3-f823-aaa6-54c2a321bd3c
+	fromColumn: f_consumer_price_index.country_code
+	toColumn: d_country.iso2_code
+
+relationship 765bd26a-83c5-e9e0-6de9-8eba75b350d1
+	fromColumn: f_retail_sales.LOCATION
+	toColumn: d_country.iso3_code
+
+relationship 5b149c0d-f44f-e48b-3115-c1833fd6ae72
+	fromColumn: f_industrial_production_index.country_code
+	toColumn: d_country.iso2_code
+
+relationship 57fa779c-7ab5-e908-81b3-4ab0f70c311b
+	fromColumn: f_PMI.LOCATION
+	toColumn: d_country.iso3_code
+
+relationship f864bf20-d7b8-50de-dd2e-e222e24dbff5
+	fromColumn: f_cb_policy_rates.REF_AREA
+	toColumn: d_country.iso2_code
+
+relationship 24ff58cf-a675-2b53-7c50-89553e775fe4
+	fromColumn: f_trade_balance.REF_AREA
+	toColumn: d_country.iso2_code
+
+relationship dc695326-a1e1-84a7-4714-25821213f0f0
+	fromColumn: f_unemployment_rate.weo-country
+	toColumn: d_country.iso3_code
+
+relationship b8e2dcf5-81a5-c767-6e20-72822c45dc68
 	fromColumn: f_export_value.period
-	toColumn: LocalDateTable_49926afe-7b75-4802-b27b-0d5412b464b7.Date
+	toColumn: d_calendar.Date
+
+relationship 99f43433-0d2b-4ec4-bb43-59f1eec93713
+	fromColumn: f_import_value.period
+	toColumn: d_calendar.Date
+
+relationship 25f80991-77f5-1621-f564-08b4e7640026
+	fromColumn: f_import_value.REF_AREA
+	toColumn: d_country.iso2_code
+
+relationship 090d7137-e2aa-3870-18d5-f8d0bf508b00
+	fromColumn: f_export_value.REF_AREA
+	toColumn: d_country.iso2_code
+
+relationship 3c9ac2ab-e495-b832-0204-510261679b1b
+	fromColumn: f_gross_domestic_product.REF_AREA
+	toColumn: d_country.iso2_code
+
+relationship d35c093a-4a3d-606c-3df5-013f21a1a5c1
+	fromColumn: f_imf_exports.period
+	toColumn: d_calendar.Date
+
+relationship 6985952c-1cd1-d002-b4ca-9278dccee1d6
+	fromColumn: f_imf_imports.period
+	toColumn: d_calendar.Date
+
+relationship 1c83f9a8-5363-46c2-ebe4-d748bc62312e
+	fromColumn: f_imf_exports.COUNTRY
+	toColumn: d_country.iso3_code
+
+relationship 611f480b-6fd3-3af8-fda2-45b812425e4a
+	fromColumn: f_imf_imports.COUNTRY
+	toColumn: d_country.iso3_code
 

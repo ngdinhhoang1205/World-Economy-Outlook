@@ -1524,7 +1524,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "f_gross_domestic_product",
-			          "ConceptualProperty": "Indicator.1"
+			          "ConceptualProperty": "Indicator 2"
 			        }
 			      },
 			      "State": "Generated",
@@ -1532,175 +1532,6 @@ cultureInfo en-US
 			        {
 			          "indicator.1": {
 			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "f_gross_domestic_product.country_name": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "f_gross_domestic_product",
-			          "ConceptualProperty": "country_name"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "country name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "country_name": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "country nickname": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "country title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "country label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "country tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "nation name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "location name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        }
-			      ]
-			    },
-			    "f_gross_domestic_product.country_code": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "f_gross_domestic_product",
-			          "ConceptualProperty": "country_code"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "country code": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "country_code": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "country id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "country key": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "nation code": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "location code": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        }
-			      ]
-			    },
-			    "f_gross_domestic_product.value_yoy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "f_gross_domestic_product",
-			          "ConceptualProperty": "value_yoy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value yoy": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "value_yoy": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -1996,6 +1827,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "country code": {
@@ -3833,6 +3667,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "country code": {
@@ -5075,6 +4912,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ref area": {
@@ -6337,6 +6177,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "weo-country": {
@@ -8000,6 +7843,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "location": {
@@ -9479,6 +9325,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "location": {
@@ -11073,6 +10922,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "ref area": {
@@ -17766,207 +17618,615 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "measures_table.current_import": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_import"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current import": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_import": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "import": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest import": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "contemporary import": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "present import": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "current introduction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "current importation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "current ingress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "introduction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "importation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ingress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "current significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_export": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_export"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current export": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_export": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "export": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest export": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "contemporary export": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "present export": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "present day export": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.471
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_trade_balance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_trade_balance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current trade balance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_trade_balance": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "balance": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trade balance": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "current trade equilibrium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current trade stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current trade steadiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "trade equilibrium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "trade stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "trade steadiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "current trade poise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "d_country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "d_country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "d_country": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "d nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "d location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "d_country.iso_2_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "d_country",
+			          "ConceptualProperty": "iso2_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "iso 2 code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "iso2_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "2 code": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "iso 2 id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "2 id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "iso 2 key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "2 key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "d_country.iso_3_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "d_country",
+			          "ConceptualProperty": "iso3_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "iso 3 code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "iso3_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "3 code": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "iso 3 id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "3 id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "iso 3 key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "3 key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "d_country.country_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "d_country",
+			          "ConceptualProperty": "country_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "country_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "country nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "nation name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "location name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Country": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "f_export_value_original_period_date_hierarchy_has_f_export_value_original_period_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "f_export_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_export_value.original_period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period.date_hierarchy"
-			          }
-			        },
-			        "f_export_value.original_period.quarter": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_export_value.original_period.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "f_export_value.original_period.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters"
-			        }
-			      ]
-			    },
-			    "f_export_value_original_period_date_hierarchy_has_f_export_value_original_period_year": {
-			      "Binding": {
-			        "ConceptualEntity": "f_export_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_export_value.original_period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period.date_hierarchy"
-			          }
-			        },
-			        "f_export_value.original_period.year": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_export_value.original_period.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "f_export_value.original_period.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years"
-			        }
-			      ]
-			    },
-			    "f_export_value_original_period_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "f_export_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_export_value.original_period": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period"
-			          }
-			        },
-			        "f_export_value.original_period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_export_value.original_period.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_export_value.original_period"
-			            },
-			            "Object": {
-			              "Role": "f_export_value.original_period.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "f_import_value_period_date_hierarchy_has_f_import_value_period_day": {
-			      "Binding": {
-			        "ConceptualEntity": "f_import_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_import_value.period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_import_value.period.date_hierarchy"
-			          }
-			        },
-			        "f_import_value.period.day": {
-			          "Target": {
-			            "Entity": "f_import_value.period.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_import_value.period.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "f_import_value.period.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "period_date_hierarchies_have_period_days"
-			        }
-			      ]
-			    },
-			    "f_import_value_period_date_hierarchy_has_f_import_value_period_month": {
-			      "Binding": {
-			        "ConceptualEntity": "f_import_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_import_value.period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_import_value.period.date_hierarchy"
-			          }
-			        },
-			        "f_import_value.period.month": {
-			          "Target": {
-			            "Entity": "f_import_value.period.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_import_value.period.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "f_import_value.period.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "period_date_hierarchies_have_period_months"
-			        }
-			      ]
-			    },
-			    "f_import_value_period_date_hierarchy_has_f_import_value_period_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "f_import_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_import_value.period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_import_value.period.date_hierarchy"
-			          }
-			        },
-			        "f_import_value.period.quarter": {
-			          "Target": {
-			            "Entity": "f_import_value.period.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_import_value.period.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "f_import_value.period.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "period_date_hierarchies_have_period_quarters"
-			        }
-			      ]
-			    },
 			    "f_import_value_period_date_hierarchy_has_f_import_value_period_year": {
 			      "Binding": {
 			        "ConceptualEntity": "f_import_value"
@@ -18128,7 +18388,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters1"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters"
 			        }
 			      ]
 			    },
@@ -18161,7 +18421,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years1"
+			          "ID": "original_period_date_hierarchies_have_original_period_years"
 			        }
 			      ]
 			    },
@@ -18194,7 +18454,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies1"
+			          "ID": "original_periods_have_original_period_date_hierarchies"
 			        }
 			      ]
 			    },
@@ -18458,7 +18718,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters2"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters1"
 			        }
 			      ]
 			    },
@@ -18491,7 +18751,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years2"
+			          "ID": "original_period_date_hierarchies_have_original_period_years1"
 			        }
 			      ]
 			    },
@@ -18524,7 +18784,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies2"
+			          "ID": "original_periods_have_original_period_date_hierarchies1"
 			        }
 			      ]
 			    },
@@ -18623,7 +18883,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters3"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters2"
 			        }
 			      ]
 			    },
@@ -18656,7 +18916,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years3"
+			          "ID": "original_period_date_hierarchies_have_original_period_years2"
 			        }
 			      ]
 			    },
@@ -18689,7 +18949,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies3"
+			          "ID": "original_periods_have_original_period_date_hierarchies2"
 			        }
 			      ]
 			    },
@@ -18788,7 +19048,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters4"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters3"
 			        }
 			      ]
 			    },
@@ -18821,7 +19081,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years4"
+			          "ID": "original_period_date_hierarchies_have_original_period_years3"
 			        }
 			      ]
 			    },
@@ -18854,7 +19114,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies4"
+			          "ID": "original_periods_have_original_period_date_hierarchies3"
 			        }
 			      ]
 			    },
@@ -18953,7 +19213,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters5"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters4"
 			        }
 			      ]
 			    },
@@ -18986,7 +19246,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years5"
+			          "ID": "original_period_date_hierarchies_have_original_period_years4"
 			        }
 			      ]
 			    },
@@ -19019,7 +19279,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies5"
+			          "ID": "original_periods_have_original_period_date_hierarchies4"
 			        }
 			      ]
 			    },
@@ -19118,7 +19378,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_quarters6"
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters5"
 			        }
 			      ]
 			    },
@@ -19151,7 +19411,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_period_date_hierarchies_have_original_period_years6"
+			          "ID": "original_period_date_hierarchies_have_original_period_years5"
 			        }
 			      ]
 			    },
@@ -19184,7 +19444,53 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies6"
+			          "ID": "original_periods_have_original_period_date_hierarchies5"
+			        }
+			      ]
+			    },
+			    "f_trade_balance_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_trade_balance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_trade_balance": {
+			          "Target": {
+			            "Entity": "f_trade_balance"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_trade_balance"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_trade_balances_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_trade_balances"
 			        }
 			      ]
 			    },
@@ -19234,6 +19540,59 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_PMI_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_PMI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_PMI": {
+			          "Target": {
+			            "Entity": "f_PMI"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          },
+			          "Nouns": [
+			            {
+			              "location": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_PMI"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_PMI_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_PMI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_PMI"
+			        }
+			      ]
+			    },
 			    "f_PMI_has_d_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "f_PMI"
@@ -19277,6 +19636,59 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_PMI"
+			        }
+			      ]
+			    },
+			    "f_retail_sale_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_retail_sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_retail_sale": {
+			          "Target": {
+			            "Entity": "f_retail_sale"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          },
+			          "Nouns": [
+			            {
+			              "location": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_retail_sale"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_retail_sales_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_retail_sale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_retail_sales"
 			        }
 			      ]
 			    },
@@ -19326,6 +19738,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_unemployment_rate_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_unemployment_rate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_unemployment_rate": {
+			          "Target": {
+			            "Entity": "f_unemployment_rate"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_unemployment_rate"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_unemployment_rates_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_unemployment_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_unemployment_rates"
+			        }
+			      ]
+			    },
 			    "f_unemployment_rate_has_d_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "f_unemployment_rate"
@@ -19369,6 +19827,52 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_unemployment_rates"
+			        }
+			      ]
+			    },
+			    "f_cb_policy_rate_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_cb_policy_rates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_cb_policy_rate": {
+			          "Target": {
+			            "Entity": "f_cb_policy_rate"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_cb_policy_rate"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_cb_policy_rates_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_cb_policy_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_cb_policy_rates"
 			        }
 			      ]
 			    },
@@ -19418,6 +19922,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_consumer_price_index_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_consumer_price_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_consumer_price_index": {
+			          "Target": {
+			            "Entity": "f_consumer_price_index"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_consumer_price_index"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_consumer_price_indices_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_consumer_price_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_consumer_price_indices"
+			        }
+			      ]
+			    },
 			    "f_consumer_price_index_has_d_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "f_consumer_price_index"
@@ -19461,6 +20011,52 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_consumer_price_indices"
+			        }
+			      ]
+			    },
+			    "f_industrial_production_index_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_industrial_production_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_industrial_production_index": {
+			          "Target": {
+			            "Entity": "f_industrial_production_index"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_industrial_production_index"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_industrial_production_indices_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_industrial_production_index"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_industrial_production_indices"
 			        }
 			      ]
 			    },
@@ -19510,6 +20106,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_gross_domestic_product_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_gross_domestic_product"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_gross_domestic_product": {
+			          "Target": {
+			            "Entity": "f_gross_domestic_product"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_gross_domestic_product"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_gross_domestic_products_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_gross_domestic_product"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_gross_domestic_products"
+			        }
+			      ]
+			    },
 			    "f_gross_domestic_product_has_d_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "f_gross_domestic_product"
@@ -19553,6 +20195,237 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_gross_domestic_products"
+			        }
+			      ]
+			    },
+			    "d_country_has_country_name": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.country_name": {
+			          "Target": {
+			            "Entity": "d_country.country_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "d_country.country_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_country_names"
+			        }
+			      ]
+			    },
+			    "d_country_has_iso_3_code": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.iso_3_code": {
+			          "Target": {
+			            "Entity": "d_country.iso_3_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "d_country.iso_3_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_iso_3_codes"
+			        }
+			      ]
+			    },
+			    "d_country_has_iso_2_code": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.iso_2_code": {
+			          "Target": {
+			            "Entity": "d_country.iso_2_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "d_country.iso_2_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_iso_2_codes"
+			        }
+			      ]
+			    },
+			    "f_import_value_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value": {
+			          "Target": {
+			            "Entity": "f_import_value"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_import_values_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_export_value_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_export_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_export_value": {
+			          "Target": {
+			            "Entity": "f_export_value"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_export_value"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_export_values_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_export_value_has_measures_table_current_export": {
+			      "Binding": {
+			        "ConceptualEntity": "f_export_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_export_value": {
+			          "Target": {
+			            "Entity": "f_export_value"
+			          }
+			        },
+			        "measures_table.current_export": {
+			          "Target": {
+			            "Entity": "measures_table.current_export"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_export_value"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_export"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_export_values_have_current_export"
+			        }
+			      ]
+			    },
+			    "f_import_value_has_measures_table_current_import": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value": {
+			          "Target": {
+			            "Entity": "f_import_value"
+			          }
+			        },
+			        "measures_table.current_import": {
+			          "Target": {
+			            "Entity": "measures_table.current_import"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_import"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_import_values_have_current_import"
 			        }
 			      ]
 			    },
@@ -21866,39 +22739,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_trade_balance_has_ref_area": {
-			      "Binding": {
-			        "ConceptualEntity": "f_trade_balance"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_trade_balance": {
-			          "Target": {
-			            "Entity": "f_trade_balance"
-			          }
-			        },
-			        "f_trade_balance.ref_area": {
-			          "Target": {
-			            "Entity": "f_trade_balance.ref_area"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_trade_balance"
-			            },
-			            "Object": {
-			              "Role": "f_trade_balance.ref_area"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_trade_balances_have_ref_areas"
-			        }
-			      ]
-			    },
 			    "f_trade_balance_has_freq": {
 			      "Binding": {
 			        "ConceptualEntity": "f_trade_balance"
@@ -22526,39 +23366,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_PMI_has_location": {
-			      "Binding": {
-			        "ConceptualEntity": "f_PMI"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_PMI": {
-			          "Target": {
-			            "Entity": "f_PMI"
-			          }
-			        },
-			        "f_PMI.location": {
-			          "Target": {
-			            "Entity": "f_PMI.location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_PMI"
-			            },
-			            "Object": {
-			              "Role": "f_PMI.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_PMI_have_locations"
-			        }
-			      ]
-			    },
 			    "f_PMI_has_value": {
 			      "Binding": {
 			        "ConceptualEntity": "f_PMI"
@@ -23153,39 +23960,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_retail_sale_has_location": {
-			      "Binding": {
-			        "ConceptualEntity": "f_retail_sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_retail_sale": {
-			          "Target": {
-			            "Entity": "f_retail_sale"
-			          }
-			        },
-			        "f_retail_sale.location": {
-			          "Target": {
-			            "Entity": "f_retail_sale.location"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_retail_sale"
-			            },
-			            "Object": {
-			              "Role": "f_retail_sale.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_retail_sales_have_locations"
-			        }
-			      ]
-			    },
 			    "f_retail_sale_has_value": {
 			      "Binding": {
 			        "ConceptualEntity": "f_retail_sales"
@@ -23714,39 +24488,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_unemployment_rate_has_weocountry": {
-			      "Binding": {
-			        "ConceptualEntity": "f_unemployment_rate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_unemployment_rate": {
-			          "Target": {
-			            "Entity": "f_unemployment_rate"
-			          }
-			        },
-			        "f_unemployment_rate.weocountry": {
-			          "Target": {
-			            "Entity": "f_unemployment_rate.weocountry"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_unemployment_rate"
-			            },
-			            "Object": {
-			              "Role": "f_unemployment_rate.weocountry"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_unemployment_rates_have_weocountries"
-			        }
-			      ]
-			    },
 			    "f_unemployment_rate_has_value": {
 			      "Binding": {
 			        "ConceptualEntity": "f_unemployment_rate"
@@ -24176,39 +24917,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_cb_policy_rate_has_ref_area": {
-			      "Binding": {
-			        "ConceptualEntity": "f_cb_policy_rates"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_cb_policy_rate": {
-			          "Target": {
-			            "Entity": "f_cb_policy_rate"
-			          }
-			        },
-			        "f_cb_policy_rate.ref_area": {
-			          "Target": {
-			            "Entity": "f_cb_policy_rate.ref_area"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_cb_policy_rate"
-			            },
-			            "Object": {
-			              "Role": "f_cb_policy_rate.ref_area"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_cb_policy_rates_have_ref_areas"
-			        }
-			      ]
-			    },
 			    "f_cb_policy_rate_has_freq": {
 			      "Binding": {
 			        "ConceptualEntity": "f_cb_policy_rates"
@@ -24602,39 +25310,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_cb_policy_rates_have_column_1"
-			        }
-			      ]
-			    },
-			    "f_consumer_price_index_has_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_consumer_price_index"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_consumer_price_index": {
-			          "Target": {
-			            "Entity": "f_consumer_price_index"
-			          }
-			        },
-			        "f_consumer_price_index.country_code": {
-			          "Target": {
-			            "Entity": "f_consumer_price_index.country_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_consumer_price_index"
-			            },
-			            "Object": {
-			              "Role": "f_consumer_price_index.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_consumer_price_indices_have_country_codes"
 			        }
 			      ]
 			    },
@@ -25298,39 +25973,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_industrial_production_index_has_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_industrial_production_index"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_industrial_production_index": {
-			          "Target": {
-			            "Entity": "f_industrial_production_index"
-			          }
-			        },
-			        "f_industrial_production_index.country_code": {
-			          "Target": {
-			            "Entity": "f_industrial_production_index.country_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_industrial_production_index"
-			            },
-			            "Object": {
-			              "Role": "f_industrial_production_index.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_industrial_production_indices_have_country_codes"
-			        }
-			      ]
-			    },
 			    "f_industrial_production_index_has_value": {
 			      "Binding": {
 			        "ConceptualEntity": "f_industrial_production_index"
@@ -25427,39 +26069,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_have_value_yoys"
-			        }
-			      ]
-			    },
-			    "f_gross_domestic_product_has_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_gross_domestic_product"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_gross_domestic_product": {
-			          "Target": {
-			            "Entity": "f_gross_domestic_product"
-			          }
-			        },
-			        "f_gross_domestic_product.country_code": {
-			          "Target": {
-			            "Entity": "f_gross_domestic_product.country_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_gross_domestic_product"
-			            },
-			            "Object": {
-			              "Role": "f_gross_domestic_product.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_gross_domestic_products_have_country_codes"
 			        }
 			      ]
 			    },
@@ -26189,6 +26798,411 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_trade_balance_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_trade_balance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_trade_balance": {
+			          "Target": {
+			            "Entity": "f_trade_balance"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_trade_balance"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_trade_balances_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_PMI_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_PMI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_PMI": {
+			          "Target": {
+			            "Entity": "f_PMI"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_PMI"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_PMI_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_retail_sale_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_retail_sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_retail_sale": {
+			          "Target": {
+			            "Entity": "f_retail_sale"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_retail_sale"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_retail_sales_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_unemployment_rate_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_unemployment_rate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_unemployment_rate": {
+			          "Target": {
+			            "Entity": "f_unemployment_rate"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_unemployment_rate"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_unemployment_rates_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_cb_policy_rate_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_cb_policy_rates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_cb_policy_rate": {
+			          "Target": {
+			            "Entity": "f_cb_policy_rate"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_cb_policy_rate"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_cb_policy_rates_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_consumer_price_index_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_consumer_price_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_consumer_price_index": {
+			          "Target": {
+			            "Entity": "f_consumer_price_index"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_consumer_price_index"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_consumer_price_indices_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_industrial_production_index_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_industrial_production_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_industrial_production_index": {
+			          "Target": {
+			            "Entity": "f_industrial_production_index"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_industrial_production_index"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_industrial_production_indices_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "f_gross_domestic_product_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_gross_domestic_product"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_gross_domestic_product": {
+			          "Target": {
+			            "Entity": "f_gross_domestic_product"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "f_gross_domestic_product"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_gross_domestic_products_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "d_country_in_country_name": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.country_name": {
+			          "Target": {
+			            "Entity": "d_country.country_name"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country.country_name"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country.country_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_are_in_country_names"
+			        }
+			      ]
+			    },
 			    "f_export_value_in_counterpart_reference_area": {
 			      "Binding": {
 			        "ConceptualEntity": "f_export_value"
@@ -26684,51 +27698,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_trade_balance_in_ref_area": {
-			      "Binding": {
-			        "ConceptualEntity": "f_trade_balance"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_trade_balance": {
-			          "Target": {
-			            "Entity": "f_trade_balance"
-			          }
-			        },
-			        "f_trade_balance.ref_area": {
-			          "Target": {
-			            "Entity": "f_trade_balance.ref_area"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_trade_balance.ref_area"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_trade_balance"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_trade_balance.ref_area"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_trade_balances_are_in_ref_areas"
-			        }
-			      ]
-			    },
 			    "f_PMI_in_country": {
 			      "Binding": {
 			        "ConceptualEntity": "f_PMI"
@@ -26771,51 +27740,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_PMI_are_in_countries"
-			        }
-			      ]
-			    },
-			    "f_PMI_in_location": {
-			      "Binding": {
-			        "ConceptualEntity": "f_PMI"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_PMI": {
-			          "Target": {
-			            "Entity": "f_PMI"
-			          }
-			        },
-			        "f_PMI.location": {
-			          "Target": {
-			            "Entity": "f_PMI.location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_PMI.location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_PMI"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_PMI.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_PMI_are_in_locations"
 			        }
 			      ]
 			    },
@@ -26864,51 +27788,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_retail_sale_in_location": {
-			      "Binding": {
-			        "ConceptualEntity": "f_retail_sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_retail_sale": {
-			          "Target": {
-			            "Entity": "f_retail_sale"
-			          }
-			        },
-			        "f_retail_sale.location": {
-			          "Target": {
-			            "Entity": "f_retail_sale.location"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_retail_sale.location"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_retail_sale"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_retail_sale.location"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_retail_sales_are_in_locations"
-			        }
-			      ]
-			    },
 			    "f_unemployment_rate_in_WEO_country": {
 			      "Binding": {
 			        "ConceptualEntity": "f_unemployment_rate"
@@ -26954,51 +27833,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_unemployment_rate_in_weocountry": {
-			      "Binding": {
-			        "ConceptualEntity": "f_unemployment_rate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_unemployment_rate": {
-			          "Target": {
-			            "Entity": "f_unemployment_rate"
-			          }
-			        },
-			        "f_unemployment_rate.weocountry": {
-			          "Target": {
-			            "Entity": "f_unemployment_rate.weocountry"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_unemployment_rate.weocountry"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_unemployment_rate"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_unemployment_rate.weocountry"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_unemployment_rates_are_in_weocountries"
-			        }
-			      ]
-			    },
 			    "f_cb_policy_rate_in_reference_area": {
 			      "Binding": {
 			        "ConceptualEntity": "f_cb_policy_rates"
@@ -27041,96 +27875,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_cb_policy_rates_are_in_reference_areas"
-			        }
-			      ]
-			    },
-			    "f_cb_policy_rate_in_ref_area": {
-			      "Binding": {
-			        "ConceptualEntity": "f_cb_policy_rates"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_cb_policy_rate": {
-			          "Target": {
-			            "Entity": "f_cb_policy_rate"
-			          }
-			        },
-			        "f_cb_policy_rate.ref_area": {
-			          "Target": {
-			            "Entity": "f_cb_policy_rate.ref_area"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_cb_policy_rate.ref_area"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_cb_policy_rate"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_cb_policy_rate.ref_area"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_cb_policy_rates_are_in_ref_areas"
-			        }
-			      ]
-			    },
-			    "f_consumer_price_index_in_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_consumer_price_index"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_consumer_price_index": {
-			          "Target": {
-			            "Entity": "f_consumer_price_index"
-			          }
-			        },
-			        "f_consumer_price_index.country_code": {
-			          "Target": {
-			            "Entity": "f_consumer_price_index.country_code"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_consumer_price_index.country_code"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_consumer_price_index"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_consumer_price_index.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_consumer_price_indices_are_in_country_codes"
 			        }
 			      ]
 			    },
@@ -27314,96 +28058,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_industrial_production_index_in_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_industrial_production_index"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_industrial_production_index": {
-			          "Target": {
-			            "Entity": "f_industrial_production_index"
-			          }
-			        },
-			        "f_industrial_production_index.country_code": {
-			          "Target": {
-			            "Entity": "f_industrial_production_index.country_code"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_industrial_production_index.country_code"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_industrial_production_index"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_industrial_production_index.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_industrial_production_indices_are_in_country_codes"
-			        }
-			      ]
-			    },
-			    "f_gross_domestic_product_in_country_code": {
-			      "Binding": {
-			        "ConceptualEntity": "f_gross_domestic_product"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_gross_domestic_product": {
-			          "Target": {
-			            "Entity": "f_gross_domestic_product"
-			          }
-			        },
-			        "f_gross_domestic_product.country_code": {
-			          "Target": {
-			            "Entity": "f_gross_domestic_product.country_code"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "f_gross_domestic_product.country_code"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "f_gross_domestic_product"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "f_gross_domestic_product.country_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_gross_domestic_products_are_in_country_codes"
-			        }
-			      ]
-			    },
 			    "f_gross_domestic_product_in_country_name": {
 			      "Binding": {
 			        "ConceptualEntity": "f_gross_domestic_product"
@@ -27536,6 +28190,204 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_ref_areas"
+			        }
+			      ]
+			    },
+			    "f_import_value_period_date_hierarchy_has_f_import_value_period_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value.period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_import_value.period.date_hierarchy"
+			          }
+			        },
+			        "f_import_value.period.quarter": {
+			          "Target": {
+			            "Entity": "f_import_value.period.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value.period.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "f_import_value.period.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "period_date_hierarchies_have_period_quarters"
+			        }
+			      ]
+			    },
+			    "f_import_value_period_date_hierarchy_has_f_import_value_period_month": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value.period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_import_value.period.date_hierarchy"
+			          }
+			        },
+			        "f_import_value.period.month": {
+			          "Target": {
+			            "Entity": "f_import_value.period.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value.period.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "f_import_value.period.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "period_date_hierarchies_have_period_months"
+			        }
+			      ]
+			    },
+			    "f_import_value_period_date_hierarchy_has_f_import_value_period_day": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value.period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_import_value.period.date_hierarchy"
+			          }
+			        },
+			        "f_import_value.period.day": {
+			          "Target": {
+			            "Entity": "f_import_value.period.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value.period.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "f_import_value.period.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "period_date_hierarchies_have_period_days"
+			        }
+			      ]
+			    },
+			    "f_export_value_original_period_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "f_export_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_export_value.original_period": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period"
+			          }
+			        },
+			        "f_export_value.original_period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_export_value.original_period"
+			            },
+			            "Object": {
+			              "Role": "f_export_value.original_period.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "original_periods_have_original_period_date_hierarchies6"
+			        }
+			      ]
+			    },
+			    "f_export_value_original_period_date_hierarchy_has_f_export_value_original_period_year": {
+			      "Binding": {
+			        "ConceptualEntity": "f_export_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_export_value.original_period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period.date_hierarchy"
+			          }
+			        },
+			        "f_export_value.original_period.year": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_export_value.original_period.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "f_export_value.original_period.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "original_period_date_hierarchies_have_original_period_years6"
+			        }
+			      ]
+			    },
+			    "f_export_value_original_period_date_hierarchy_has_f_export_value_original_period_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "f_export_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_export_value.original_period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period.date_hierarchy"
+			          }
+			        },
+			        "f_export_value.original_period.quarter": {
+			          "Target": {
+			            "Entity": "f_export_value.original_period.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_export_value.original_period.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "f_export_value.original_period.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "original_period_date_hierarchies_have_original_period_quarters6"
 			        }
 			      ]
 			    },

@@ -6,7 +6,7 @@ table Measures_Table
 			VAR current_year = [_current_year]
 			RETURN    SUMX(
 			        FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = current_year), 
-			        f_gross_domestic_product[value]
+			        f_gross_domestic_product[value_usd]
 			        )
 			
 			```
@@ -157,6 +157,31 @@ table Measures_Table
 			RETURN DIVIDE(current_retail-previous_retail, previous_retail, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: c618621a-d96c-4849-b755-b51a451ada6c
+
+	measure _current_import =
+			
+			VAR current_year = [_current_year]
+			VAR current_value = SUMX(FILTER(f_imf_imports, YEAR(f_imf_imports[period])=[_current_year]), f_imf_imports[value])
+			
+			RETURN current_value
+		lineageTag: ac0e8b5b-6108-4177-9bd1-cc3039f294c1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_export =
+			
+			VAR current_year = [_current_year]
+			VAR current_value = SUMX(FILTER(f_imf_exports, YEAR(f_imf_exports[period])=current_year), f_imf_exports[value])
+			
+			RETURN current_value
+		lineageTag: 7916cc5f-783f-4170-bb1f-993ca0853246
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_trade_balance = [_current_export]-[_current_import]
+		lineageTag: f5e28d82-3039-4d09-b5cb-9cbd6070c1c2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		formatString: 0
