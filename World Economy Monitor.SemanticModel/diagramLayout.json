@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1074.2857142857144,
-        "y": 320
+        "x": 675.71428571428578,
+        "y": 50
       },
       "nodes": [
         {
@@ -180,8 +180,7 @@
             "x": 1309.9999999999998,
             "y": 1019.2499999999999
           },
-          "nodeIndex": "f_imf_exports",
-          "nodeLineageTag": "a17c574b-d5da-412a-8a10-f9812b389c4d",
+          "nodeIndex": "f_imf_exports_goods",
           "size": {
             "height": 224,
             "width": 234
@@ -190,13 +189,39 @@
         },
         {
           "location": {
-            "x": 1766.8571428571427,
-            "y": 1007.8214285714286
+            "x": 1559.7142857142856,
+            "y": 1014.9642857142857
           },
-          "nodeIndex": "f_imf_imports",
+          "nodeIndex": "f_imf_imports_goods",
           "nodeLineageTag": "b446d63b-013b-49d2-9edb-e916f88da559",
           "size": {
             "height": 235.42857142857144,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1858.5714285714287,
+            "y": 1009.0535714285714
+          },
+          "nodeIndex": "f_imf_exports_services",
+          "nodeLineageTag": "6685b014-fd31-407b-99bf-d6668f7b4a5d",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2141.1428571428573,
+            "y": 1007.6250000000001
+          },
+          "nodeIndex": "f_imf_imports_services",
+          "nodeLineageTag": "b3db0569-16f1-4011-9220-2a95ec5b718a",
+          "size": {
+            "height": 248,
             "width": 234
           },
           "zIndex": 0

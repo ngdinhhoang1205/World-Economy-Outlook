@@ -3,7 +3,7 @@ table Measures_Table
 
 	measure _current_gdp = ```
 			
-			VAR current_year = [_current_year]
+			VAR current_year = [_current_gpd_year]
 			RETURN    SUMX(
 			        FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = current_year), 
 			        f_gross_domestic_product[value_usd]
@@ -15,10 +15,11 @@ table Measures_Table
 
 	measure _yoy_gdp =
 			
-			VAR current_gdp = [_current_gdp]
-			VAR last_year = [_previous_year]
-			VAR last_gdp = SUMX(FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = last_year), f_gross_domestic_product[value])
-			RETURN DIVIDE(current_gdp-last_gdp, last_gdp, 0)
+			VAR current_year = [_current_year]
+			VAR previous_year = [_previous_year]
+			VAR current_gdp = SUMX(FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = current_year), f_gross_domestic_product[value_usd])
+			VAR previous_gdp = SUMX(FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = previous_year), f_gross_domestic_product[value_usd])
+			RETURN DIVIDE(current_gdp-previous_gdp, previous_gdp, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 6910365f-2c5f-4338-8e79-ffe5f05290ba
 
@@ -132,25 +133,30 @@ table Measures_Table
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: ae029301-14a7-4960-83ed-860ef4c9286e
 
-	measure _yoy_retail =
+	measure _yoy_retail = ```
 			
-			VAR current_year = [_current_year]-1
-			VAR previous_year = [_previous_year]-1
+			VAR current_year = YEAR(MAX(f_retail_sales[period])) 
+			VAR previous_year = current_year-1
 			VAR current_retail = SUMX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), f_retail_sales[value])
 			VAR previous_retail = SUMX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=previous_year), f_retail_sales[value])
 			
 			RETURN DIVIDE(current_retail-previous_retail, previous_retail, 0)
+			```
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: d9b8ba7e-1d2b-401d-b64d-ee0a2422aa7a
 
-	measure _current_gpd_year = YEAR(MAX(f_gross_domestic_product[period]))
+	measure _current_gpd_year = ```
+			YEAR(MAX(f_gross_domestic_product[period])) 
+			```
 		formatString: 0
 		lineageTag: a820c542-c430-441c-bad4-2fd9b8f23e14
 
 	measure _mom_retail =
 			
-			VAR current_month = [_current_month]-101
-			VAR previous_month = [_previous_month]-101
+			VAR current_year = YEAR(MAX(f_retail_sales[period]))
+			VAR previous_year = current_year-1
+			VAR current_month = current_year*100 + MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))
+			VAR previous_month = IF(MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))=1, previous_year*100+12, current_month-1)
 			VAR current_retail = SUMX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])*100+MONTH(f_retail_sales[period])=current_month), f_retail_sales[value])
 			VAR previous_retail = SUMX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])*100+MONTH(f_retail_sales[period])=previous_month), f_retail_sales[value])
 			
@@ -161,9 +167,9 @@ table Measures_Table
 	measure _current_import =
 			
 			VAR current_year = [_current_year]
-			VAR current_value = SUMX(FILTER(f_imf_imports, YEAR(f_imf_imports[period])=[_current_year]), f_imf_imports[value])
-			
-			RETURN current_value
+			VAR current_value_goods = SUMX(FILTER(f_imf_imports_goods, YEAR(f_imf_imports_goods[period])=[_current_year]), f_imf_imports_goods[value])
+			VAR current_value_services = SUMX(FILTER(f_imf_imports_services, YEAR(f_imf_imports_services[period])=[_current_year]), f_imf_imports_services[value])
+			RETURN current_value_goods+current_value_services
 		lineageTag: ac0e8b5b-6108-4177-9bd1-cc3039f294c1
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -171,9 +177,9 @@ table Measures_Table
 	measure _current_export =
 			
 			VAR current_year = [_current_year]
-			VAR current_value = SUMX(FILTER(f_imf_exports, YEAR(f_imf_exports[period])=current_year), f_imf_exports[value])
-			
-			RETURN current_value
+			VAR current_value_goods = SUMX(FILTER(f_imf_exports_goods, YEAR(f_imf_exports_goods[period])=current_year), f_imf_exports_goods[value])
+			VAR current_value_services = SUMX(FILTER(f_imf_exports_services, YEAR(f_imf_exports_services[period])=current_year), f_imf_exports_services[value])
+			RETURN current_value_goods+current_value_services
 		lineageTag: 7916cc5f-783f-4170-bb1f-993ca0853246
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -182,6 +188,33 @@ table Measures_Table
 		lineageTag: f5e28d82-3039-4d09-b5cb-9cbd6070c1c2
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_gdp_subtitle = "Latest: " & [_current_gpd_year]
+		lineageTag: c9284181-1df3-4707-9ccf-fee40c2d8ece
+
+	measure _yoy_gdp_subtitle = [_current_gpd_year] & " vs. " & [_current_gpd_year]-1
+		lineageTag: 25e02610-2f7f-427e-9bf6-46cd59238690
+
+	measure _current_retail_year = YEAR(MAX(f_retail_sales[period]))
+		formatString: 0
+		lineageTag: ae06332a-5923-4bdb-8984-a402e458bc7d
+
+	measure _mom_retail_subtitle =
+			
+			VAR current_year = YEAR(MAX(f_retail_sales[period]))
+			VAR previous_year = current_year-1
+			VAR current_month = current_year*100 + MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))
+			VAR previous_month = IF(MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))=1, previous_year*100+12, current_month-1)
+			RETURN current_month & " vs. " & previous_month
+		lineageTag: dd1ed56b-dd84-44d5-9a71-f35468f91b31
+
+	measure _yoy_retail_subtitle = ```
+			
+			VAR current_year = YEAR(MAX(f_retail_sales[period])) 
+			VAR previous_year = current_year-1
+			RETURN current_year & " vs. " & previous_year
+			```
+		lineageTag: 84e17603-d70a-4e61-93d8-0be2c90bfae9
 
 	column Value
 		formatString: 0

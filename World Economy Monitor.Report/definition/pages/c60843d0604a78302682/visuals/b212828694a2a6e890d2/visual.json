@@ -29,6 +29,20 @@
               "queryRef": "Measures_Table._yoy_gdp",
               "nativeQueryRef": "YoY GDP",
               "displayName": "YoY GDP"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures_Table"
+                    }
+                  },
+                  "Property": "_yoy_gdp_subtitle"
+                }
+              },
+              "queryRef": "Measures_Table._yoy_gdp_subtitle",
+              "nativeQueryRef": "_yoy_gdp_subtitle"
             }
           ]
         }
@@ -82,6 +96,20 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures_Table._yoy_gdp_subtitle"
           }
         }
       ],
@@ -143,6 +171,26 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "style": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cards'"
+                }
+              }
+            },
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
           }
         }
       ]
@@ -311,6 +359,20 @@
               }
             },
             "Property": "_yoy_gdp"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c08a7475415c4188e094",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_yoy_gdp_subtitle"
           }
         },
         "type": "Advanced"

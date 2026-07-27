@@ -119,18 +119,34 @@ relationship 3c9ac2ab-e495-b832-0204-510261679b1b
 	toColumn: d_country.iso2_code
 
 relationship d35c093a-4a3d-606c-3df5-013f21a1a5c1
-	fromColumn: f_imf_exports.period
+	fromColumn: f_imf_exports_goods.period
 	toColumn: d_calendar.Date
 
 relationship 6985952c-1cd1-d002-b4ca-9278dccee1d6
-	fromColumn: f_imf_imports.period
+	fromColumn: f_imf_imports_goods.period
 	toColumn: d_calendar.Date
 
 relationship 1c83f9a8-5363-46c2-ebe4-d748bc62312e
-	fromColumn: f_imf_exports.COUNTRY
+	fromColumn: f_imf_exports_goods.COUNTRY
 	toColumn: d_country.iso3_code
 
 relationship 611f480b-6fd3-3af8-fda2-45b812425e4a
-	fromColumn: f_imf_imports.COUNTRY
+	fromColumn: f_imf_imports_goods.COUNTRY
+	toColumn: d_country.iso3_code
+
+relationship 45f3388c-d4e0-18b9-ad0d-6995a3e3f1bf
+	fromColumn: f_imf_exports_services.period
+	toColumn: d_calendar.Date
+
+relationship 2f53ab7a-715f-a067-80df-52dc96dd179f
+	fromColumn: f_imf_imports_services.period
+	toColumn: d_calendar.Date
+
+relationship 8657051b-60af-ac97-a54a-58b694d2ad7b
+	fromColumn: f_imf_exports_services.COUNTRY
+	toColumn: d_country.iso3_code
+
+relationship 1cd4369b-7ede-6983-6877-6d07e38e08e5
+	fromColumn: f_imf_imports_services.COUNTRY
 	toColumn: d_country.iso3_code
 

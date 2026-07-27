@@ -93,6 +93,24 @@ def fetch_imf_api(dataflow_id, key, agency="IMF.STA", version="+", start_period=
     return _parse_imf_sdmx_json(resp.json())
 
 
+def fetch_bop_services(entry, countries, unit="USD", frequency="Q", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch BOP trade-in-services value ('CD_T' credits = exports, 'DB_T' debits = imports)
+    for a list of countries. Unlike IMTS, BOP has no counterpart-country dimension — each
+    country reports one total against the rest of world — so no bilateral chunking or
+    aggregate-code filtering is needed, only chunking the reporting-country list itself.
+    """
+    dfs = []
+    for chunk in chunked(countries):
+        key = f"{'+'.join(chunk)}.{entry}.S.{unit}.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="BOP", key=key,
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+
+
 def fetch_imts(indicator, country_key="*", frequency="M", start_period=None, end_period=None, api_key=None):
     """
     Fetch an IMTS indicator (e.g. MG_FOB_USD, MG_CIF_USD, XG_FOB_USD) across every real

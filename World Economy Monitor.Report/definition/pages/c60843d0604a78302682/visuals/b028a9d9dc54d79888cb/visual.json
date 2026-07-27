@@ -39,11 +39,11 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_gpd_year"
+                  "Property": "_current_gdp_subtitle"
                 }
               },
-              "queryRef": "Measures_Table._current_gpd_year",
-              "nativeQueryRef": "_current_gpd_year"
+              "queryRef": "Measures_Table._current_gdp_subtitle",
+              "nativeQueryRef": "_current_gdp_subtitle"
             }
           ]
         }
@@ -105,48 +105,6 @@
       "value": [
         {
           "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            },
-            "textWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_gpd_year"
-          }
-        },
-        {
-          "properties": {
             "show": {
               "expr": {
                 "Literal": {
@@ -171,10 +129,38 @@
                   "Value": "1D"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "24D"
+                }
+              }
             }
           },
           "selector": {
             "metadata": "Measures_Table._total_god"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures_Table._current_gdp_subtitle"
           }
         }
       ],
@@ -190,7 +176,7 @@
             }
           },
           "selector": {
-            "metadata": "Measures_Table._current_gpd_year"
+            "metadata": "Measures_Table._total_god"
           }
         },
         {
@@ -204,25 +190,11 @@
             }
           },
           "selector": {
-            "metadata": "Measures_Table._total_god"
+            "metadata": "Measures_Table._current_gdp_subtitle"
           }
         }
       ],
       "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_gpd_year"
-          }
-        },
         {
           "properties": {
             "show": {
@@ -404,7 +376,7 @@
         "type": "Advanced"
       },
       {
-        "name": "93ca510b208de0e24a85",
+        "name": "76eab5c7d3077a602a14",
         "field": {
           "Measure": {
             "Expression": {
@@ -412,7 +384,7 @@
                 "Entity": "Measures_Table"
               }
             },
-            "Property": "_current_gpd_year"
+            "Property": "_current_gdp_subtitle"
           }
         },
         "type": "Advanced"
