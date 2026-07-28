@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "bcb7698bb7dcb4a0a937",
   "position": {
-    "x": 17.507598784194531,
-    "y": 534.95440729483289,
+    "x": 17.448325017818959,
+    "y": 535.08196721311469,
     "z": 7000,
-    "height": 140.06079027355625,
-    "width": 286.93009118541033,
+    "height": 139.58660014255167,
+    "width": 321.82466143977189,
     "tabOrder": 7000
   },
   "visual": {
@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_policy_rate_us"
+                  "Property": "_current_policy_rate"
                 }
               },
               "queryRef": "Measures_Table._current_policy_rate",
@@ -43,7 +43,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_policy_rate_us"
+                "Property": "_current_policy_rate"
               }
             },
             "direction": "Descending"
@@ -189,7 +189,7 @@
                 "Entity": "Measures_Table"
               }
             },
-            "Property": "_current_policy_rate_us"
+            "Property": "_current_policy_rate"
           }
         },
         "type": "Advanced"

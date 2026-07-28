@@ -12159,7 +12159,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_current_policy_rate_us"
+			          "ConceptualProperty": "_current_policy_rate"
 			        }
 			      },
 			      "State": "Generated",

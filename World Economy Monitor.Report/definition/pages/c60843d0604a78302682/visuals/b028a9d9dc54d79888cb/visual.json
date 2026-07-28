@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b028a9d9dc54d79888cb",
   "position": {
-    "x": 17.507598784194531,
-    "y": 77.81155015197568,
+    "x": 17.448325017818959,
+    "y": 77.548111190306471,
     "z": 0,
-    "height": 140.06079027355625,
-    "width": 286.93009118541033,
+    "height": 140.5559515324305,
+    "width": 321.82466143977189,
     "tabOrder": 0
   },
   "visual": {
@@ -147,7 +147,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "9D"
                 }
               }
             },
@@ -161,6 +161,20 @@
           },
           "selector": {
             "metadata": "Measures_Table._current_gdp_subtitle"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],

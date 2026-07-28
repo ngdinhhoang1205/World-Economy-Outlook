@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "82063b3223735cdcaccc",
   "position": {
-    "x": 17.507598784194531,
-    "y": 228.57142857142858,
+    "x": 17.334283677833213,
+    "y": 228.9950106913756,
     "z": 3000,
-    "height": 140.06079027355625,
-    "width": 286.93009118541033,
+    "height": 139.58660014255167,
+    "width": 322.05274411974341,
     "tabOrder": 3000
   },
   "visual": {
@@ -38,11 +38,11 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_year"
+                  "Property": "_yoy_ipi_subtitle"
                 }
               },
-              "queryRef": "Measures_Table._current_year",
-              "nativeQueryRef": "_current_year"
+              "queryRef": "Measures_Table._yoy_ipi_subtitle",
+              "nativeQueryRef": "_yoy_ipi_subtitle"
             }
           ]
         }
@@ -103,7 +103,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "9D"
                 }
               }
             },
@@ -116,7 +116,7 @@
             }
           },
           "selector": {
-            "metadata": "Measures_Table._current_year"
+            "metadata": "Measures_Table._yoy_ipi_subtitle"
           }
         }
       ],
@@ -252,20 +252,6 @@
               }
             },
             "Property": "_yoy_ipi"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0ef54e89510acdd2902a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_year"
           }
         },
         "type": "Advanced"

@@ -35,10 +35,12 @@ table Measures_Table
 
 	measure _yoy_ipi =
 			
-			VAR current_year = [_current_year]
-			VAR previous_year = [_previous_year]
-			VAR current_ipi = SUMX(FILTER(f_industrial_production_index, YEAR(f_industrial_production_index[Date])=current_year), f_industrial_production_index[value])
-			VAR previous_ipi = SUMX(FILTER(f_industrial_production_index, YEAR(f_industrial_production_index[Date])=previous_year), f_industrial_production_index[value])
+			VAR latest_date = MAX(f_industrial_production_index[Date])
+			VAR latest_year = YEAR(latest_date)
+			VAR same_date_previous_year = MAX(f_industrial_production_index[Date])-365
+			VAR previous_year = YEAR(same_date_previous_year)
+			VAR current_ipi = SUMX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=latest_year, f_industrial_production_index[Date]<=latest_date)), f_industrial_production_index[value])
+			VAR previous_ipi = SUMX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=previous_year, f_industrial_production_index[Date]<=same_date_previous_year)), f_industrial_production_index[value])
 			RETURN DIVIDE(current_ipi-previous_ipi, previous_ipi, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 98ca56b1-bba7-44f3-9289-b677f32a2d71
@@ -49,10 +51,10 @@ table Measures_Table
 
 	measure _mom_ipi =
 			
-			VAR current_month = [_current_month]
-			VAR previous_month = [_previous_month]
-			VAR current_ipi = SUMX(FILTER(f_industrial_production_index, YEAR(f_industrial_production_index[Date])*100+MONTH(f_industrial_production_index[Date])=current_month), f_industrial_production_index[value])
-			VAR previous_ipi = SUMX(FILTER(f_industrial_production_index, YEAR(f_industrial_production_index[Date])*100+MONTH(f_industrial_production_index[Date])=previous_month), f_industrial_production_index[value])
+			VAR latest_date = MAX(f_industrial_production_index[Date])
+			VAR previous_month = EOMONTH(latest_date, -2) + 1
+			VAR current_ipi = SUMX(FILTER(f_industrial_production_index, f_industrial_production_index[Date]=latest_date), f_industrial_production_index[value])
+			VAR previous_ipi = SUMX(FILTER(f_industrial_production_index, f_industrial_production_index[Date]=previous_month), f_industrial_production_index[value])
 			RETURN DIVIDE(current_ipi-previous_ipi, previous_ipi, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 8791e000-4a27-4234-943b-ba964f856d4f
@@ -67,10 +69,13 @@ table Measures_Table
 
 	measure _yoy_cpi =
 			
-			VAR current_year = [_current_year]
-			VAR previous_year = [_previous_year]
-			VAR current_cpi = SUMX(FILTER(f_consumer_price_index, YEAR(f_consumer_price_index[period])=current_year), f_consumer_price_index[value])
-			VAR previous_cpi = SUMX(FILTER(f_consumer_price_index, YEAR(f_consumer_price_index[period])=previous_year), f_consumer_price_index[value])
+			VAR latest_date = MAX(f_consumer_price_index[period])
+			VAR latest_year = YEAR(latest_date)
+			VAR same_date_previous_year = MAX(f_consumer_price_index[period])-365
+			VAR previous_year = YEAR(same_date_previous_year)
+			
+			VAR current_cpi = SUMX(FILTER(f_consumer_price_index, AND(YEAR(f_consumer_price_index[period])=latest_year, f_consumer_price_index[period]<= latest_date)), f_consumer_price_index[value])
+			VAR previous_cpi = SUMX(FILTER(f_consumer_price_index, AND(YEAR(f_consumer_price_index[period])=previous_year, f_consumer_price_index[period]<= same_date_previous_year)), f_consumer_price_index[value])
 			
 			RETURN DIVIDE(current_cpi-previous_cpi, previous_cpi, 0)
 		formatString: 0.00%;-0.00%;0.00%
@@ -78,19 +83,19 @@ table Measures_Table
 
 	measure _mom_cpi =
 			
-			VAR current_month = [_current_month]
-			VAR previous_month = [_previous_month]
-			VAR current_cpi = SUMX(FILTER(f_consumer_price_index, YEAR(f_consumer_price_index[period])*100 + MONTH(f_consumer_price_index[period])=current_month), f_consumer_price_index[value])
-			VAR previous_cpi = SUMX(FILTER(f_consumer_price_index, YEAR(f_consumer_price_index[period])*100 + MONTH(f_consumer_price_index[period])=previous_month), f_consumer_price_index[value])
+			VAR latest_date = MAX(f_consumer_price_index[period])
+			VAR previous_month = EOMONTH(latest_date, -2) + 1
+			VAR current_cpi = SUMX(FILTER(f_consumer_price_index, f_consumer_price_index[period]=latest_date), f_consumer_price_index[value])
+			VAR previous_cpi = SUMX(FILTER(f_consumer_price_index, f_consumer_price_index[period]=previous_month), f_consumer_price_index[value])
 			
 			RETURN DIVIDE(current_cpi-previous_cpi, previous_cpi, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 356619cc-f2ec-4406-a71b-8a69835aae58
 
-	measure _current_policy_rate_us =
+	measure _current_policy_rate =
 			
-			VAR current_month = [_current_month]
-			VAR policy_rate = AVERAGEX(FILTER(f_cb_policy_rates, AND(YEAR(f_cb_policy_rates[period])*100+MONTH(f_cb_policy_rates[period])=current_month, f_cb_policy_rates[REF_AREA]="US")), f_cb_policy_rates[value]/100)
+			VAR latest_date = MAX(f_cb_policy_rates[period])
+			VAR policy_rate = AVERAGEX(FILTER(f_cb_policy_rates, f_cb_policy_rates[period]=latest_date), f_cb_policy_rates[value]/100)
 			
 			RETURN policy_rate
 		formatString: 0.00%;-0.00%;0.00%
@@ -109,7 +114,7 @@ table Measures_Table
 
 	measure _current_unemployment_rate =
 			
-			VAR current_year = [_current_year]
+			VAR current_year = YEAR(MAX(f_unemployment_rate[period]))
 			VAR current_unemployment_rate = CALCULATE(
 			    AVERAGE(f_unemployment_rate[value]),
 			    YEAR(f_unemployment_rate[period])=current_year)
@@ -120,8 +125,8 @@ table Measures_Table
 
 	measure _yoy_unemployment_rate =
 			
-			VAR current_year = [_current_year]
-			VAR previous_year = [_previous_year]
+			VAR current_year = YEAR(MAX(f_unemployment_rate[period]))
+			VAR previous_year = YEAR(MAX(f_unemployment_rate[period]))-1
 			VAR current_unemployment_rate = CALCULATE(
 			    AVERAGE(f_unemployment_rate[value]),
 			    YEAR(f_unemployment_rate[period])=current_year)
@@ -201,11 +206,9 @@ table Measures_Table
 
 	measure _mom_retail_subtitle =
 			
-			VAR current_year = YEAR(MAX(f_retail_sales[period]))
-			VAR previous_year = current_year-1
-			VAR current_month = current_year*100 + MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))
-			VAR previous_month = IF(MAXX(FILTER(f_retail_sales, YEAR(f_retail_sales[period])=current_year), MONTH(f_retail_sales[period]))=1, previous_year*100+12, current_month-1)
-			RETURN current_month & " vs. " & previous_month
+			VAR latest_date = MAX(f_retail_sales[period])
+			VAR previous_month = EOMONTH(latest_date, -2) + 1
+			RETURN FORMAT(latest_date, "yyyy-mm") & " vs. " & FORMAT(previous_month, "yyyy-mm")
 		lineageTag: dd1ed56b-dd84-44d5-9a71-f35468f91b31
 
 	measure _yoy_retail_subtitle = ```
@@ -215,6 +218,51 @@ table Measures_Table
 			RETURN current_year & " vs. " & previous_year
 			```
 		lineageTag: 84e17603-d70a-4e61-93d8-0be2c90bfae9
+
+	measure _current_unemployment_rate_subtitle =
+			
+			VAR current_year = YEAR(MAX(f_unemployment_rate[period]))
+			RETURN "Latest: " & current_year
+		lineageTag: 0c8f5100-f3f4-45af-a9c6-c203fc8d7729
+
+	measure _yoy_unemployment_rate_subtitle =
+			
+			VAR current_year = YEAR(MAX(f_unemployment_rate[period]))
+			VAR previous_year = YEAR(MAX(f_unemployment_rate[period]))-1
+			RETURN current_year & " vs. " & previous_year
+		lineageTag: 5e810f98-e8d5-4835-9aa0-bfa9db022eb1
+
+	measure _yoy_ipi_subtitle =
+			
+			VAR latest_date = MAX(f_industrial_production_index[Date])
+			VAR latest_year = DATE(YEAR(latest_date), 1, 1)
+			VAR same_date_previous_year = MAX(f_industrial_production_index[Date])-365
+			VAR previous_year = DATE(YEAR(same_date_previous_year), 1, 1)
+			RETURN "[" & FORMAT(latest_year, "yyyy-mm") & "; " & FORMAT(latest_date, "yyyy-mm") & "]" & " over " & "[" & FORMAT(previous_year, "yyyy-mm") & "; " & FORMAT(same_date_previous_year, "yyyy-mm") & "]"
+		lineageTag: ba31ce32-bd4c-45e5-b2c7-567bbe41ad7f
+
+	measure _mom_ipi_subtitle =
+			
+			VAR latest_date = MAX(f_industrial_production_index[Date])
+			VAR previous_month = EOMONTH(latest_date, -2) + 1
+			RETURN FORMAT(latest_date, "yyyy-mm") & " over " & FORMAT(previous_month, "yyyy-mm")
+		lineageTag: 88b9cbca-87ed-4b8c-8ed1-33da4f241509
+
+	measure _yoy_cpi_subtitle =
+			
+			VAR latest_date = MAX(f_consumer_price_index[period])
+			VAR latest_year = DATE(YEAR(latest_date), 1, 1)
+			VAR same_date_previous_year = MAX(f_consumer_price_index[period])-365
+			VAR previous_year = DATE(YEAR(same_date_previous_year), 1, 1)
+			RETURN "[" & FORMAT(latest_year, "yyyy-mm") & "; " & FORMAT(latest_date, "yyyy-mm") & "]" & " over " & "[" & FORMAT(previous_year, "yyyy-mm") & "; " & FORMAT(same_date_previous_year, "yyyy-mm") & "]"
+		lineageTag: ccfdbb46-aa2a-49db-8adc-db2d0105bc9b
+
+	measure _mom_cpi_subtitle =
+			
+			VAR latest_date = MAX(f_consumer_price_index[period])
+			VAR previous_month = EOMONTH(latest_date, -2) + 1
+			RETURN FORMAT(latest_date, "yyyy-mm") & " over " & FORMAT(previous_month, "yyyy-mm")
+		lineageTag: 03bd1f5e-1895-406b-9fda-8409b65e526e
 
 	column Value
 		formatString: 0

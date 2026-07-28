@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d71f2634407cba9673c1",
   "position": {
-    "x": 317.08206686930095,
-    "y": 228.57142857142858,
+    "x": 350.33499643620809,
+    "y": 228.9950106913756,
     "z": 4000,
-    "height": 140.06079027355625,
-    "width": 286.93009118541033,
+    "height": 139.58660014255167,
+    "width": 322.05274411974341,
     "tabOrder": 4000
   },
   "visual": {
@@ -29,6 +29,20 @@
               "queryRef": "Measures_Table._mom_ipi",
               "nativeQueryRef": "MoM IPI",
               "displayName": "MoM IPI"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures_Table"
+                    }
+                  },
+                  "Property": "_mom_ipi_subtitle"
+                }
+              },
+              "queryRef": "Measures_Table._mom_ipi_subtitle",
+              "nativeQueryRef": "_mom_ipi_subtitle"
             }
           ]
         }
@@ -83,6 +97,20 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Measures_Table._mom_ipi_subtitle"
+          }
         }
       ],
       "outline": [
@@ -98,6 +126,19 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
           }
         }
       ]
