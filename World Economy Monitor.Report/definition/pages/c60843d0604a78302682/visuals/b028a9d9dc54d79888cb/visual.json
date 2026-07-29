@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b028a9d9dc54d79888cb",
   "position": {
-    "x": 17.448325017818959,
-    "y": 77.548111190306471,
+    "x": 17.56838905775076,
+    "y": 77.507598784194528,
     "z": 0,
-    "height": 140.5559515324305,
-    "width": 321.82466143977189,
+    "height": 150.88145896656536,
+    "width": 321.39817629179333,
     "tabOrder": 0
   },
   "visual": {
@@ -323,6 +323,20 @@
                   "Value": "true"
                 }
               }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Canvas'"
+                }
+              }
+            },
+            "showTooltipFieldsOnly": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -346,24 +360,49 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "text": {
               "expr": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "f_gross_domestic_product"
-                        }
-                      },
-                      "Property": "dataset_name"
-                    }
-                  },
-                  "Function": 4
+                "Literal": {
+                  "Value": "'(Millions of Dollars)'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading4'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -372,37 +411,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4075651d570679aabe24",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "76eab5c7d3077a602a14",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp_subtitle"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

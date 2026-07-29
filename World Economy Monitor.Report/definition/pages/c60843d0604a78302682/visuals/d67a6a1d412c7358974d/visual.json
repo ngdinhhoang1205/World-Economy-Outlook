@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "d67a6a1d412c7358974d",
   "position": {
-    "x": 1022.6657163221666,
-    "y": 228.7669280114041,
-    "z": 16002,
-    "height": 139.58660014255167,
-    "width": 322.79401282965074,
-    "tabOrder": 16002
+    "x": 1023.1003039513678,
+    "y": 238.72340425531914,
+    "z": 14000,
+    "height": 151.91489361702128,
+    "width": 322.43161094224922,
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -218,37 +218,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e2c35f1dea926805d092",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_mom_retail"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "04ddacfb2317b40a1199",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_mom_retail_subtitle"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

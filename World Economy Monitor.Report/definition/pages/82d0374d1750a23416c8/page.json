@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "82d0374d1750a23416c8",
+  "displayName": "YoY_GDP_Tooltip",
+  "displayOption": "ActualSize",
+  "height": 140,
+  "width": 500,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c05a1a30db0302aa077d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_yoy_gdp"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "9f2a00743062c505a42b",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "85fc04060182350b3eaa",
+        "boundFilter": "c05a1a30db0302aa077d",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_yoy_gdp"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

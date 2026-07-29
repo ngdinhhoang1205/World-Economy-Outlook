@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "def3e6001a0a53738a52",
   "position": {
-    "x": 686.07270135424085,
-    "y": 228.9950106913756,
-    "z": 11000,
-    "height": 139.58660014255167,
-    "width": 322.05274411974341,
-    "tabOrder": 11000
+    "x": 686.20060790273556,
+    "y": 238.72340425531914,
+    "z": 10000,
+    "height": 150.88145896656536,
+    "width": 322.43161094224922,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -74,6 +74,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'--'"
                 }
               }
             }
@@ -218,37 +225,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f0fc5b8105064035e254",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_retail"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "55fe4d6590a700d5009e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_retail_subtitle"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

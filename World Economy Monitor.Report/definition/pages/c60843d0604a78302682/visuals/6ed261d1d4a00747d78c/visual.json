@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "6ed261d1d4a00747d78c",
   "position": {
-    "x": 1022.6657163221666,
-    "y": 77.548111190306471,
-    "z": 16001,
-    "height": 140.5559515324305,
-    "width": 322.79401282965074,
-    "tabOrder": 16001
+    "x": 1023.1003039513678,
+    "y": 77.507598784194528,
+    "z": 13000,
+    "height": 150.88145896656536,
+    "width": 322.43161094224922,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -218,23 +218,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "82fdeaef9703384074d0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_unemployment_rate"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

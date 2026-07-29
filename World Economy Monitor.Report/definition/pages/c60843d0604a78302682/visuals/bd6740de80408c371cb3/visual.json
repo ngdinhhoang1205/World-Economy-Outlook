@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "bd6740de80408c371cb3",
   "position": {
-    "x": 349.935851746258,
-    "y": 535.08196721311469,
+    "x": 350.33434650455928,
+    "y": 563.22188449848022,
     "z": 8000,
-    "height": 139.58660014255167,
-    "width": 321.82466143977189,
+    "height": 150.88145896656536,
+    "width": 321.39817629179333,
     "tabOrder": 8000
   },
   "visual": {
@@ -188,7 +188,41 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Percentage Point'"
+                  "Value": "'(Percentage Points)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -197,23 +231,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d01d27762510e8a177c0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_mom_policy_rate"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

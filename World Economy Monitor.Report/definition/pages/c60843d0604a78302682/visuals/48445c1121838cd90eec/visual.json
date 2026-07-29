@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "48445c1121838cd90eec",
   "position": {
-    "x": 17.448325017818959,
-    "y": 379.98574483250172,
+    "x": 17.56838905775076,
+    "y": 397.87234042553189,
     "z": 5000,
-    "height": 140.5559515324305,
-    "width": 321.82466143977189,
+    "height": 155.01519756838906,
+    "width": 321.39817629179333,
     "tabOrder": 5000
   },
   "visual": {
@@ -231,23 +231,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8e3e3a1e038564605bb0",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_cpi"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

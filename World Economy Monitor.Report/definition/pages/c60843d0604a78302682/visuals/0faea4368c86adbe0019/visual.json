@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "0faea4368c86adbe0019",
   "position": {
-    "x": 686.30078403421237,
-    "y": 535.08196721311469,
-    "z": 15000,
-    "height": 139.58660014255167,
-    "width": 659.15894511760507,
-    "tabOrder": 15000
+    "x": 686.20060790273556,
+    "y": 563.22188449848022,
+    "z": 12000,
+    "height": 150.88145896656536,
+    "width": 659.33130699088144,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -188,26 +188,49 @@
             }
           }
         }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'(Millions of Dollars)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "italic": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2692ddb4606949c1dc18",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_trade_balance"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

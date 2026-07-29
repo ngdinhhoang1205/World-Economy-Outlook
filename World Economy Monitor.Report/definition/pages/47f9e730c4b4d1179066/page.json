@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "47f9e730c4b4d1179066",
+  "displayName": "MoM_policyrate_Tooltip",
+  "displayOption": "ActualSize",
+  "height": 140,
+  "width": 500,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "66219ee1147c470738ad",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_mom_policy_rate"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "0621c17370d0a56e9e99",
+    "type": "Tooltip",
+    "parameters": [
+      {
+        "name": "daf70109730a456802a1",
+        "boundFilter": "66219ee1147c470738ad",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
+        "fieldExpr": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_mom_policy_rate"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}
