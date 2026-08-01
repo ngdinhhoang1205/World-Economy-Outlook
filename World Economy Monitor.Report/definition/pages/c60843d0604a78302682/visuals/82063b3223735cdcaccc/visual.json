@@ -239,5 +239,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "02f3baeea0d381c3cea8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_yoy_ipi"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5ecea054c7781513e128",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_yoy_ipi_subtitle"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

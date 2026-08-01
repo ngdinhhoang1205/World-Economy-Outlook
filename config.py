@@ -201,7 +201,16 @@ dict_3_char = {
     "UGA": "Uganda", "ZAF": "South Africa", "ZMB": "Zambia", "ZWE": "Zimbabwe",
     # OCEANIA & OTHERS / REGIONAL
     "TON": "Tonga", "TUV": "Tuvalu", "VUT": "Vanuatu", "WSM": "Samoa",
-    "STP": "Sao Tome and Principe", "SUN": "Former U.S.S.R.", "EA": "Euro Area"
+    "STP": "Sao Tome and Principe", "SUN": "Former U.S.S.R.",
+    # ADDITIONAL COUNTRIES (IMF PI / Industrial Production dataset coverage)
+    "AUS": "Australia", "BGR": "Bulgaria", "BIH": "Bosnia and Herzegovina", "BRB": "Barbados",
+    "CHL": "Chile", "CHN": "China", "CIV": "Côte d'Ivoire", "CRI": "Costa Rica",
+    "CYP": "Cyprus", "ECU": "Ecuador", "EGY": "Egypt", "EST": "Estonia",
+    "HRV": "Croatia", "IND": "India", "ISL": "Iceland", "JOR": "Jordan",
+    "JPN": "Japan", "KAZ": "Kazakhstan", "KGZ": "Kyrgyz Republic", "KOR": "Korea, Republic of",
+    "LTU": "Lithuania", "LUX": "Luxembourg", "MKD": "North Macedonia", "MNE": "Montenegro",
+    "MWI": "Malawi", "NOR": "Norway", "PRY": "Paraguay", "RUS": "Russian Federation",
+    "SRB": "Serbia", "SVK": "Slovak Republic", "SVN": "Slovenia", "TWN": "Taiwan Province of China"
 }
 
 # 2. Dictionary 2-character (Alpha-2)
@@ -232,5 +241,14 @@ dict_2_char = {
     "UG": "Uganda", "ZA": "South Africa", "ZM": "Zambia", "ZW": "Zimbabwe",
     # OCEANIA & OTHERS / REGIONAL
     "TO": "Tonga", "TV": "Tuvalu", "VU": "Vanuatu", "WS": "Samoa",
-    "ST": "Sao Tome and Principe", "SUH": "Former U.S.S.R.", "U2": "Euro Area"
+    "ST": "Sao Tome and Principe", "SUH": "Former U.S.S.R.",
+    # ADDITIONAL COUNTRIES (IMF PI / Industrial Production dataset coverage)
+    "AU": "Australia", "BG": "Bulgaria", "BA": "Bosnia and Herzegovina", "BB": "Barbados",
+    "CL": "Chile", "CN": "China", "CI": "Côte d'Ivoire", "CR": "Costa Rica",
+    "CY": "Cyprus", "EC": "Ecuador", "EG": "Egypt", "EE": "Estonia",
+    "HR": "Croatia", "IN": "India", "IS": "Iceland", "JO": "Jordan",
+    "JP": "Japan", "KZ": "Kazakhstan", "KG": "Kyrgyz Republic", "KR": "Korea, Republic of",
+    "LT": "Lithuania", "LU": "Luxembourg", "MK": "North Macedonia", "ME": "Montenegro",
+    "MW": "Malawi", "NO": "Norway", "PY": "Paraguay", "RU": "Russian Federation",
+    "RS": "Serbia", "SK": "Slovak Republic", "SI": "Slovenia", "TW": "Taiwan Province of China"
 }

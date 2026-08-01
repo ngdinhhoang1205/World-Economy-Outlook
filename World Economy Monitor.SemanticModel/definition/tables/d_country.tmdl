@@ -25,11 +25,19 @@ table d_country
 
 		annotation SummarizationSetBy = Automatic
 
+	column continent
+		dataType: string
+		lineageTag: be0a195e-1e8a-4db7-8fb0-58bad4fe7dc4
+		summarizeBy: none
+		sourceColumn: continent
+
+		annotation SummarizationSetBy = Automatic
+
 	partition d_country = m
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("D:\Projects\DA Porforlio\data\d_country.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("D:\Projects\DA Porforlio\data\d_country.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"", Int64.Type}, {"iso2_code", type text}, {"iso3_code", type text}, {"country_name", type text}}),
 				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{""})

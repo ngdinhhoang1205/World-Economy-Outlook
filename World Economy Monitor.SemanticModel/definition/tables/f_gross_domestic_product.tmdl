@@ -83,13 +83,12 @@ table f_gross_domestic_product
 
 	column value
 		dataType: double
+		formatString: #,0
 		lineageTag: 84268141-d63e-4231-b585-734ce5af0638
 		summarizeBy: sum
 		sourceColumn: value
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column FREQ
 		dataType: string

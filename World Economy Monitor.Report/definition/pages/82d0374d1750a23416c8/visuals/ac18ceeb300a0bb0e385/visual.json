@@ -145,7 +145,7 @@
             "name": {
               "expr": {
                 "Literal": {
-                  "Value": "'Default'"
+                  "Value": "''"
                 }
               }
             }
@@ -260,20 +260,6 @@
         "howCreated": "User"
       },
       {
-        "name": "2a2946e6cb17c80136e2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "1ce42b3853d2c05b182a",
         "field": {
           "Column": {
@@ -320,6 +306,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "8641dab809b4cd0a0c52",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_current_gdp"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

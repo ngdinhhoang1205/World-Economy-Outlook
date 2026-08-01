@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "99b50281713d00229804",
+  "name": "92dbdc4019740810abc7",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 140,
-    "width": 500,
-    "tabOrder": 0
+    "x": 8.9552238805970141,
+    "y": 365.67164179104475,
+    "z": 1000,
+    "height": 319.40298507462683,
+    "width": 867.16417910447751,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "lineChart",
@@ -32,6 +32,24 @@
             }
           ]
         },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "d_country"
+                    }
+                  },
+                  "Property": "country_name"
+                }
+              },
+              "queryRef": "d_country.country_name",
+              "nativeQueryRef": "country_name"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -42,11 +60,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_policy_rate"
+                  "Property": "_current_gdp"
                 }
               },
-              "queryRef": "Measures_Table._current_policy_rate",
-              "nativeQueryRef": "_current_policy_rate"
+              "queryRef": "Measures_Table._current_gdp",
+              "nativeQueryRef": "_current_gdp",
+              "format": "#,0"
             }
           ]
         }
@@ -71,6 +90,33 @@
       }
     },
     "objects": {
+      "legend": [
+        {
+          "properties": {
+            "legendMarkerRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "'markerCircleDefault'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bottom'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
       "lineStyles": [
         {
           "properties": {
@@ -78,20 +124,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'smooth'"
-                }
-              }
-            },
-            "interpolationSmooth": {
-              "expr": {
-                "Literal": {
-                  "Value": "'monotoneX'"
-                }
-              }
-            },
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
                 }
               }
             }
@@ -108,38 +140,17 @@
                 }
               }
             },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
             "showAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "roundRange": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "invertAxis": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "logAxisScale": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
                 }
               }
             }
@@ -156,10 +167,37 @@
                 }
               }
             },
-            "axisType": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "'Scalar'"
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showOnValueAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showOnCategoryAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -168,35 +206,22 @@
       ]
     },
     "visualContainerObjects": {
-      "visualTooltip": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "''"
-                }
-              }
-            }
-          }
-        }
-      ],
       "title": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'YoY GDP'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
@@ -204,24 +229,34 @@
                 }
               }
             },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'POLICY RATE OVER YEARS'"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#ffffff'"
+                    }
+                  }
                 }
               }
             },
-            "fontSize": {
+            "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "5D"
                 }
               }
-            },
-            "alignment": {
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "true"
                 }
               }
             }
@@ -234,22 +269,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "d9cdf45fc989e60e47c1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_country"
-              }
-            },
-            "Property": "country_name"
-          }
-        },
-        "type": "TopN",
-        "howCreated": "User"
-      },
-      {
-        "name": "bb85ca12223de36352a9",
+        "name": "edbc36f54080ceaa01ca",
         "field": {
           "Column": {
             "Expression": {
@@ -265,7 +285,7 @@
           "Version": 2,
           "From": [
             {
-              "Name": "d",
+              "Name": "d1",
               "Entity": "d_country",
               "Type": 0
             }
@@ -281,7 +301,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "d"
+                              "Source": "d1"
                             }
                           },
                           "Property": "country_name"
@@ -298,11 +318,10 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
+        }
       },
       {
-        "name": "1ce42b3853d2c05b182a",
+        "name": "e8932192aa14b2bc7a25",
         "field": {
           "Column": {
             "Expression": {
@@ -310,45 +329,24 @@
                 "Entity": "d_calendar"
               }
             },
-            "Property": "Year"
+            "Property": "Date"
           }
         },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "d",
-              "Entity": "d_calendar",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 2,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "d"
-                        }
-                      },
-                      "Property": "Year"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2020L"
-                    }
-                  }
-                }
+        "type": "Categorical"
+      },
+      {
+        "name": "d85064f85900b10b530b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
               }
-            }
-          ]
+            },
+            "Property": "_current_gdp"
+          }
         },
-        "howCreated": "User"
+        "type": "Advanced"
       }
     ]
   }

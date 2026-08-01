@@ -359,37 +359,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "662fb863031b7100a819",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_gdp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "21830a5d2d903a0052cb",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_gdp_subtitle"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

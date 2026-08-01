@@ -4,10 +4,31 @@ import pandas as pd
 import requests
 from dbnomics import fetch_series
 from dotenv import load_dotenv
+from pycountry_convert import country_alpha2_to_continent_code, convert_continent_code_to_continent_name
 
 load_dotenv()
 
 IMF_API_BASE = "https://api.imf.org/external/sdmx/3.0/data/dataflow"
+
+# pycountry_convert doesn't recognize these — historical entities and aggregates, not real ISO countries.
+_CONTINENT_OVERRIDES = {
+    "TL": "Asia",             # Timor-Leste
+    "VA": "Europe",           # Holy See / Vatican City
+    "SX": "North America",    # Sint Maarten (Dutch part)
+    "SUH": "Europe",          # Former U.S.S.R. (historical, spanned Europe/Asia)
+    "U2": "Europe",           # Euro Area (aggregate, not a real country)
+}
+
+
+def get_continent(iso2_code):
+    """Map an ISO2 code to a continent name, with manual overrides for codes
+    pycountry_convert doesn't recognize (historical entities, aggregates)."""
+    if iso2_code in _CONTINENT_OVERRIDES:
+        return _CONTINENT_OVERRIDES[iso2_code]
+    try:
+        return convert_continent_code_to_continent_name(country_alpha2_to_continent_code(iso2_code))
+    except KeyError:
+        return None
 IMF_STRUCTURE_BASE = "https://api.imf.org/external/sdmx/3.0/structure/codelist"
 
 
@@ -93,6 +114,42 @@ def fetch_imf_api(dataflow_id, key, agency="IMF.STA", version="+", start_period=
     return _parse_imf_sdmx_json(resp.json())
 
 
+def fetch_ipi(countries, production_index="IND", transformation="IX", frequency="M", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch an IMF Production Index (PI dataflow) series (default: overall Industrial
+    Production, raw index level) for a list of countries. No counterpart-country
+    dimension, key is COUNTRY.PRODUCTION_INDEX.TYPE_OF_TRANSFORMATION.FREQUENCY.
+    Coverage is narrower than the DBnomics IFS/AIP_IX series for some countries
+    (e.g. AUT, BEL, FIN, GBR, SWE, MYS, PHL) — check overlap before replacing it outright.
+    """
+    dfs = []
+    for chunk in chunked(countries):
+        key = f"{'+'.join(chunk)}.{production_index}.{transformation}.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="PI", key=key,
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+
+
+def fetch_weo(indicator, countries, frequency="A", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch a WEO indicator (e.g. LP = population) for a list of countries. Same shape as
+    fetch_bop_services — WEO has no counterpart-country dimension, just COUNTRY.INDICATOR.FREQUENCY.
+    Note: WEO includes forecast years alongside actuals (it's a projections dataset).
+    """
+    dfs = []
+    for chunk in chunked(countries):
+        key = f"{'+'.join(chunk)}.{indicator}.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="WEO", key=key, agency="IMF.RES",
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+
+
 def fetch_bop_services(entry, countries, unit="USD", frequency="Q", start_period=None, end_period=None, api_key=None):
     """
     Fetch BOP trade-in-services value ('CD_T' credits = exports, 'DB_T' debits = imports)
@@ -166,7 +223,7 @@ def fetch_imf_data(country_dict, dataset_code="IFS", metric_suffix="PCPI_IX", fr
         return pd.DataFrame()
     
 
-def fetch_imf_bulk(dataset_code="IFS", metric_code="NGDP_R_XDC", frequency="Q", country_list=None):
+def fetch_imf_bulk(dataset_code="IFS", metric_code="NGDP_R_XDC", frequency="Q", country_list=None, max_nb_series=50):
     """
     Cào dữ liệu vĩ mô từ IMF bằng phương pháp lọc Dimension của DBnomics.
     Tránh lỗi nối chuỗi ID sai cấu trúc.
@@ -198,7 +255,7 @@ def fetch_imf_bulk(dataset_code="IFS", metric_code="NGDP_R_XDC", frequency="Q", 
 
     try:
         # Gọi API tải hàng loạt theo bộ lọc
-        df = fetch_series(provider_code="IMF", dataset_code=dataset_code, dimensions=dimensions)
+        df = fetch_series(provider_code="IMF", dataset_code=dataset_code, dimensions=dimensions, max_nb_series=max_nb_series)
         
         if df.empty:
             print(f"⚠️ Không tìm thấy dữ liệu nào khớp với mã {metric_code}.")

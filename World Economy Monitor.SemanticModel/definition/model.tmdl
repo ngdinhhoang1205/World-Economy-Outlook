@@ -37,7 +37,7 @@ queryGroup 'Query Errors - 7/22/2026 10:51:04 PM'
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["f_gross_domestic_product","f_industrial_production_index","f_consumer_price_index","f_cb_policy_rates","f_unemployment_rate","f_retail_sales","f_PMI","f_trade_balance","Sample File","Parameter1","Transform Sample File","Transform File","f_import_value","Sample File (2)","Parameter2","Transform Sample File (2)","Transform File (2)","f_export_value","Sample File (3)","Parameter3","Transform Sample File (3)","Transform File (3)","Errors in f_export_value","d_country","f_imf_exports_goods","f_imf_imports_goods","f_imf_exports_services","f_imf_imports_services"]
+annotation PBI_QueryOrder = ["f_gross_domestic_product","f_industrial_production_index","f_consumer_price_index","f_cb_policy_rates","f_unemployment_rate","f_retail_sales","f_PMI","f_trade_balance","Sample File","Parameter1","Transform Sample File","Transform File","f_import_value","Sample File (2)","Parameter2","Transform Sample File (2)","Transform File (2)","f_export_value","Sample File (3)","Parameter3","Transform Sample File (3)","Transform File (3)","Errors in f_export_value","d_country","f_imf_exports_goods","f_imf_imports_goods","f_imf_exports_services","f_imf_imports_services","imf_population"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -67,6 +67,7 @@ ref table f_imf_exports_goods
 ref table f_imf_imports_goods
 ref table f_imf_exports_services
 ref table f_imf_imports_services
+ref table imf_population
 
 ref cultureInfo en-US
 

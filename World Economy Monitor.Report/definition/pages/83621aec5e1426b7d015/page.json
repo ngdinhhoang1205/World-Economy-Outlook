@@ -1,14 +1,14 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "47f9e730c4b4d1179066",
-  "displayName": "MoM_policyrate_Tooltip",
+  "name": "83621aec5e1426b7d015",
+  "displayName": "Country_IPI_Trend_Tooltip",
   "displayOption": "ActualSize",
-  "height": 140,
-  "width": 500,
+  "height": 240,
+  "width": 320,
   "filterConfig": {
     "filters": [
       {
-        "name": "66219ee1147c470738ad",
+        "name": "d563bb7a10c5b7060ea6",
         "field": {
           "Measure": {
             "Expression": {
@@ -16,7 +16,7 @@
                 "Entity": "Measures_Table"
               }
             },
-            "Property": "_mom_policy_rate"
+            "Property": "_yoy_ipi"
           }
         },
         "type": "Categorical",
@@ -25,12 +25,14 @@
     ]
   },
   "pageBinding": {
-    "name": "0621c17370d0a56e9e99",
+    "name": "fb60966345a85224d225",
     "type": "Tooltip",
     "parameters": [
       {
-        "name": "daf70109730a456802a1",
-        "boundFilter": "66219ee1147c470738ad",
+        "name": "1fdad2aa31e4db7b3d2c",
+        "boundFilter": "d563bb7a10c5b7060ea6",
+        "asAggregation": false,
+        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Measure": {
             "Expression": {
@@ -38,12 +40,11 @@
                 "Entity": "Measures_Table"
               }
             },
-            "Property": "_mom_policy_rate"
+            "Property": "_yoy_ipi"
           }
         }
       }
     ]
   },
-  "visibility": "HiddenInViewMode",
   "type": "Tooltip"
 }

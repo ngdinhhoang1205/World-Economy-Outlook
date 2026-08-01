@@ -39,8 +39,8 @@ table Measures_Table
 			VAR latest_year = YEAR(latest_date)
 			VAR same_date_previous_year = MAX(f_industrial_production_index[Date])-365
 			VAR previous_year = YEAR(same_date_previous_year)
-			VAR current_ipi = SUMX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=latest_year, f_industrial_production_index[Date]<=latest_date)), f_industrial_production_index[value])
-			VAR previous_ipi = SUMX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=previous_year, f_industrial_production_index[Date]<=same_date_previous_year)), f_industrial_production_index[value])
+			VAR current_ipi = AVERAGEX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=latest_year, f_industrial_production_index[Date]<=latest_date)), f_industrial_production_index[value])
+			VAR previous_ipi = AVERAGEX(FILTER(f_industrial_production_index, AND(YEAR(f_industrial_production_index[Date])=previous_year, f_industrial_production_index[Date]<=same_date_previous_year)), f_industrial_production_index[value])
 			RETURN DIVIDE(current_ipi-previous_ipi, previous_ipi, 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 98ca56b1-bba7-44f3-9289-b677f32a2d71
@@ -263,6 +263,47 @@ table Measures_Table
 			VAR previous_month = EOMONTH(latest_date, -2) + 1
 			RETURN FORMAT(latest_date, "yyyy-mm") & " over " & FORMAT(previous_month, "yyyy-mm")
 		lineageTag: 03bd1f5e-1895-406b-9fda-8409b65e526e
+
+	measure _gdp_% =
+			
+			VAR current_gdp = SUMX(f_gross_domestic_product, f_gross_domestic_product[value_usd])
+			VAR previous_gdp = SUMX(FILTER(f_gross_domestic_product, DATEADD(d_calendar[Date], -1, YEAR)), f_gross_domestic_product[value_usd])
+			RETURN DIVIDE(current_gdp-previous_gdp, previous_gdp, 0)
+		lineageTag: a24abe51-94f9-4bb6-b17d-2bee0dd3d50e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _total_ipi = SUMX(f_industrial_production_index, f_industrial_production_index[value])
+		lineageTag: daaf871b-7588-4f58-a30b-fbba39dd2b18
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_population =
+			
+			VAR current_year = MAX(imf_population[period])
+			VAR current_population = MAXX(FILTER(imf_population, imf_population[period]=current_year), imf_population[value])
+			
+			RETURN current_population
+		formatString: 0
+		lineageTag: 17e7c7cd-aa3f-47dd-b230-9e2e788bfc3c
+
+	measure _current_gdp_per_capita = ```
+			
+			VAR current_year_gdp = MAX(f_gross_domestic_product[period])
+			VAR current_year_pop = MAX(imf_population[period])
+			VAR current_year = IF(current_year_gdp <= current_year_pop, current_year_gdp, current_year_pop)
+			VAR gdp = SUMX(
+			        FILTER(f_gross_domestic_product, f_gross_domestic_product[period] = current_year), 
+			        f_gross_domestic_product[value_usd]
+			        )
+			VAR pop = SUMX(FILTER(imf_population, imf_population[period]=current_year),
+			        imf_population[value]
+			)
+			RETURN DIVIDE(gdp, pop, 0)*1000000
+			```
+		lineageTag: bd843749-183e-4314-b292-960a06e8403a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		formatString: 0

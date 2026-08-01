@@ -16,13 +16,12 @@ table f_industrial_production_index
 
 	column value
 		dataType: double
+		formatString: 0.00
 		lineageTag: 105e5a29-9551-4dba-a80f-64c85b5b286b
 		summarizeBy: sum
 		sourceColumn: value
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column country_code
 		dataType: string
@@ -37,6 +36,13 @@ table f_industrial_production_index
 		lineageTag: 09c34bd2-c556-46f4-8db3-f4daec8889f8
 		summarizeBy: none
 		sourceColumn: country_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_change = f_industrial_production_index[value]-100
+		formatString: 0.00
+		lineageTag: 85a91415-7110-422d-a3e6-796ded3c5b01
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 

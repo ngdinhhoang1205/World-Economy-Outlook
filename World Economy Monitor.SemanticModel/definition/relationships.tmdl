@@ -150,3 +150,11 @@ relationship 1cd4369b-7ede-6983-6877-6d07e38e08e5
 	fromColumn: f_imf_imports_services.COUNTRY
 	toColumn: d_country.iso3_code
 
+relationship 25b28967-578f-7d1c-79d1-cef48e5f9d3d
+	fromColumn: imf_population.COUNTRY
+	toColumn: d_country.iso3_code
+
+relationship 67a97ac4-9de2-3a42-4fb7-88e724d9b23c
+	fromColumn: imf_population.period
+	toColumn: d_calendar.Date
+

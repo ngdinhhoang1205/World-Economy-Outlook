@@ -71,6 +71,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.471
 			          }
+			        },
+			        {
+			          "GPD": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "GDP (Billions $)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -93,6 +113,16 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "GDP Growth Rate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -8388,16 +8418,6 @@ cultureInfo en-US
 			          "country": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
 			        }
 			      ]
 			    },
@@ -9929,16 +9949,6 @@ cultureInfo en-US
 			        {
 			          "country": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
 			          }
 			        }
 			      ]
@@ -19377,6 +19387,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Nation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -20061,16 +20081,6 @@ cultureInfo en-US
 			          "country": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
 			        }
 			      ]
 			    },
@@ -20645,16 +20655,6 @@ cultureInfo en-US
 			          "country": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
 			        }
 			      ]
 			    },
@@ -21228,16 +21228,6 @@ cultureInfo en-US
 			        {
 			          "country": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
 			          }
 			        }
 			      ]
@@ -22001,16 +21991,6 @@ cultureInfo en-US
 			          "country": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
 			        }
 			      ]
 			    },
@@ -22595,75 +22575,933 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "f_industrial_production_index.value_change": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "f_industrial_production_index",
+			          "ConceptualProperty": "value_change"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value change": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "value_change": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "change": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "value alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value variation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value transformation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value revolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value conversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value adjustment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "value amendment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.entity__gdp_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_gdp_%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_gdp_%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_gdp_ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "_gdp_ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.total_ipi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_total_ipi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total ipi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_total_ipi": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate ipi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall ipi": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "d_country.continent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "d_country",
+			          "ConceptualProperty": "continent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "continent": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "landmass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "landform": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "land": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "island": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mainland": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_population": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "population": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "contemporary population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "present population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "current populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "current person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "present day population": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.471
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_gdp_per_capita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_gdp_per_capita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current gdp per capita": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_gdp_per_capita": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "latest gdp per capita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "contemporary gdp per capita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "present gdp per capita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "present day gdp per capita": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "GDP Per Capita": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "GDP Per Capita ($)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "imf_population": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "imf population": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "imf_population": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "population": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "imf populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "imf person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "populace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "imf_population.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population",
+			          "ConceptualProperty": "COUNTRY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "imf_population.indicator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population",
+			          "ConceptualProperty": "INDICATOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicator": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pointer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "needle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gauge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "meter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "marker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "sign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "guide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "imf_population.frequency": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population",
+			          "ConceptualProperty": "FREQUENCY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "frequency": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "incidence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "occurrence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "regularity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "imf_population.period": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population",
+			          "ConceptualProperty": "period"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "period": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "phase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "imf_population.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "imf_population",
+			          "ConceptualProperty": "value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "f_import_value_original_period_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "f_import_value"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_import_value.original_period": {
-			          "Target": {
-			            "Entity": "f_import_value.original_period"
-			          }
-			        },
-			        "f_import_value.original_period.date_hierarchy": {
-			          "Target": {
-			            "Entity": "f_import_value.original_period.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_import_value.original_period"
-			            },
-			            "Object": {
-			              "Role": "f_import_value.original_period.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.day": {
-			          "Target": {
-			            "Entity": "d_calendar.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
 			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "d_calendar"
@@ -22957,7 +23795,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies1"
+			          "ID": "original_periods_have_original_period_date_hierarchies"
 			        }
 			      ]
 			    },
@@ -23122,7 +23960,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies2"
+			          "ID": "original_periods_have_original_period_date_hierarchies1"
 			        }
 			      ]
 			    },
@@ -23287,7 +24125,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies3"
+			          "ID": "original_periods_have_original_period_date_hierarchies2"
 			        }
 			      ]
 			    },
@@ -23452,7 +24290,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies4"
+			          "ID": "original_periods_have_original_period_date_hierarchies3"
 			        }
 			      ]
 			    },
@@ -23617,7 +24455,99 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "original_periods_have_original_period_date_hierarchies5"
+			          "ID": "original_periods_have_original_period_date_hierarchies4"
+			        }
+			      ]
+			    },
+			    "imf_population_has_d_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "d_calendar": {
+			          "Target": {
+			            "Entity": "d_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "d_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_d_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar"
+			            },
+			            "Object": {
+			              "Role": "imf_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendars_have_imf_populations"
+			        }
+			      ]
+			    },
+			    "imf_population_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "imf_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_imf_populations"
 			        }
 			      ]
 			    },
@@ -24920,6 +25850,439 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_gross_domestic_products"
+			        }
+			      ]
+			    },
+			    "imf_population_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "imf_population.value": {
+			          "Target": {
+			            "Entity": "imf_population.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "imf_population.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_values"
+			        }
+			      ]
+			    },
+			    "imf_population_has_period": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "imf_population.period": {
+			          "Target": {
+			            "Entity": "imf_population.period"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "imf_population.period"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_periods"
+			        }
+			      ]
+			    },
+			    "imf_population_has_frequency": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "imf_population.frequency": {
+			          "Target": {
+			            "Entity": "imf_population.frequency"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "imf_population.frequency"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_frequencies"
+			        }
+			      ]
+			    },
+			    "imf_population_has_indicator": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "imf_population.indicator": {
+			          "Target": {
+			            "Entity": "imf_population.indicator"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "imf_population.indicator"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_indicators"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "imf_population.indicator"
+			            },
+			            "Verbs": [
+			              {
+			                "indicate": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "imf_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "indicators_indicate_imf_populations"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population.indicator"
+			            },
+			            "Object": {
+			              "Role": "imf_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicators_have_imf_populations"
+			        }
+			      ]
+			    },
+			    "imf_population_has_measures_table_current_gdp_per_capita": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "measures_table.current_gdp_per_capita": {
+			          "Target": {
+			            "Entity": "measures_table.current_gdp_per_capita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_gdp_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_current_gdp_per_capita"
+			        }
+			      ]
+			    },
+			    "f_gross_domestic_product_has_measures_table_current_gdp_per_capita": {
+			      "Binding": {
+			        "ConceptualEntity": "f_gross_domestic_product"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_gross_domestic_product": {
+			          "Target": {
+			            "Entity": "f_gross_domestic_product"
+			          }
+			        },
+			        "measures_table.current_gdp_per_capita": {
+			          "Target": {
+			            "Entity": "measures_table.current_gdp_per_capita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_gross_domestic_product"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_gdp_per_capita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_gross_domestic_products_have_current_gdp_per_capita"
+			        }
+			      ]
+			    },
+			    "imf_population_has_measures_table_current_population": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "measures_table.current_population": {
+			          "Target": {
+			            "Entity": "measures_table.current_population"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_current_population"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Adjectives": [
+			              {
+			                "large": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "big": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "populated": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "small": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "measures_table.current_population"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "current_population_indicates_how_large_imf_populations_are"
+			        }
+			      ]
+			    },
+			    "d_country_has_continent": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.continent": {
+			          "Target": {
+			            "Entity": "d_country.continent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "d_country.continent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_continents"
+			        }
+			      ]
+			    },
+			    "f_industrial_production_index_has_measures_table_total_ipi": {
+			      "Binding": {
+			        "ConceptualEntity": "f_industrial_production_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_industrial_production_index": {
+			          "Target": {
+			            "Entity": "f_industrial_production_index"
+			          }
+			        },
+			        "measures_table.total_ipi": {
+			          "Target": {
+			            "Entity": "measures_table.total_ipi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_industrial_production_index"
+			            },
+			            "Object": {
+			              "Role": "measures_table.total_ipi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_industrial_production_indices_have_total_ipi"
+			        }
+			      ]
+			    },
+			    "f_gross_domestic_product_has_measures_table_entity__gdp_": {
+			      "Binding": {
+			        "ConceptualEntity": "f_gross_domestic_product"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_gross_domestic_product": {
+			          "Target": {
+			            "Entity": "f_gross_domestic_product"
+			          }
+			        },
+			        "measures_table.entity__gdp_": {
+			          "Target": {
+			            "Entity": "measures_table.entity__gdp_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_gross_domestic_product"
+			            },
+			            "Object": {
+			              "Role": "measures_table.entity__gdp_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_gross_domestic_products_have__gdp_"
+			        }
+			      ]
+			    },
+			    "f_industrial_production_index_has_value_change": {
+			      "Binding": {
+			        "ConceptualEntity": "f_industrial_production_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_industrial_production_index": {
+			          "Target": {
+			            "Entity": "f_industrial_production_index"
+			          }
+			        },
+			        "f_industrial_production_index.value_change": {
+			          "Target": {
+			            "Entity": "f_industrial_production_index.value_change"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_industrial_production_index"
+			            },
+			            "Object": {
+			              "Role": "f_industrial_production_index.value_change"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_industrial_production_indices_have_value_changes"
 			        }
 			      ]
 			    },
@@ -32810,6 +34173,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "imf_population_in_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_are_in_d_countries"
+			        }
+			      ]
+			    },
 			    "f_imf_imports_service_in_d_country": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_imports_services"
@@ -33437,6 +34845,51 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_d_countries"
+			        }
+			      ]
+			    },
+			    "d_country_in_continent": {
+			      "Binding": {
+			        "ConceptualEntity": "d_country"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        },
+			        "d_country.continent": {
+			          "Target": {
+			            "Entity": "d_country.continent"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "d_country.continent"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_country.continent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_are_in_continents"
 			        }
 			      ]
 			    },
@@ -34382,6 +35835,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_reference_areas"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.day": {
+			          "Target": {
+			            "Entity": "d_calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "f_import_value_original_period_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "f_import_value"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_import_value.original_period": {
+			          "Target": {
+			            "Entity": "f_import_value.original_period"
+			          }
+			        },
+			        "f_import_value.original_period.date_hierarchy": {
+			          "Target": {
+			            "Entity": "f_import_value.original_period.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_import_value.original_period"
+			            },
+			            "Object": {
+			              "Role": "f_import_value.original_period.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "original_periods_have_original_period_date_hierarchies5"
 			        }
 			      ]
 			    },

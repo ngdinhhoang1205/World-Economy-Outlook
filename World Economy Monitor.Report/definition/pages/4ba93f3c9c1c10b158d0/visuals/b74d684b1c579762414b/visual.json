@@ -310,20 +310,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "b1e0383b3c4ea5809d70",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
