@@ -133,6 +133,47 @@ def fetch_ipi(countries, production_index="IND", transformation="IX", frequency=
     return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
 
 
+def fetch_policy_rate(countries, indicator="MFS166_RT_PT_A_PT", frequency="M", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch the IMF's Monetary Policy-Related Interest Rate (MFS_IR dataflow) for a list of
+    countries. No counterpart-country dimension, key is COUNTRY.INDICATOR.FREQUENCY.
+    No monthly/quarterly/annual coverage for Eurozone members (ECB sets one shared rate,
+    not reported per-country here), the UK, Saudi Arabia, or Kuwait — fall back to BIS/
+    dbnomics (WS_CBPOL) for those. Also note this dataflow tops out at monthly frequency,
+    coarser than BIS's daily series.
+    """
+    dfs = []
+    for chunk in chunked(countries):
+        key = f"{'+'.join(chunk)}.{indicator}.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="MFS_IR", key=key,
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+
+
+def fetch_policy_rate(countries, frequency="M", start_period=None, end_period=None, api_key=None):
+    """
+    Fetch IMF's central bank policy-related interest rate (MFS_IR dataflow, indicator
+    MFS166_RT_PT_A_PT — "Monetary policy-related, Rate, Percent per annum") for a list
+    of countries. Key is COUNTRY.INDICATOR.FREQUENCY.
+
+    Coverage gap: Eurozone members aren't reported individually (ECB sets one shared
+    rate), and a handful of others (e.g. GBR, SAU, KWT) aren't covered by this indicator
+    at all — fall back to BIS/WS_CBPOL (dbnomics) for those.
+    """
+    dfs = []
+    for chunk in chunked(countries):
+        key = f"{'+'.join(chunk)}.MFS166_RT_PT_A_PT.{frequency}"
+        dfs.append(fetch_imf_api(
+            dataflow_id="MFS_IR", key=key,
+            start_period=start_period, end_period=end_period, api_key=api_key,
+        ))
+    dfs = [df for df in dfs if not df.empty]
+    return pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+
+
 def fetch_weo(indicator, countries, frequency="A", start_period=None, end_period=None, api_key=None):
     """
     Fetch a WEO indicator (e.g. LP = population) for a list of countries. Same shape as
