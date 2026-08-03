@@ -12416,25 +12416,95 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measures_table.yoy_cpi": {
+			    "measures_table.yoy_cpi_overview": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_yoy_cpi"
+			          "ConceptualProperty": "_yoy_cpi_overview"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "yoy cpi": {
+			          "yoy cpi overview": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "_yoy_cpi": {
+			          "_yoy_cpi_overview": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "yoy cpi impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "yoy cpi indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "yoy cpi synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "yoy cpi gestalt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "yoy cpi summary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "yoy cpi outline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "YoY CPI": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -12472,7 +12542,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_current_policy_rate"
+			          "ConceptualProperty": "_current_policy_rate_overview"
 			        }
 			      },
 			      "State": "Generated",
@@ -19646,125 +19716,85 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measures_table.yoy_cpi_subtitle": {
+			    "measures_table.yoy_cpi_subtitle_overview": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_yoy_cpi_subtitle"
+			          "ConceptualProperty": "_yoy_cpi_subtitle_overview"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "yoy cpi subtitle": {
+			          "yoy cpi subtitle overview": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "_yoy_cpi_subtitle": {
+			          "_yoy_cpi_subtitle_overview": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "yoy cpi slogan": {
+			          "yoy cpi subtitle impression": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
+			            "Weight": 0.514
 			          }
 			        },
 			        {
-			          "yoy cpi description": {
+			          "yoy cpi subtitle indication": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
+			            "Weight": 0.514
 			          }
 			        },
 			        {
-			          "yoy cpi legend": {
+			          "yoy cpi subtitle synopsis": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
+			            "Weight": 0.514
 			          }
 			        },
 			        {
-			          "yoy cpi header": {
+			          "yoy cpi subtitle gestalt": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
+			            "Weight": 0.514
 			          }
 			        },
 			        {
-			          "yoy cpi footer": {
+			          "yoy cpi subtitle summary": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
+			            "Weight": 0.499
 			          }
 			        },
 			        {
-			          "yoy cpi surtitle": {
+			          "yoy cpi subtitle outline": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "yoy cpi supertitle": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "yoy cpi caption": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "yoy cpi title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "yoy cpi heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
+			            "Weight": 0.499
 			          }
 			        }
 			      ]
@@ -23499,42 +23529,42 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "measures_table.yoy_cpi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_yoy_cpi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yoy cpi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_yoy_cpi": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "YoY CPI%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.month": {
-			          "Target": {
-			            "Entity": "d_calendar.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
 			    "d_calendar_date_date_hierarchy_has_d_calendar_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "d_calendar"
@@ -25853,6 +25883,39 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "f_consumer_price_index_has_measures_table_yoy_cpi": {
+			      "Binding": {
+			        "ConceptualEntity": "f_consumer_price_index"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_consumer_price_index": {
+			          "Target": {
+			            "Entity": "f_consumer_price_index"
+			          }
+			        },
+			        "measures_table.yoy_cpi": {
+			          "Target": {
+			            "Entity": "measures_table.yoy_cpi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_consumer_price_index"
+			            },
+			            "Object": {
+			              "Role": "measures_table.yoy_cpi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_consumer_price_indices_have_yoy_cpi"
+			        }
+			      ]
+			    },
 			    "imf_population_has_value": {
 			      "Binding": {
 			        "ConceptualEntity": "imf_population"
@@ -27177,7 +27240,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_consumer_price_index_has_measures_table_yoy_cpi_subtitle": {
+			    "f_consumer_price_index_has_measures_table_yoy_cpi_subtitle_overview": {
 			      "Binding": {
 			        "ConceptualEntity": "f_consumer_price_index"
 			      },
@@ -27188,9 +27251,9 @@ cultureInfo en-US
 			            "Entity": "f_consumer_price_index"
 			          }
 			        },
-			        "measures_table.yoy_cpi_subtitle": {
+			        "measures_table.yoy_cpi_subtitle_overview": {
 			          "Target": {
-			            "Entity": "measures_table.yoy_cpi_subtitle"
+			            "Entity": "measures_table.yoy_cpi_subtitle_overview"
 			          }
 			        }
 			      },
@@ -27201,12 +27264,12 @@ cultureInfo en-US
 			              "Role": "f_consumer_price_index"
 			            },
 			            "Object": {
-			              "Role": "measures_table.yoy_cpi_subtitle"
+			              "Role": "measures_table.yoy_cpi_subtitle_overview"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_consumer_price_indices_have_yoy_cpi_subtitle"
+			          "ID": "f_consumer_price_indices_have_yoy_cpi_subtitle_overview"
 			        }
 			      ]
 			    },
@@ -29751,7 +29814,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_consumer_price_index_has_measures_table_yoy_cpi": {
+			    "f_consumer_price_index_has_measures_table_yoy_cpi_overview": {
 			      "Binding": {
 			        "ConceptualEntity": "f_consumer_price_index"
 			      },
@@ -29762,9 +29825,9 @@ cultureInfo en-US
 			            "Entity": "f_consumer_price_index"
 			          }
 			        },
-			        "measures_table.yoy_cpi": {
+			        "measures_table.yoy_cpi_overview": {
 			          "Target": {
-			            "Entity": "measures_table.yoy_cpi"
+			            "Entity": "measures_table.yoy_cpi_overview"
 			          }
 			        }
 			      },
@@ -29775,12 +29838,12 @@ cultureInfo en-US
 			              "Role": "f_consumer_price_index"
 			            },
 			            "Object": {
-			              "Role": "measures_table.yoy_cpi"
+			              "Role": "measures_table.yoy_cpi_overview"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_consumer_price_indices_have_yoy_cpi"
+			          "ID": "f_consumer_price_indices_have_yoy_cpi_overview"
 			        }
 			      ]
 			    },
@@ -35835,6 +35898,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_reference_areas"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.month": {
+			          "Target": {
+			            "Entity": "d_calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
 			        }
 			      ]
 			    },

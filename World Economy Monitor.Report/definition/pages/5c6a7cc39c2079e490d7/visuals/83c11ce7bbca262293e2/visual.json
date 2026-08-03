@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "99b50281713d00229804",
+  "name": "83c11ce7bbca262293e2",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 140,
-    "width": 500,
-    "tabOrder": 0
+    "x": 893.1343283582089,
+    "y": 360.1194029850746,
+    "z": 6,
+    "height": 348.65671641791045,
+    "width": 376.35820895522386,
+    "tabOrder": 6
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "d_calendar"
+                      "Entity": "d_country"
                     }
                   },
-                  "Property": "Date"
+                  "Property": "country_name"
                 }
               },
-              "queryRef": "d_calendar.Date",
-              "nativeQueryRef": "Date",
+              "queryRef": "d_country.country_name",
+              "nativeQueryRef": "country_name",
               "active": true
             }
           ]
@@ -45,8 +45,8 @@
                   "Property": "_current_policy_rate_overview"
                 }
               },
-              "queryRef": "Measures_Table._current_policy_rate",
-              "nativeQueryRef": "_current_policy_rate"
+              "queryRef": "Measures_Table._current_policy_rate_overview",
+              "nativeQueryRef": "_current_policy_rate_overview"
             }
           ]
         }
@@ -55,43 +55,36 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "d_calendar"
+                    "Entity": "Measures_Table"
                   }
                 },
-                "Property": "Date"
+                "Property": "_current_policy_rate_overview"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "lineStyles": [
+      "legend": [
         {
           "properties": {
-            "lineChartType": {
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'smooth'"
+                  "Value": "'Bottom'"
                 }
               }
             },
-            "interpolationSmooth": {
+            "showTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "'monotoneX'"
-                }
-              }
-            },
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
                 }
               }
             }
@@ -104,7 +97,14 @@
             "gridlineShow": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             },
@@ -115,31 +115,10 @@
                 }
               }
             },
-            "roundRange": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "invertAxis": {
+            "switchAxisPosition": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "logAxisScale": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
                 }
               }
             }
@@ -156,58 +135,31 @@
                 }
               }
             },
-            "axisType": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "'Scalar'"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualTooltip": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "''"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "1D"
                 }
               }
             },
-            "text": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "'POLICY RATE OVER YEARS'"
+                  "Value": "false"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "25L"
+                }
+              }
+            },
+            "switchAxisPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             },
@@ -217,11 +169,124 @@
                   "Value": "9D"
                 }
               }
+            }
+          }
+        }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             },
-            "alignment": {
+            "showOnValueAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showOnCategoryAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "optimizeLabelDisplay": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "labelContentLayout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'SingleLine'"
+                }
+              }
+            },
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Countries'' Latest Inflation'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#ffffff'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -234,22 +299,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "d9cdf45fc989e60e47c1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_country"
-              }
-            },
-            "Property": "country_name"
-          }
-        },
-        "type": "TopN",
-        "howCreated": "User"
-      },
-      {
-        "name": "bb85ca12223de36352a9",
+        "name": "edbc36f54080ceaa01ca",
         "field": {
           "Column": {
             "Expression": {
@@ -265,7 +315,7 @@
           "Version": 2,
           "From": [
             {
-              "Name": "d",
+              "Name": "d1",
               "Entity": "d_country",
               "Type": 0
             }
@@ -281,7 +331,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "d"
+                              "Source": "d1"
                             }
                           },
                           "Property": "country_name"
@@ -298,57 +348,7 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
-      },
-      {
-        "name": "1ce42b3853d2c05b182a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "d",
-              "Entity": "d_calendar",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 2,
-                  "Left": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "d"
-                        }
-                      },
-                      "Property": "Year"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "2020L"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
+        }
       }
     ]
   }

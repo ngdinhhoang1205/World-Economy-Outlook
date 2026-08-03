@@ -76,7 +76,7 @@ table f_cb_policy_rates
 
 	column period
 		dataType: dateTime
-		formatString: Long Date
+		formatString: yyyy-mm-dd
 		lineageTag: 383477ad-3cac-4b89-9f8b-4a85159eedbd
 		summarizeBy: none
 		sourceColumn: period
@@ -84,6 +84,8 @@ table f_cb_policy_rates
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column original_value
 		dataType: string

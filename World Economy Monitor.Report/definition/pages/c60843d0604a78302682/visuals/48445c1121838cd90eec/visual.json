@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_yoy_cpi"
+                  "Property": "_yoy_cpi_overview"
                 }
               },
               "queryRef": "Measures_Table._yoy_cpi",
@@ -38,7 +38,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_yoy_cpi_subtitle"
+                  "Property": "_yoy_cpi_subtitle_overview"
                 }
               },
               "queryRef": "Measures_Table._yoy_cpi_subtitle",
@@ -57,7 +57,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_yoy_cpi"
+                "Property": "_yoy_cpi_overview"
               }
             },
             "direction": "Descending"

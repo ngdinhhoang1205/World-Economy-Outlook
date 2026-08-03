@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_policy_rate"
+                  "Property": "_current_policy_rate_overview"
                 }
               },
               "queryRef": "Measures_Table._current_policy_rate",
@@ -43,7 +43,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_policy_rate"
+                "Property": "_current_policy_rate_overview"
               }
             },
             "direction": "Descending"

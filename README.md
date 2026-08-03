@@ -102,6 +102,9 @@ The report has **9 pages** — 4 content pages, 4 drill-through tooltip pages, a
 **Economic Growth**
 ![Economic Growth page](images/Economic-Growth.png)
 
+**Inflation & Monetary Policy**
+![Inflation & Monetary Policy page](images/Inflation-and-monetary-policy.png)
+
 ### Semantic Model
 
 Key fact tables loaded into the model: `f_gross_domestic_product`, `f_industrial_production_index`, `f_consumer_price_index`, `f_cb_policy_rates`, `f_unemployment_rate`, `f_retail_sales`, `f_PMI`, `f_trade_balance`, `f_imf_imports_goods`, `f_imf_exports_goods`, `f_imf_imports_services`, `f_imf_exports_services`, `imf_population`, plus `d_country` and `d_calendar` as dimension tables and a central `Measures_Table` for DAX measures.

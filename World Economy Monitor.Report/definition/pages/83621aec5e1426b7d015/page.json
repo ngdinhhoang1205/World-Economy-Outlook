@@ -5,46 +5,5 @@
   "displayOption": "ActualSize",
   "height": 240,
   "width": 320,
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d563bb7a10c5b7060ea6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_ipi"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      }
-    ]
-  },
-  "pageBinding": {
-    "name": "fb60966345a85224d225",
-    "type": "Tooltip",
-    "parameters": [
-      {
-        "name": "1fdad2aa31e4db7b3d2c",
-        "boundFilter": "d563bb7a10c5b7060ea6",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
-        "fieldExpr": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_ipi"
-          }
-        }
-      }
-    ]
-  },
   "type": "Tooltip"
 }

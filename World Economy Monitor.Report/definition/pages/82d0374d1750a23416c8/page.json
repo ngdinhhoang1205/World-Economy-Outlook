@@ -5,45 +5,6 @@
   "displayOption": "ActualSize",
   "height": 140,
   "width": 500,
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c05a1a30db0302aa077d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_gdp"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      }
-    ]
-  },
-  "pageBinding": {
-    "name": "9f2a00743062c505a42b",
-    "type": "Tooltip",
-    "parameters": [
-      {
-        "name": "85fc04060182350b3eaa",
-        "boundFilter": "c05a1a30db0302aa077d",
-        "fieldExpr": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_gdp"
-          }
-        }
-      }
-    ]
-  },
   "visibility": "HiddenInViewMode",
   "type": "Tooltip"
 }

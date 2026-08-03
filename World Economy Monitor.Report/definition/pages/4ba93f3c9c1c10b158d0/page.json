@@ -5,45 +5,6 @@
   "displayOption": "ActualSize",
   "height": 140,
   "width": 230,
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9208e42ea9050230747c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "Drillthrough"
-      }
-    ]
-  },
-  "pageBinding": {
-    "name": "39dfe522a390cd0d1d9a",
-    "type": "Tooltip",
-    "parameters": [
-      {
-        "name": "c051b706d98454705c93",
-        "boundFilter": "9208e42ea9050230747c",
-        "fieldExpr": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        }
-      }
-    ]
-  },
   "visibility": "HiddenInViewMode",
   "type": "Tooltip"
 }

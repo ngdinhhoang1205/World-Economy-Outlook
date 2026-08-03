@@ -4,5 +4,27 @@
   "displayName": "Inflation & Monetary Policy",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "50db9bc41c073e23e647",
+      "target": "4f00b8a64ad457900c65",
+      "type": "DataFilter"
+    },
+    {
+      "source": "4f00b8a64ad457900c65",
+      "target": "50db9bc41c073e23e647",
+      "type": "NoFilter"
+    },
+    {
+      "source": "83435a32102638690e20",
+      "target": "4f00b8a64ad457900c65",
+      "type": "NoFilter"
+    },
+    {
+      "source": "83435a32102638690e20",
+      "target": "83c11ce7bbca262293e2",
+      "type": "NoFilter"
+    }
+  ]
 }

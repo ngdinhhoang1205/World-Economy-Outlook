@@ -67,7 +67,7 @@ table Measures_Table
 		formatString: 0
 		lineageTag: f9da6273-8208-45ce-bbf0-58960575012b
 
-	measure _yoy_cpi =
+	measure _yoy_cpi_overview =
 			
 			VAR latest_date = MAX(f_consumer_price_index[period])
 			VAR latest_year = YEAR(latest_date)
@@ -92,7 +92,7 @@ table Measures_Table
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 356619cc-f2ec-4406-a71b-8a69835aae58
 
-	measure _current_policy_rate =
+	measure _current_policy_rate_overview =
 			
 			VAR latest_date = MAX(f_cb_policy_rates[period])
 			VAR policy_rate = AVERAGEX(FILTER(f_cb_policy_rates, f_cb_policy_rates[period]=latest_date), f_cb_policy_rates[value]/100)
@@ -248,7 +248,7 @@ table Measures_Table
 			RETURN FORMAT(latest_date, "yyyy-mm") & " over " & FORMAT(previous_month, "yyyy-mm")
 		lineageTag: 88b9cbca-87ed-4b8c-8ed1-33da4f241509
 
-	measure _yoy_cpi_subtitle =
+	measure _yoy_cpi_subtitle_overview =
 			
 			VAR latest_date = MAX(f_consumer_price_index[period])
 			VAR latest_year = DATE(YEAR(latest_date), 1, 1)
@@ -304,6 +304,18 @@ table Measures_Table
 		lineageTag: bd843749-183e-4314-b292-960a06e8403a
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _yoy_cpi =
+			
+			VAR current_cpi = AVERAGEX(f_consumer_price_index, f_consumer_price_index[value])
+			VAR previous_cpi = CALCULATE(AVERAGE(f_consumer_price_index[value]), DATEADD(d_calendar[Date], -1, YEAR))
+			RETURN DIVIDE(current_cpi-previous_cpi, previous_cpi, 0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7a089e6e-dc44-49cb-8149-ab8fafd20f30
+
+	measure _policy_rate = AVERAGE(f_cb_policy_rates[value])/100
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 9fea51b5-a6f4-41e4-bafc-105e6bea4042
 
 	column Value
 		formatString: 0
