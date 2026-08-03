@@ -242,7 +242,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Countries'' Latest Inflation'"
+                  "Value": "'Countries'' Latest Policy Rate'"
                 }
               }
             }
