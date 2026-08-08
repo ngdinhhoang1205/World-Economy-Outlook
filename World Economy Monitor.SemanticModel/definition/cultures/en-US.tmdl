@@ -3845,12 +3845,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "policy rate": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "cb policy rate": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -12538,7 +12532,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measures_table.current_policy_rate": {
+			    "measures_table.current_policy_rate_overview": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
@@ -12548,61 +12542,107 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "current policy rate": {
+			          "current policy rate overview": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "_current_policy_rate": {
+			          "_current_policy_rate_overview": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "rate": {
+			          "overview": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "policy rate": {
+			          "rate overview": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "latest policy rate": {
+			          "policy rate overview": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest policy rate overview": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "contemporary policy rate": {
+			          "contemporary policy rate overview": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "present policy rate": {
+			          "present policy rate overview": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "current policy degree": {
+			          "current policy rate impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "current policy rate indication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "current policy rate synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "current policy rate gestalt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "policy rate impression": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -12612,7 +12652,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current policy frequency": {
+			          "policy rate indication": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -12622,7 +12662,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current policy percentage": {
+			          "policy rate synopsis": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -12632,43 +12672,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current policy ratio": {
-			            "Type": "Noun",
+			          "Current Policy Rate": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "current policy quotient": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "policy degree": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "policy frequency": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -18184,12 +18194,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "policy rate": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "mom policy degree": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -18240,53 +18244,53 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "policy degree": {
+			          "mom policy amount": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "policy frequency": {
+			          "mom policy proportion": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "policy percentage": {
+			          "mom policy speed": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "policy ratio": {
+			          "mom policy level": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "policy quotient": {
+			          "mom policy scale": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.492
 			          }
 			        }
 			      ]
@@ -23562,9 +23566,313 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "measures_table.policy_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_policy_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "policy rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_policy_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "policy degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "policy frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "policy percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "policy ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "policy quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "policy amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "policy proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.retail_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_retail_total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "retail total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_retail_total": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "retail aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "retail overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_population_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_population_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current population year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_population_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "population year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current population yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "population yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "latest population year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary population year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present population year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present day population year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
+			          }
+			        },
+			        {
+			          "Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.month": {
+			          "Target": {
+			            "Entity": "d_calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
 			    "d_calendar_date_date_hierarchy_has_d_calendar_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "d_calendar"
@@ -25880,6 +26188,105 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_gross_domestic_products"
+			        }
+			      ]
+			    },
+			    "imf_population_has_measures_table_current_population_year": {
+			      "Binding": {
+			        "ConceptualEntity": "imf_population"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "imf_population": {
+			          "Target": {
+			            "Entity": "imf_population"
+			          }
+			        },
+			        "measures_table.current_population_year": {
+			          "Target": {
+			            "Entity": "measures_table.current_population_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "imf_population"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_population_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "imf_populations_have_current_population_year"
+			        }
+			      ]
+			    },
+			    "f_retail_sale_has_measures_table_retail_total": {
+			      "Binding": {
+			        "ConceptualEntity": "f_retail_sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_retail_sale": {
+			          "Target": {
+			            "Entity": "f_retail_sale"
+			          }
+			        },
+			        "measures_table.retail_total": {
+			          "Target": {
+			            "Entity": "measures_table.retail_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_retail_sale"
+			            },
+			            "Object": {
+			              "Role": "measures_table.retail_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_retail_sales_have_retail_total"
+			        }
+			      ]
+			    },
+			    "f_cb_policy_rate_has_measures_table_policy_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "f_cb_policy_rates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_cb_policy_rate": {
+			          "Target": {
+			            "Entity": "f_cb_policy_rate"
+			          }
+			        },
+			        "measures_table.policy_rate": {
+			          "Target": {
+			            "Entity": "measures_table.policy_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_cb_policy_rate"
+			            },
+			            "Object": {
+			              "Role": "measures_table.policy_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_cb_policy_rates_have_policy_rate"
 			        }
 			      ]
 			    },
@@ -29748,7 +30155,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_cb_policy_rate_has_measures_table_current_policy_rate": {
+			    "f_cb_policy_rate_has_measures_table_current_policy_rate_overview": {
 			      "Binding": {
 			        "ConceptualEntity": "f_cb_policy_rates"
 			      },
@@ -29759,9 +30166,9 @@ cultureInfo en-US
 			            "Entity": "f_cb_policy_rate"
 			          }
 			        },
-			        "measures_table.current_policy_rate": {
+			        "measures_table.current_policy_rate_overview": {
 			          "Target": {
-			            "Entity": "measures_table.current_policy_rate"
+			            "Entity": "measures_table.current_policy_rate_overview"
 			          }
 			        }
 			      },
@@ -29772,12 +30179,12 @@ cultureInfo en-US
 			              "Role": "f_cb_policy_rate"
 			            },
 			            "Object": {
-			              "Role": "measures_table.current_policy_rate"
+			              "Role": "measures_table.current_policy_rate_overview"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_cb_policy_rates_have_current_policy_rate"
+			          "ID": "f_cb_policy_rates_have_current_policy_rate_overview"
 			        }
 			      ]
 			    },
@@ -35898,39 +36305,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_reference_areas"
-			        }
-			      ]
-			    },
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.month": {
-			          "Target": {
-			            "Entity": "d_calendar.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
 			        }
 			      ]
 			    },

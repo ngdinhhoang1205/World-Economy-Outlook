@@ -69,7 +69,7 @@ table f_unemployment_rate
 
 	column period
 		dataType: dateTime
-		formatString: Long Date
+		formatString: yyyy-mm-dd
 		lineageTag: f47311a5-ae44-4a16-a36b-883c18773493
 		summarizeBy: none
 		sourceColumn: period
@@ -77,6 +77,8 @@ table f_unemployment_rate
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column original_value
 		dataType: string

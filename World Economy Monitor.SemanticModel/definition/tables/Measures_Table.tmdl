@@ -171,9 +171,11 @@ table Measures_Table
 
 	measure _current_import =
 			
-			VAR current_year = [_current_year]
-			VAR current_value_goods = SUMX(FILTER(f_imf_imports_goods, YEAR(f_imf_imports_goods[period])=[_current_year]), f_imf_imports_goods[value])
-			VAR current_value_services = SUMX(FILTER(f_imf_imports_services, YEAR(f_imf_imports_services[period])=[_current_year]), f_imf_imports_services[value])
+			VAR current_year_goods = YEAR(MAX(f_imf_imports_goods[period]))
+			VAR current_year_service = YEAR(MAX(f_imf_imports_services[period]))
+			VAR current_year = IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
+			VAR current_value_goods = SUMX(FILTER(f_imf_imports_goods, YEAR(f_imf_imports_goods[period])=current_year), f_imf_imports_goods[value])
+			VAR current_value_services = SUMX(FILTER(f_imf_imports_services, YEAR(f_imf_imports_services[period])=current_year), f_imf_imports_services[value])
 			RETURN DIVIDE(current_value_goods+current_value_services, 1000000)
 		lineageTag: ac0e8b5b-6108-4177-9bd1-cc3039f294c1
 
@@ -181,7 +183,10 @@ table Measures_Table
 
 	measure _current_export =
 			
-			VAR current_year = [_current_year]
+			VAR current_year_goods = YEAR(MAX(f_imf_exports_goods[period]))
+			VAR current_year_service = YEAR(MAX(f_imf_exports_services[period]))
+			VAR current_year = IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
+			
 			VAR current_value_goods = SUMX(FILTER(f_imf_exports_goods, YEAR(f_imf_exports_goods[period])=current_year), f_imf_exports_goods[value])
 			VAR current_value_services = SUMX(FILTER(f_imf_exports_services, YEAR(f_imf_exports_services[period])=current_year), f_imf_exports_services[value])
 			RETURN DIVIDE(current_value_goods+current_value_services, 1000000)
@@ -316,6 +321,31 @@ table Measures_Table
 	measure _policy_rate = AVERAGE(f_cb_policy_rates[value])/100
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 9fea51b5-a6f4-41e4-bafc-105e6bea4042
+
+	measure _retail_total = SUMX(f_retail_sales, f_retail_sales[value])
+		lineageTag: a941b840-bedc-4027-885f-d631687cecec
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_population_year = YEAR(MAXX(imf_population, imf_population[period]))
+		formatString: 0
+		lineageTag: 85bea402-5025-4732-99c4-0dc5886eb16b
+
+	measure _current_import_year =
+			
+			VAR current_year_goods = YEAR(MAX(f_imf_imports_goods[period]))
+			VAR current_year_service = YEAR(MAX(f_imf_imports_services[period]))
+			RETURN IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
+		formatString: 0
+		lineageTag: 4e4870d5-1b90-4019-a532-bddd47128524
+
+	measure _current_export_year =
+			
+			VAR current_year_goods = YEAR(MAX(f_imf_exports_goods[period]))
+			VAR current_year_service = YEAR(MAX(f_imf_exports_services[period]))
+			RETURN IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
+		formatString: 0
+		lineageTag: 0f484f36-f0d0-4375-86e2-1db9e7664bba
 
 	column Value
 		formatString: 0

@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "be5f6e7120d01427c08b",
+  "name": "3d296b0262007be58049",
   "position": {
-    "x": 17.448325017818959,
-    "y": 6.7854597291518166,
-    "z": 16000,
-    "height": 63.007840342124013,
-    "width": 321.82466143977189,
-    "tabOrder": 16000
+    "x": 924.648493543759,
+    "y": 13.773314203730273,
+    "z": 5,
+    "height": 695.093256814921,
+    "width": 355.351506456241,
+    "tabOrder": 5
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "treemap",
     "query": {
       "queryState": {
-        "Values": {
+        "Group": {
           "projections": [
             {
               "field": {
@@ -32,72 +32,87 @@
               "displayName": "Country"
             }
           ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures_Table"
+                    }
+                  },
+                  "Property": "_current_population_year"
+                }
+              },
+              "queryRef": "Measures_Table._current_population_year",
+              "nativeQueryRef": "Year",
+              "displayName": "Year"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures_Table"
+                    }
+                  },
+                  "Property": "_current_population"
+                }
+              },
+              "queryRef": "Measures_Table._current_population",
+              "nativeQueryRef": "Population",
+              "displayName": "Population",
+              "format": "#,0"
+            }
+          ]
         }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
       }
     },
     "objects": {
-      "data": [
+      "legend": [
         {
           "properties": {
-            "mode": {
+            "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "'Bottom'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "general": [
+      "labels": [
         {
           "properties": {
-            "selfFilterEnabled": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "d",
-                    "Entity": "d_country",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "country_name"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Vietnam'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
               }
             }
           }
@@ -105,6 +120,19 @@
       ]
     },
     "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Population'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "border": [
         {
           "properties": {
@@ -119,9 +147,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#ffffff'"
                     }
                   }
                 }
@@ -130,7 +157,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "2D"
+                  "Value": "5D"
                 }
               }
             }
@@ -156,7 +183,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "60ce9076a29c02882268",
+        "name": "edbc36f54080ceaa01ca",
         "field": {
           "Column": {
             "Expression": {
@@ -172,7 +199,7 @@
           "Version": 2,
           "From": [
             {
-              "Name": "d",
+              "Name": "d1",
               "Entity": "d_country",
               "Type": 0
             }
@@ -188,7 +215,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Source": "d"
+                              "Source": "d1"
                             }
                           },
                           "Property": "country_name"

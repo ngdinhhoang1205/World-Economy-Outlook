@@ -43,7 +43,7 @@ table f_imf_imports_services
 
 	column period
 		dataType: dateTime
-		formatString: Long Date
+		formatString: yyyy-mm-dd
 		lineageTag: 67204482-c51e-4b83-98df-ecde6ab54318
 		summarizeBy: none
 		sourceColumn: period
@@ -51,6 +51,8 @@ table f_imf_imports_services
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column value
 		dataType: double

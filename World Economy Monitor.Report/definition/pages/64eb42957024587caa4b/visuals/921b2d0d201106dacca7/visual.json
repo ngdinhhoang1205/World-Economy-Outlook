@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "be5f6e7120d01427c08b",
+  "name": "921b2d0d201106dacca7",
   "position": {
-    "x": 17.448325017818959,
-    "y": 6.7854597291518166,
-    "z": 16000,
-    "height": 63.007840342124013,
-    "width": 321.82466143977189,
-    "tabOrder": 16000
+    "x": 614.43298969072168,
+    "y": 598.96907216494844,
+    "z": 1,
+    "height": 110.30927835051547,
+    "width": 308.2474226804124,
+    "tabOrder": 1
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "d_country"
                     }
                   },
-                  "Property": "country_name"
+                  "Property": "continent"
                 }
               },
-              "queryRef": "d_country.country_name",
-              "nativeQueryRef": "Country",
+              "queryRef": "d_country.continent",
+              "nativeQueryRef": "Continent",
               "active": true,
-              "displayName": "Country"
+              "displayName": "Continent"
             }
           ]
         }
@@ -57,47 +57,6 @@
                 "Literal": {
                   "Value": "true"
                 }
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "d",
-                    "Entity": "d_country",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "country_name"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Vietnam'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
               }
             }
           }
@@ -130,7 +89,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "2D"
+                  "Value": "5D"
                 }
               }
             }
@@ -156,7 +115,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "60ce9076a29c02882268",
+        "name": "a0273d344d166dc00ae6",
         "field": {
           "Column": {
             "Expression": {
@@ -205,7 +164,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

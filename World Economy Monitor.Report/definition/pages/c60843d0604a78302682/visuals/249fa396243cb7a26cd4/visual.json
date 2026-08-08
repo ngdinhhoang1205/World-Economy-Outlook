@@ -38,11 +38,11 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_year"
+                  "Property": "_current_import_year"
                 }
               },
-              "queryRef": "Measures_Table._current_year",
-              "nativeQueryRef": "_current_year"
+              "queryRef": "Measures_Table._current_import_year",
+              "nativeQueryRef": "_current_import_year"
             }
           ]
         },
@@ -124,30 +124,23 @@
         },
         {
           "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
                   "Value": "1D"
                 }
               }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
             }
           },
           "selector": {
-            "metadata": "Measures_Table._current_year"
+            "metadata": "Measures_Table._current_import_year"
           }
         }
       ],

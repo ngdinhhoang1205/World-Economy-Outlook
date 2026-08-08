@@ -10,7 +10,7 @@ table d_calendar
 
 		variation Variation
 			isDefault
-			relationship: 19fbd194-dd43-41fc-b008-8a4bb49f116b
+			relationship: 335a6b1e-59bf-4637-864c-793f395aa2b4
 			defaultHierarchy: LocalDateTable_35297e2b-eb05-4156-83d9-d2d62e3b524b.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
@@ -89,7 +89,11 @@ table d_calendar
 				        SELECTCOLUMNS(f_PMI, "Date", f_PMI[period]),
 				        SELECTCOLUMNS(f_retail_sales, "Date", f_retail_sales[period]),
 				        SELECTCOLUMNS(f_trade_balance, "Date", f_trade_balance[period]),
-				        SELECTCOLUMNS(f_unemployment_rate, "Date", f_unemployment_rate[period])
+				        SELECTCOLUMNS(f_unemployment_rate, "Date", f_unemployment_rate[period]),
+				        SELECTCOLUMNS(f_imf_exports_goods, "Date", f_imf_exports_goods[period]),
+				        SELECTCOLUMNS(f_imf_imports_goods, "Date", f_imf_imports_goods[period]),
+				        SELECTCOLUMNS(f_imf_exports_services, "Date", f_imf_exports_services[period]),
+				        SELECTCOLUMNS(f_imf_imports_services, "Date", f_imf_imports_services[period])
 				    )
 				
 				VAR _StartDate = MINX(_AllDates, [Date])
