@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "61839dfdee0ea0bc70bd",
+  "name": "b0b5a05b5d75c9ec4735",
   "position": {
-    "x": 11.340206185567011,
-    "y": 13.402061855670103,
-    "z": 3,
-    "height": 230.9278350515464,
-    "width": 630,
-    "tabOrder": 3
+    "x": 649.84615384615381,
+    "y": 252.06153846153848,
+    "z": 5,
+    "height": 331.81538461538463,
+    "width": 619.32307692307688,
+    "tabOrder": 5
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "ribbonChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,48 +23,30 @@
                       "Entity": "d_calendar"
                     }
                   },
-                  "Property": "Year"
+                  "Property": "Date"
                 }
               },
-              "queryRef": "d_calendar.Year",
-              "nativeQueryRef": "Year",
+              "queryRef": "d_calendar.Date",
+              "nativeQueryRef": "Date",
               "active": true
             }
           ]
         },
-        "Tooltips": {
+        "Series": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Measures_Table"
+                      "Entity": "f_imf_exports_goods"
                     }
                   },
-                  "Property": "_current_import_goods"
+                  "Property": "COUNTERPART_COUNTRY"
                 }
               },
-              "queryRef": "Measures_Table._current_import",
-              "nativeQueryRef": "Import",
-              "displayName": "Import",
-              "format": "#,0"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures_Table"
-                    }
-                  },
-                  "Property": "_current_export_goods"
-                }
-              },
-              "queryRef": "Measures_Table._current_export",
-              "nativeQueryRef": "Export",
-              "displayName": "Export",
-              "format": "#,0"
+              "queryRef": "f_imf_exports_goods.COUNTERPART_COUNTRY",
+              "nativeQueryRef": "COUNTERPART_COUNTRY"
             }
           ]
         },
@@ -78,12 +60,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_trade_balance_goods"
+                  "Property": "_current_export_goods"
                 }
               },
-              "queryRef": "Measures_Table._current_trade_balance",
-              "nativeQueryRef": "Trade Balance",
-              "displayName": "Trade Balance",
+              "queryRef": "Measures_Table._current_export_goods",
+              "nativeQueryRef": "Export Value",
+              "displayName": "Export Value",
               "format": "#,0"
             }
           ]
@@ -93,114 +75,26 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Measures_Table"
+                    "Entity": "d_calendar"
                   }
                 },
-                "Property": "_current_trade_balance_goods"
+                "Property": "Date"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "legend": [
-        {
-          "properties": {
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Bottom'"
-                }
-              }
-            },
-            "showTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "switchAxisPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "zoom": [
         {
           "properties": {
             "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "showOnValueAxis": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -217,7 +111,40 @@
           }
         }
       ],
-      "labels": [
+      "legend": [
+        {
+          "properties": {
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "ribbonBands": [
         {
           "properties": {
             "show": {
@@ -227,24 +154,30 @@
                 }
               }
             },
-            "optimizeLabelDisplay": {
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "borderShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
-            },
-            "labelContentLayout": {
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "'SingleLine'"
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
+                  "Value": "false"
                 }
               }
             }
@@ -259,7 +192,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Goods Trade Balance'"
+                  "Value": "'Export Value to Counterparts Ranking Over Time'"
                 }
               }
             }
@@ -276,21 +209,22 @@
                 }
               }
             },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            },
             "radius": {
               "expr": {
                 "Literal": {
                   "Value": "5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -316,21 +250,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'(For Goods)'"
-                }
-              }
-            },
-            "italic": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "'Top 10 Only'"
                 }
               }
             }
@@ -343,57 +270,133 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "edbc36f54080ceaa01ca",
+        "name": "8dca6eb946a630eca12d",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "d_country"
+                "Entity": "d_calendar"
               }
             },
-            "Property": "country_name"
+            "Property": "Date"
           }
         },
-        "type": "Advanced",
+        "type": "Categorical"
+      },
+      {
+        "name": "a2ad8ee3d1bc50703a21",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "f_imf_exports_goods"
+              }
+            },
+            "Property": "COUNTERPART_COUNTRY"
+          }
+        },
+        "type": "TopN",
         "filter": {
           "Version": 2,
           "From": [
             {
-              "Name": "d1",
-              "Entity": "d_country",
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "f_imf_exports_goods",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "m",
+                        "Entity": "Measures_Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "f"
+                            }
+                          },
+                          "Property": "COUNTERPART_COUNTRY"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Measure": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "_current_export_goods"
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 10
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "f",
+              "Entity": "f_imf_exports_goods",
               "Type": 0
             }
           ],
           "Where": [
             {
               "Condition": {
-                "Not": {
-                  "Expression": {
-                    "Comparison": {
-                      "ComparisonKind": 0,
-                      "Left": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "d1"
-                            }
-                          },
-                          "Property": "country_name"
-                        }
-                      },
-                      "Right": {
-                        "Literal": {
-                          "Value": "null"
-                        }
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "COUNTERPART_COUNTRY"
                       }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
                     }
                   }
                 }
               }
             }
           ]
+        }
+      },
+      {
+        "name": "a6338b5c6c086111de70",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_current_export_goods"
+          }
         },
-        "howCreated": "User"
+        "type": "Advanced"
       }
     ]
   }

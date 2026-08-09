@@ -412,6 +412,20 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "a97b8b128c205962e0ca",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_retail_total"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

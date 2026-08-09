@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_export"
+                  "Property": "_current_export_goods"
                 }
               },
               "queryRef": "Measures_Table._current_export",
@@ -56,7 +56,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_export"
+                  "Property": "_current_export_goods"
                 }
               },
               "queryRef": "Measures_Table._current_export",
@@ -76,7 +76,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_export"
+                "Property": "_current_export_goods"
               }
             },
             "direction": "Descending"

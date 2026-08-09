@@ -169,19 +169,19 @@ table Measures_Table
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: c618621a-d96c-4849-b755-b51a451ada6c
 
-	measure _current_import =
+	measure _current_import_goods =
 			
 			VAR current_year_goods = YEAR(MAX(f_imf_imports_goods[period]))
 			VAR current_year_service = YEAR(MAX(f_imf_imports_services[period]))
 			VAR current_year = IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
 			VAR current_value_goods = SUMX(FILTER(f_imf_imports_goods, YEAR(f_imf_imports_goods[period])=current_year), f_imf_imports_goods[value])
 			VAR current_value_services = SUMX(FILTER(f_imf_imports_services, YEAR(f_imf_imports_services[period])=current_year), f_imf_imports_services[value])
-			RETURN DIVIDE(current_value_goods+current_value_services, 1000000)
+			RETURN DIVIDE(current_value_goods, 1000000)
 		lineageTag: ac0e8b5b-6108-4177-9bd1-cc3039f294c1
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure _current_export =
+	measure _current_export_goods =
 			
 			VAR current_year_goods = YEAR(MAX(f_imf_exports_goods[period]))
 			VAR current_year_service = YEAR(MAX(f_imf_exports_services[period]))
@@ -189,12 +189,12 @@ table Measures_Table
 			
 			VAR current_value_goods = SUMX(FILTER(f_imf_exports_goods, YEAR(f_imf_exports_goods[period])=current_year), f_imf_exports_goods[value])
 			VAR current_value_services = SUMX(FILTER(f_imf_exports_services, YEAR(f_imf_exports_services[period])=current_year), f_imf_exports_services[value])
-			RETURN DIVIDE(current_value_goods+current_value_services, 1000000)
+			RETURN DIVIDE(current_value_goods, 1000000)
 		lineageTag: 7916cc5f-783f-4170-bb1f-993ca0853246
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure _current_trade_balance = [_current_export]-[_current_import]
+	measure _current_trade_balance_goods = [_current_export_goods]-[_current_import_goods]
 		lineageTag: f5e28d82-3039-4d09-b5cb-9cbd6070c1c2
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -346,6 +346,40 @@ table Measures_Table
 			RETURN IF(current_year_goods<current_year_service, current_year_goods, current_year_service)
 		formatString: 0
 		lineageTag: 0f484f36-f0d0-4375-86e2-1db9e7664bba
+
+	measure _current_export_service =
+			
+			VAR current_year = YEAR(MAX(f_imf_exports_services[period]))
+			VAR current_value_goods = SUMX(FILTER(f_imf_exports_goods, YEAR(f_imf_exports_goods[period])=current_year), f_imf_exports_goods[value])
+			VAR current_value_services = SUMX(FILTER(f_imf_exports_services, YEAR(f_imf_exports_services[period])=current_year), f_imf_exports_services[value])
+			RETURN DIVIDE(current_value_services, 1000000)
+		lineageTag: 4cdd682f-974b-4bc4-9728-d03c81f5d1b3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_import_service =
+			
+			VAR current_year = YEAR(MAX(f_imf_imports_services[period]))
+			VAR current_value_goods = SUMX(FILTER(f_imf_imports_goods, YEAR(f_imf_imports_goods[period])=current_year), f_imf_imports_goods[value])
+			VAR current_value_services = SUMX(FILTER(f_imf_imports_services, YEAR(f_imf_imports_services[period])=current_year), f_imf_imports_services[value])
+			RETURN DIVIDE(current_value_services, 1000000)
+		lineageTag: a9a7d85d-bab8-4eb7-88bf-e91888082d5a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_trade_balance_service = [_current_export_service]-[_current_import_service]
+		lineageTag: 634cb4cc-7446-42a7-87ad-88ea15eee226
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _trade_balance_p_gdp = DIVIDE([_current_trade_balance], [_current_gdp], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f7695b1c-591a-426a-a169-122f6a0b349e
+
+	measure _current_trade_balance = [_current_trade_balance_goods]+[_current_trade_balance_service]
+		lineageTag: 1f5533eb-6348-4cba-91a3-64c95f8e6593
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Value
 		formatString: 0

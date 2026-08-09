@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_import"
+                  "Property": "_current_import_goods"
                 }
               },
               "queryRef": "Measures_Table._current_import",
@@ -56,7 +56,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_import"
+                  "Property": "_current_import_goods"
                 }
               },
               "queryRef": "Measures_Table._current_import",
@@ -76,7 +76,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_import"
+                "Property": "_current_import_goods"
               }
             },
             "direction": "Descending"

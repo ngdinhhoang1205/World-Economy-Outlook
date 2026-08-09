@@ -80,15 +80,15 @@ Data comes from two pipelines:
 
 ## 📊 Power BI Report (`World Economy Monitor.pbip`)
 
-The report has **9 pages** — 4 content pages, 4 drill-through tooltip pages, and 3 pillar pages still awaiting visuals.
+The report has **9 pages** — all 5 content pages built, plus 4 drill-through tooltip pages.
 
 | Page | Status | Visuals |
 | :--- | :--- | :--- |
-| **Overview** | ✅ Built | KPI cards (Trade Balance, Imports, Exports, GDP, YoY/MoM CPI, Unemployment, IPI, Retail Sales, Central Bank Policy Rate), a Current/Previous Month & Year summary table, and a Country slicer |
+| **Overview** | ✅ Built | KPI cards (Trade Balance, Imports, Exports — goods only; GDP, YoY/MoM CPI, Unemployment, IPI, Retail Sales, Central Bank Policy Rate), a Current/Previous Month & Year summary table, and a Country slicer |
 | **Economic Growth** | ✅ Built | Map of GDP by country, bar chart of IPI growth rate by country, GDP treemap, YoY GDP line chart over time, GDP combo chart (per-capita + growth rate), with Nation / Date / Continent slicers |
-| **Inflation & Monetary Policy** | 🚧 Placeholder | No visuals yet |
-| **Labor & Consumption** | 🚧 Placeholder | No visuals yet |
-| **Global Trade & Supply Chain** | 🚧 Placeholder | No visuals yet |
+| **Inflation & Monetary Policy** | ✅ Built | Bar chart of YoY CPI by country, line chart of YoY CPI over time, bar chart of central bank policy rate by country, line chart of policy rate over time, with Nation / Date / Continent slicers |
+| **Labor & Consumption** | ✅ Built | Line chart of retail sales over time, population treemap by country, line chart of unemployment rate over time, with Nation / Date / Continent slicers |
+| **Global Trade** | ✅ Built | Column chart of goods trade balance by year (Import/Export tooltip), column chart of services trade balance by year (Import/Export tooltip), ribbon chart of export value by top counterpart countries over time, with Nation and Date slicers |
 | **GDP_Tooltip** | ✅ Built | Drill-through table: GDP by country |
 | **YoY_GDP_Tooltip** | ✅ Built | Drill-through line chart: GDP over years |
 | **MoM_policyrate_Tooltip** | ✅ Built | Drill-through line chart: policy rate over years |
@@ -104,6 +104,9 @@ The report has **9 pages** — 4 content pages, 4 drill-through tooltip pages, a
 
 **Inflation & Monetary Policy**
 ![Inflation & Monetary Policy page](images/Inflation-and-monetary-policy.png)
+
+**Global Trade**
+![Global Trade page](images/Global-Trade-sample.png)
 
 ### Semantic Model
 

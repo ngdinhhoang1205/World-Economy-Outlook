@@ -23,7 +23,7 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_trade_balance"
+                  "Property": "_current_trade_balance_goods"
                 }
               },
               "queryRef": "Measures_Table._current_trade_balance",
@@ -43,7 +43,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_trade_balance"
+                "Property": "_current_trade_balance_goods"
               }
             },
             "direction": "Descending"

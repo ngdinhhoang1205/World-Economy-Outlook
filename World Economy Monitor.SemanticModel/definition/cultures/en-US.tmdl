@@ -10022,12 +10022,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "trade balance": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "f trade equilibrium": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -10055,36 +10049,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "trade equilibrium": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "trade stability": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "trade steadiness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
 			          }
 			        },
 			        {
@@ -10125,6 +10089,36 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "poise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "f trade weighing scale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "f trade residue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
 			          }
 			        }
 			      ]
@@ -15849,12 +15843,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "export value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "f export assessment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15862,16 +15850,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "export assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
 			          }
 			        },
 			        {
@@ -15925,33 +15903,43 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "export worth": {
+			          "f export importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.482
 			          }
 			        },
 			        {
-			          "export price": {
+			          "f export significance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.482
 			          }
 			        },
 			        {
-			          "export cost": {
+			          "f export usefulness": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.485
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "f export consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
 			          }
 			        }
 			      ]
@@ -18858,239 +18846,41 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "measures_table.current_import": {
+			    "measures_table.current_import_goods": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_current_import"
+			          "ConceptualProperty": "_current_import_goods"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "current import": {
+			          "current import goods": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "_current_import": {
+			          "_current_import_goods": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "import": {
+			          "goods": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "latest import": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "contemporary import": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "present import": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "current introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "current importation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "current ingress": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "importation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "ingress": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "current significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        }
-			      ]
-			    },
-			    "measures_table.current_export": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_current_export"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "current export": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "_current_export": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "export": {
+			          "import goods": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "latest export": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "contemporary export": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "present export": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "present day export": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.471
-			          }
-			        }
-			      ]
-			    },
-			    "measures_table.current_trade_balance": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Measures_Table",
-			          "ConceptualProperty": "_current_trade_balance"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "current trade balance": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "_current_trade_balance": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "balance": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "trade balance": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "latest trade balance": {
+			          "latest import goods": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19100,7 +18890,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "contemporary trade balance": {
+			          "contemporary import goods": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19110,7 +18900,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "present trade balance": {
+			          "present import goods": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19120,7 +18910,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current trade equilibrium": {
+			          "current import property": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19130,7 +18920,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current trade stability": {
+			          "current import thing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19140,7 +18930,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current trade steadiness": {
+			          "current import possession": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19150,7 +18940,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "trade equilibrium": {
+			          "import property": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19160,7 +18950,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "trade stability": {
+			          "import thing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19170,7 +18960,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "trade steadiness": {
+			          "import possession": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -19180,13 +18970,329 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "current trade poise": {
+			          "current import belonging": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Import": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_export_goods": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_export_goods"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current export goods": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_export_goods": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "goods": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "export goods": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest export goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary export goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present export goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "current export property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current export thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current export possession": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "export property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "export thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "export possession": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "current export belonging": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Export": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Export Value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_trade_balance_goods": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_trade_balance_goods"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current trade balance goods": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_trade_balance_goods": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "goods": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "balance goods": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trade balance goods": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest trade balance goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "contemporary trade balance goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "present trade balance goods": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "current trade balance property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "current trade balance thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "current trade balance possession": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "trade balance property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "trade balance thing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "trade balance possession": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "balance property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "Trade Balance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -23837,141 +23943,818 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "measures_table.current_import_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_import_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current import year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_import_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "import year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current import yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "import yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "latest import year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary import year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present import year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present day import year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_export_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_export_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current export year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_export_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "export year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current export yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "export yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "latest export year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary export year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present export year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present day export year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_export_service": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_export_service"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current export service": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_export_service": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "export service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current export maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "current export examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "current export svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "export maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "export examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "export svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "current export package": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current export repair": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current export benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current export servicing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Export": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_import_service": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_import_service"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current import service": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_import_service": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "import service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current import maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "current import examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "current import svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "import maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "import examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "import svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "current import package": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current import repair": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current import benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "current import servicing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Import": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_trade_balance_service": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_trade_balance_service"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current trade balance service": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_trade_balance_service": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "balance service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "trade balance service": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "current trade balance maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "current trade balance examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "current trade balance svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "trade balance maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "trade balance examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "trade balance svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "balance maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "balance examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "balance svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "current trade balance package": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Trade Balance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.trade_balance_p_gdp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_trade_balance_p_gdp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trade balance p gdp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_trade_balance_p_gdp": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "gdp": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "p gdp": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "balance p gdp": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Trade Balance Shares": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_table.current_trade_balance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures_Table",
+			          "ConceptualProperty": "_current_trade_balance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "current trade balance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_current_trade_balance": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "balance": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "latest trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "contemporary trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "present trade balance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "current trade equilibrium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current trade stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current trade steadiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "current trade poise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "equilibrium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "steadiness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "Trade Balance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.month": {
-			          "Target": {
-			            "Entity": "d_calendar.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.quarter": {
-			          "Target": {
-			            "Entity": "d_calendar.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "d_calendar_date_date_hierarchy_has_d_calendar_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        },
-			        "d_calendar.date.year": {
-			          "Target": {
-			            "Entity": "d_calendar.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "d_calendar_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "d_calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendar.date": {
-			          "Target": {
-			            "Entity": "d_calendar.date"
-			          }
-			        },
-			        "d_calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "d_calendar.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendar.date"
-			            },
-			            "Object": {
-			              "Role": "d_calendar.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
 			    "f_trade_balance_original_period_date_hierarchy_has_f_trade_balance_original_period_day": {
 			      "Binding": {
 			        "ConceptualEntity": "f_trade_balance"
@@ -24889,52 +25672,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_imf_imports_service_has_d_country": {
-			      "Binding": {
-			        "ConceptualEntity": "f_imf_imports_services"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_imf_imports_service": {
-			          "Target": {
-			            "Entity": "f_imf_imports_service"
-			          }
-			        },
-			        "d_country": {
-			          "Target": {
-			            "Entity": "d_country"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_imf_imports_service"
-			            },
-			            "Object": {
-			              "Role": "d_country"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_imf_imports_services_have_d_countries"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_country"
-			            },
-			            "Object": {
-			              "Role": "f_imf_imports_service"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_imf_imports_services"
-			        }
-			      ]
-			    },
 			    "f_imf_imports_service_has_d_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_imports_services"
@@ -24981,15 +25718,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_imf_exports_service_has_d_country": {
+			    "f_imf_imports_service_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_imf_exports_services"
+			        "ConceptualEntity": "f_imf_imports_services"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_imf_exports_service": {
+			        "f_imf_imports_service": {
 			          "Target": {
-			            "Entity": "f_imf_exports_service"
+			            "Entity": "f_imf_imports_service"
 			          }
 			        },
 			        "d_country": {
@@ -25002,7 +25739,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_imf_exports_service"
+			              "Role": "f_imf_imports_service"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25010,7 +25747,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_exports_services_have_d_countries"
+			          "ID": "f_imf_imports_services_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25018,12 +25755,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_imf_exports_service"
+			              "Role": "f_imf_imports_service"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_imf_exports_services"
+			          "ID": "d_countries_have_f_imf_imports_services"
 			        }
 			      ]
 			    },
@@ -25073,15 +25810,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_imf_imports_goods_has_d_country": {
+			    "f_imf_exports_service_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_imf_imports_goods"
+			        "ConceptualEntity": "f_imf_exports_services"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_imf_imports_goods": {
+			        "f_imf_exports_service": {
 			          "Target": {
-			            "Entity": "f_imf_imports_goods"
+			            "Entity": "f_imf_exports_service"
 			          }
 			        },
 			        "d_country": {
@@ -25094,7 +25831,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_imf_imports_goods"
+			              "Role": "f_imf_exports_service"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25102,7 +25839,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_imports_goods_have_d_countries"
+			          "ID": "f_imf_exports_services_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25110,12 +25847,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_imf_imports_goods"
+			              "Role": "f_imf_exports_service"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_imf_imports_goods"
+			          "ID": "d_countries_have_f_imf_exports_services"
 			        }
 			      ]
 			    },
@@ -25165,15 +25902,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_imf_exports_goods_has_d_country": {
+			    "f_imf_imports_goods_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_imf_exports_goods"
+			        "ConceptualEntity": "f_imf_imports_goods"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_imf_exports_goods": {
+			        "f_imf_imports_goods": {
 			          "Target": {
-			            "Entity": "f_imf_exports_goods"
+			            "Entity": "f_imf_imports_goods"
 			          }
 			        },
 			        "d_country": {
@@ -25186,7 +25923,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_imf_exports_goods"
+			              "Role": "f_imf_imports_goods"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25194,7 +25931,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_exports_goods_have_d_countries"
+			          "ID": "f_imf_imports_goods_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25202,12 +25939,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_imf_exports_goods"
+			              "Role": "f_imf_imports_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_imf_exports_goods"
+			          "ID": "d_countries_have_f_imf_imports_goods"
 			        }
 			      ]
 			    },
@@ -25257,15 +25994,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_export_value_has_d_country": {
+			    "f_imf_exports_goods_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_export_value"
+			        "ConceptualEntity": "f_imf_exports_goods"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_export_value": {
+			        "f_imf_exports_goods": {
 			          "Target": {
-			            "Entity": "f_export_value"
+			            "Entity": "f_imf_exports_goods"
 			          }
 			        },
 			        "d_country": {
@@ -25278,7 +26015,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_export_value"
+			              "Role": "f_imf_exports_goods"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25286,7 +26023,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_export_values_have_d_countries"
+			          "ID": "f_imf_exports_goods_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25294,12 +26031,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_export_value"
+			              "Role": "f_imf_exports_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_export_values"
+			          "ID": "d_countries_have_f_imf_exports_goods"
 			        }
 			      ]
 			    },
@@ -25349,15 +26086,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_import_value_has_d_country": {
+			    "f_export_value_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_import_value"
+			        "ConceptualEntity": "f_export_value"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_import_value": {
+			        "f_export_value": {
 			          "Target": {
-			            "Entity": "f_import_value"
+			            "Entity": "f_export_value"
 			          }
 			        },
 			        "d_country": {
@@ -25370,7 +26107,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_import_value"
+			              "Role": "f_export_value"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25378,7 +26115,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_import_values_have_d_countries"
+			          "ID": "f_export_values_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25386,12 +26123,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_import_value"
+			              "Role": "f_export_value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_import_values"
+			          "ID": "d_countries_have_f_export_values"
 			        }
 			      ]
 			    },
@@ -25441,15 +26178,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_trade_balance_has_d_country": {
+			    "f_import_value_has_d_country": {
 			      "Binding": {
-			        "ConceptualEntity": "f_trade_balance"
+			        "ConceptualEntity": "f_import_value"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_trade_balance": {
+			        "f_import_value": {
 			          "Target": {
-			            "Entity": "f_trade_balance"
+			            "Entity": "f_import_value"
 			          }
 			        },
 			        "d_country": {
@@ -25462,7 +26199,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_trade_balance"
+			              "Role": "f_import_value"
 			            },
 			            "Object": {
 			              "Role": "d_country"
@@ -25470,7 +26207,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_trade_balances_have_d_countries"
+			          "ID": "f_import_values_have_d_countries"
 			        },
 			        {
 			          "Attribute": {
@@ -25478,12 +26215,12 @@ cultureInfo en-US
 			              "Role": "d_country"
 			            },
 			            "Object": {
-			              "Role": "f_trade_balance"
+			              "Role": "f_import_value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_countries_have_f_trade_balances"
+			          "ID": "d_countries_have_f_import_values"
 			        }
 			      ]
 			    },
@@ -25530,6 +26267,98 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "d_calendars_have_f_trade_balances"
+			        }
+			      ]
+			    },
+			    "f_trade_balance_has_d_country": {
+			      "Binding": {
+			        "ConceptualEntity": "f_trade_balance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_trade_balance": {
+			          "Target": {
+			            "Entity": "f_trade_balance"
+			          }
+			        },
+			        "d_country": {
+			          "Target": {
+			            "Entity": "d_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_trade_balance"
+			            },
+			            "Object": {
+			              "Role": "d_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_trade_balances_have_d_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_country"
+			            },
+			            "Object": {
+			              "Role": "f_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_countries_have_f_trade_balances"
+			        }
+			      ]
+			    },
+			    "f_PMI_has_d_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "f_PMI"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_PMI": {
+			          "Target": {
+			            "Entity": "f_PMI"
+			          }
+			        },
+			        "d_calendar": {
+			          "Target": {
+			            "Entity": "d_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_PMI"
+			            },
+			            "Object": {
+			              "Role": "d_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_PMI_have_d_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar"
+			            },
+			            "Object": {
+			              "Role": "f_PMI"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendars_have_f_PMI"
 			        }
 			      ]
 			    },
@@ -25586,15 +26415,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_PMI_has_d_calendar": {
+			    "f_retail_sale_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_PMI"
+			        "ConceptualEntity": "f_retail_sales"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_PMI": {
+			        "f_retail_sale": {
 			          "Target": {
-			            "Entity": "f_PMI"
+			            "Entity": "f_retail_sale"
 			          }
 			        },
 			        "d_calendar": {
@@ -25607,7 +26436,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_PMI"
+			              "Role": "f_retail_sale"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -25615,7 +26444,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_PMI_have_d_calendars"
+			          "ID": "f_retail_sales_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -25623,12 +26452,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_PMI"
+			              "Role": "f_retail_sale"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_PMI"
+			          "ID": "d_calendars_have_f_retail_sales"
 			        }
 			      ]
 			    },
@@ -25685,15 +26514,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_retail_sale_has_d_calendar": {
+			    "f_unemployment_rate_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_retail_sales"
+			        "ConceptualEntity": "f_unemployment_rate"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_retail_sale": {
+			        "f_unemployment_rate": {
 			          "Target": {
-			            "Entity": "f_retail_sale"
+			            "Entity": "f_unemployment_rate"
 			          }
 			        },
 			        "d_calendar": {
@@ -25706,7 +26535,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_retail_sale"
+			              "Role": "f_unemployment_rate"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -25714,7 +26543,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_retail_sales_have_d_calendars"
+			          "ID": "f_unemployment_rates_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -25722,12 +26551,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_retail_sale"
+			              "Role": "f_unemployment_rate"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_retail_sales"
+			          "ID": "d_calendars_have_f_unemployment_rates"
 			        }
 			      ]
 			    },
@@ -25777,15 +26606,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_unemployment_rate_has_d_calendar": {
+			    "f_cb_policy_rate_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_unemployment_rate"
+			        "ConceptualEntity": "f_cb_policy_rates"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_unemployment_rate": {
+			        "f_cb_policy_rate": {
 			          "Target": {
-			            "Entity": "f_unemployment_rate"
+			            "Entity": "f_cb_policy_rate"
 			          }
 			        },
 			        "d_calendar": {
@@ -25798,7 +26627,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_unemployment_rate"
+			              "Role": "f_cb_policy_rate"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -25806,7 +26635,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_unemployment_rates_have_d_calendars"
+			          "ID": "f_cb_policy_rates_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -25814,12 +26643,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_unemployment_rate"
+			              "Role": "f_cb_policy_rate"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_unemployment_rates"
+			          "ID": "d_calendars_have_f_cb_policy_rates"
 			        }
 			      ]
 			    },
@@ -25869,15 +26698,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_cb_policy_rate_has_d_calendar": {
+			    "f_consumer_price_index_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_cb_policy_rates"
+			        "ConceptualEntity": "f_consumer_price_index"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_cb_policy_rate": {
+			        "f_consumer_price_index": {
 			          "Target": {
-			            "Entity": "f_cb_policy_rate"
+			            "Entity": "f_consumer_price_index"
 			          }
 			        },
 			        "d_calendar": {
@@ -25890,7 +26719,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_cb_policy_rate"
+			              "Role": "f_consumer_price_index"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -25898,7 +26727,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_cb_policy_rates_have_d_calendars"
+			          "ID": "f_consumer_price_indices_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -25906,12 +26735,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_cb_policy_rate"
+			              "Role": "f_consumer_price_index"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_cb_policy_rates"
+			          "ID": "d_calendars_have_f_consumer_price_indices"
 			        }
 			      ]
 			    },
@@ -25961,15 +26790,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_consumer_price_index_has_d_calendar": {
+			    "f_industrial_production_index_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_consumer_price_index"
+			        "ConceptualEntity": "f_industrial_production_index"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_consumer_price_index": {
+			        "f_industrial_production_index": {
 			          "Target": {
-			            "Entity": "f_consumer_price_index"
+			            "Entity": "f_industrial_production_index"
 			          }
 			        },
 			        "d_calendar": {
@@ -25982,7 +26811,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_consumer_price_index"
+			              "Role": "f_industrial_production_index"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -25990,7 +26819,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_consumer_price_indices_have_d_calendars"
+			          "ID": "f_industrial_production_indices_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -25998,12 +26827,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_consumer_price_index"
+			              "Role": "f_industrial_production_index"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_consumer_price_indices"
+			          "ID": "d_calendars_have_f_industrial_production_indices"
 			        }
 			      ]
 			    },
@@ -26053,15 +26882,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_industrial_production_index_has_d_calendar": {
+			    "f_gross_domestic_product_has_d_calendar": {
 			      "Binding": {
-			        "ConceptualEntity": "f_industrial_production_index"
+			        "ConceptualEntity": "f_gross_domestic_product"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_industrial_production_index": {
+			        "f_gross_domestic_product": {
 			          "Target": {
-			            "Entity": "f_industrial_production_index"
+			            "Entity": "f_gross_domestic_product"
 			          }
 			        },
 			        "d_calendar": {
@@ -26074,7 +26903,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_industrial_production_index"
+			              "Role": "f_gross_domestic_product"
 			            },
 			            "Object": {
 			              "Role": "d_calendar"
@@ -26082,7 +26911,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_industrial_production_indices_have_d_calendars"
+			          "ID": "f_gross_domestic_products_have_d_calendars"
 			        },
 			        {
 			          "Attribute": {
@@ -26090,12 +26919,12 @@ cultureInfo en-US
 			              "Role": "d_calendar"
 			            },
 			            "Object": {
-			              "Role": "f_industrial_production_index"
+			              "Role": "f_gross_domestic_product"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_industrial_production_indices"
+			          "ID": "d_calendars_have_f_gross_domestic_products"
 			        }
 			      ]
 			    },
@@ -26145,7 +26974,271 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_gross_domestic_product_has_d_calendar": {
+			    "f_imf_imports_service_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_service": {
+			          "Target": {
+			            "Entity": "f_imf_imports_service"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_services_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_goods_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_imports_goods"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_goods_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_service_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_service": {
+			          "Target": {
+			            "Entity": "f_imf_exports_service"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_services_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_goods_has_measures_table_current_trade_balance": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_exports_goods"
+			          }
+			        },
+			        "measures_table.current_trade_balance": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_goods_have_current_trade_balance"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_service_has_measures_table_trade_balance_p_gdp": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_service": {
+			          "Target": {
+			            "Entity": "f_imf_imports_service"
+			          }
+			        },
+			        "measures_table.trade_balance_p_gdp": {
+			          "Target": {
+			            "Entity": "measures_table.trade_balance_p_gdp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.trade_balance_p_gdp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_services_have_trade_balance_p_gdp"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_goods_has_measures_table_trade_balance_p_gdp": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_imports_goods"
+			          }
+			        },
+			        "measures_table.trade_balance_p_gdp": {
+			          "Target": {
+			            "Entity": "measures_table.trade_balance_p_gdp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.trade_balance_p_gdp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_goods_have_trade_balance_p_gdp"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_service_has_measures_table_trade_balance_p_gdp": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_service": {
+			          "Target": {
+			            "Entity": "f_imf_exports_service"
+			          }
+			        },
+			        "measures_table.trade_balance_p_gdp": {
+			          "Target": {
+			            "Entity": "measures_table.trade_balance_p_gdp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.trade_balance_p_gdp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_services_have_trade_balance_p_gdp"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_goods_has_measures_table_trade_balance_p_gdp": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_exports_goods"
+			          }
+			        },
+			        "measures_table.trade_balance_p_gdp": {
+			          "Target": {
+			            "Entity": "measures_table.trade_balance_p_gdp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.trade_balance_p_gdp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_goods_have_trade_balance_p_gdp"
+			        }
+			      ]
+			    },
+			    "f_gross_domestic_product_has_measures_table_trade_balance_p_gdp": {
 			      "Binding": {
 			        "ConceptualEntity": "f_gross_domestic_product"
 			      },
@@ -26156,9 +27249,9 @@ cultureInfo en-US
 			            "Entity": "f_gross_domestic_product"
 			          }
 			        },
-			        "d_calendar": {
+			        "measures_table.trade_balance_p_gdp": {
 			          "Target": {
-			            "Entity": "d_calendar"
+			            "Entity": "measures_table.trade_balance_p_gdp"
 			          }
 			        }
 			      },
@@ -26169,25 +27262,276 @@ cultureInfo en-US
 			              "Role": "f_gross_domestic_product"
 			            },
 			            "Object": {
-			              "Role": "d_calendar"
+			              "Role": "measures_table.trade_balance_p_gdp"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_gross_domestic_products_have_d_calendars"
+			          "ID": "f_gross_domestic_products_have_trade_balance_p_gdp"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_service_has_measures_table_current_trade_balance_service": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_service": {
+			          "Target": {
+			            "Entity": "f_imf_imports_service"
+			          }
 			        },
+			        "measures_table.current_trade_balance_service": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance_service"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendar"
+			              "Role": "f_imf_imports_service"
 			            },
 			            "Object": {
-			              "Role": "f_gross_domestic_product"
+			              "Role": "measures_table.current_trade_balance_service"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_calendars_have_f_gross_domestic_products"
+			          "ID": "f_imf_imports_services_have_current_trade_balance_service"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_service_has_measures_table_current_trade_balance_service": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_service": {
+			          "Target": {
+			            "Entity": "f_imf_exports_service"
+			          }
+			        },
+			        "measures_table.current_trade_balance_service": {
+			          "Target": {
+			            "Entity": "measures_table.current_trade_balance_service"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_trade_balance_service"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_services_have_current_trade_balance_service"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_service_has_measures_table_current_import_service": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_service": {
+			          "Target": {
+			            "Entity": "f_imf_imports_service"
+			          }
+			        },
+			        "measures_table.current_import_service": {
+			          "Target": {
+			            "Entity": "measures_table.current_import_service"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_import_service"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_services_have_current_import_service"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_service_has_measures_table_current_export_service": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_service": {
+			          "Target": {
+			            "Entity": "f_imf_exports_service"
+			          }
+			        },
+			        "measures_table.current_export_service": {
+			          "Target": {
+			            "Entity": "measures_table.current_export_service"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_export_service"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_services_have_current_export_service"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_service_has_measures_table_current_export_year": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_service": {
+			          "Target": {
+			            "Entity": "f_imf_exports_service"
+			          }
+			        },
+			        "measures_table.current_export_year": {
+			          "Target": {
+			            "Entity": "measures_table.current_export_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_export_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_services_have_current_export_year"
+			        }
+			      ]
+			    },
+			    "f_imf_exports_goods_has_measures_table_current_export_year": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_exports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_exports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_exports_goods"
+			          }
+			        },
+			        "measures_table.current_export_year": {
+			          "Target": {
+			            "Entity": "measures_table.current_export_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_exports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_export_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_exports_goods_have_current_export_year"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_service_has_measures_table_current_import_year": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_services"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_service": {
+			          "Target": {
+			            "Entity": "f_imf_imports_service"
+			          }
+			        },
+			        "measures_table.current_import_year": {
+			          "Target": {
+			            "Entity": "measures_table.current_import_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_service"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_import_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_services_have_current_import_year"
+			        }
+			      ]
+			    },
+			    "f_imf_imports_goods_has_measures_table_current_import_year": {
+			      "Binding": {
+			        "ConceptualEntity": "f_imf_imports_goods"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_imf_imports_goods": {
+			          "Target": {
+			            "Entity": "f_imf_imports_goods"
+			          }
+			        },
+			        "measures_table.current_import_year": {
+			          "Target": {
+			            "Entity": "measures_table.current_import_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_imf_imports_goods"
+			            },
+			            "Object": {
+			              "Role": "measures_table.current_import_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_imf_imports_goods_have_current_import_year"
 			        }
 			      ]
 			    },
@@ -27845,40 +29189,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "f_imf_imports_service_has_measures_table_current_trade_balance": {
-			      "Binding": {
-			        "ConceptualEntity": "f_imf_imports_services"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_imf_imports_service": {
-			          "Target": {
-			            "Entity": "f_imf_imports_service"
-			          }
-			        },
-			        "measures_table.current_trade_balance": {
-			          "Target": {
-			            "Entity": "measures_table.current_trade_balance"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_imf_imports_service"
-			            },
-			            "Object": {
-			              "Role": "measures_table.current_trade_balance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_imf_imports_services_have_current_trade_balance"
-			        }
-			      ]
-			    },
-			    "f_imf_imports_goods_has_measures_table_current_trade_balance": {
+			    "f_imf_imports_goods_has_measures_table_current_trade_balance_goods": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_imports_goods"
 			      },
@@ -27889,9 +29200,9 @@ cultureInfo en-US
 			            "Entity": "f_imf_imports_goods"
 			          }
 			        },
-			        "measures_table.current_trade_balance": {
+			        "measures_table.current_trade_balance_goods": {
 			          "Target": {
-			            "Entity": "measures_table.current_trade_balance"
+			            "Entity": "measures_table.current_trade_balance_goods"
 			          }
 			        }
 			      },
@@ -27902,49 +29213,16 @@ cultureInfo en-US
 			              "Role": "f_imf_imports_goods"
 			            },
 			            "Object": {
-			              "Role": "measures_table.current_trade_balance"
+			              "Role": "measures_table.current_trade_balance_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_imports_goods_have_current_trade_balance"
+			          "ID": "f_imf_imports_goods_have_current_trade_balance_goods"
 			        }
 			      ]
 			    },
-			    "f_imf_exports_service_has_measures_table_current_trade_balance": {
-			      "Binding": {
-			        "ConceptualEntity": "f_imf_exports_services"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_imf_exports_service": {
-			          "Target": {
-			            "Entity": "f_imf_exports_service"
-			          }
-			        },
-			        "measures_table.current_trade_balance": {
-			          "Target": {
-			            "Entity": "measures_table.current_trade_balance"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_imf_exports_service"
-			            },
-			            "Object": {
-			              "Role": "measures_table.current_trade_balance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_imf_exports_services_have_current_trade_balance"
-			        }
-			      ]
-			    },
-			    "f_imf_exports_goods_has_measures_table_current_trade_balance": {
+			    "f_imf_exports_goods_has_measures_table_current_trade_balance_goods": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_exports_goods"
 			      },
@@ -27955,9 +29233,9 @@ cultureInfo en-US
 			            "Entity": "f_imf_exports_goods"
 			          }
 			        },
-			        "measures_table.current_trade_balance": {
+			        "measures_table.current_trade_balance_goods": {
 			          "Target": {
-			            "Entity": "measures_table.current_trade_balance"
+			            "Entity": "measures_table.current_trade_balance_goods"
 			          }
 			        }
 			      },
@@ -27968,49 +29246,16 @@ cultureInfo en-US
 			              "Role": "f_imf_exports_goods"
 			            },
 			            "Object": {
-			              "Role": "measures_table.current_trade_balance"
+			              "Role": "measures_table.current_trade_balance_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_exports_goods_have_current_trade_balance"
+			          "ID": "f_imf_exports_goods_have_current_trade_balance_goods"
 			        }
 			      ]
 			    },
-			    "f_imf_exports_service_has_measures_table_current_export": {
-			      "Binding": {
-			        "ConceptualEntity": "f_imf_exports_services"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_imf_exports_service": {
-			          "Target": {
-			            "Entity": "f_imf_exports_service"
-			          }
-			        },
-			        "measures_table.current_export": {
-			          "Target": {
-			            "Entity": "measures_table.current_export"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_imf_exports_service"
-			            },
-			            "Object": {
-			              "Role": "measures_table.current_export"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_imf_exports_services_have_current_export"
-			        }
-			      ]
-			    },
-			    "f_imf_exports_goods_has_measures_table_current_export": {
+			    "f_imf_exports_goods_has_measures_table_current_export_goods": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_exports_goods"
 			      },
@@ -28021,9 +29266,9 @@ cultureInfo en-US
 			            "Entity": "f_imf_exports_goods"
 			          }
 			        },
-			        "measures_table.current_export": {
+			        "measures_table.current_export_goods": {
 			          "Target": {
-			            "Entity": "measures_table.current_export"
+			            "Entity": "measures_table.current_export_goods"
 			          }
 			        }
 			      },
@@ -28034,49 +29279,16 @@ cultureInfo en-US
 			              "Role": "f_imf_exports_goods"
 			            },
 			            "Object": {
-			              "Role": "measures_table.current_export"
+			              "Role": "measures_table.current_export_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_exports_goods_have_current_export"
+			          "ID": "f_imf_exports_goods_have_current_export_goods"
 			        }
 			      ]
 			    },
-			    "f_imf_imports_service_has_measures_table_current_import": {
-			      "Binding": {
-			        "ConceptualEntity": "f_imf_imports_services"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_imf_imports_service": {
-			          "Target": {
-			            "Entity": "f_imf_imports_service"
-			          }
-			        },
-			        "measures_table.current_import": {
-			          "Target": {
-			            "Entity": "measures_table.current_import"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_imf_imports_service"
-			            },
-			            "Object": {
-			              "Role": "measures_table.current_import"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_imf_imports_services_have_current_import"
-			        }
-			      ]
-			    },
-			    "f_imf_imports_goods_has_measures_table_current_import": {
+			    "f_imf_imports_goods_has_measures_table_current_import_goods": {
 			      "Binding": {
 			        "ConceptualEntity": "f_imf_imports_goods"
 			      },
@@ -28087,9 +29299,9 @@ cultureInfo en-US
 			            "Entity": "f_imf_imports_goods"
 			          }
 			        },
-			        "measures_table.current_import": {
+			        "measures_table.current_import_goods": {
 			          "Target": {
-			            "Entity": "measures_table.current_import"
+			            "Entity": "measures_table.current_import_goods"
 			          }
 			        }
 			      },
@@ -28100,12 +29312,12 @@ cultureInfo en-US
 			              "Role": "f_imf_imports_goods"
 			            },
 			            "Object": {
-			              "Role": "measures_table.current_import"
+			              "Role": "measures_table.current_import_goods"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_imf_imports_goods_have_current_import"
+			          "ID": "f_imf_imports_goods_have_current_import_goods"
 			        }
 			      ]
 			    },
@@ -36305,6 +37517,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "f_gross_domestic_products_are_in_reference_areas"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date": {
+			          "Target": {
+			            "Entity": "d_calendar.date"
+			          }
+			        },
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.year": {
+			          "Target": {
+			            "Entity": "d_calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "d_calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "d_calendar_date_date_hierarchy_has_d_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "d_calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "d_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "d_calendar.date.month": {
+			          "Target": {
+			            "Entity": "d_calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "d_calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
 			        }
 			      ]
 			    },

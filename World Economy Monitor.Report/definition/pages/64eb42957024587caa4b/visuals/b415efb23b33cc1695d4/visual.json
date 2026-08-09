@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "61839dfdee0ea0bc70bd",
+  "name": "b415efb23b33cc1695d4",
   "position": {
-    "x": 11.340206185567011,
+    "x": 650.51546391752584,
     "y": 13.402061855670103,
-    "z": 3,
+    "z": 4,
     "height": 230.9278350515464,
-    "width": 630,
-    "tabOrder": 3
+    "width": 618.5567010309278,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,10 +42,10 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_import_goods"
+                  "Property": "_current_import_service"
                 }
               },
-              "queryRef": "Measures_Table._current_import",
+              "queryRef": "Measures_Table._current_import_service",
               "nativeQueryRef": "Import",
               "displayName": "Import",
               "format": "#,0"
@@ -58,10 +58,10 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_export_goods"
+                  "Property": "_current_export_service"
                 }
               },
-              "queryRef": "Measures_Table._current_export",
+              "queryRef": "Measures_Table._current_export_service",
               "nativeQueryRef": "Export",
               "displayName": "Export",
               "format": "#,0"
@@ -78,10 +78,10 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_trade_balance_goods"
+                  "Property": "_current_trade_balance_service"
                 }
               },
-              "queryRef": "Measures_Table._current_trade_balance",
+              "queryRef": "Measures_Table._current_trade_balance_service",
               "nativeQueryRef": "Trade Balance",
               "displayName": "Trade Balance",
               "format": "#,0"
@@ -99,7 +99,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_trade_balance_goods"
+                "Property": "_current_trade_balance_service"
               }
             },
             "direction": "Descending"
@@ -186,6 +186,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Scalar'"
+                }
+              }
             }
           }
         }
@@ -259,7 +266,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Goods Trade Balance'"
+                  "Value": "'Service Trade Balance'"
                 }
               }
             }

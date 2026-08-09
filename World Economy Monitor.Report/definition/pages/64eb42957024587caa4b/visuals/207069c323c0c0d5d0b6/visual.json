@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "61839dfdee0ea0bc70bd",
+  "name": "207069c323c0c0d5d0b6",
   "position": {
-    "x": 11.340206185567011,
-    "y": 13.402061855670103,
-    "z": 3,
-    "height": 230.9278350515464,
-    "width": 630,
-    "tabOrder": 3
+    "x": 12.8,
+    "y": 252.06153846153848,
+    "z": 6,
+    "height": 331.81538461538463,
+    "width": 627.2,
+    "tabOrder": 6
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "areaChart",
     "query": {
       "queryState": {
         "Category": {
@@ -42,12 +42,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_import_goods"
+                  "Property": "_current_trade_balance"
                 }
               },
-              "queryRef": "Measures_Table._current_import",
-              "nativeQueryRef": "Import",
-              "displayName": "Import",
+              "queryRef": "Measures_Table._current_trade_balance",
+              "nativeQueryRef": "Trade Balance",
+              "displayName": "Trade Balance",
               "format": "#,0"
             },
             {
@@ -58,13 +58,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_export_goods"
+                  "Property": "_current_gdp"
                 }
               },
-              "queryRef": "Measures_Table._current_export",
-              "nativeQueryRef": "Export",
-              "displayName": "Export",
-              "format": "#,0"
+              "queryRef": "Measures_Table._current_gdp",
+              "nativeQueryRef": "GDP",
+              "displayName": "GDP"
             }
           ]
         },
@@ -78,13 +77,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_trade_balance_goods"
+                  "Property": "_trade_balance_p_gdp"
                 }
               },
-              "queryRef": "Measures_Table._current_trade_balance",
-              "nativeQueryRef": "Trade Balance",
-              "displayName": "Trade Balance",
-              "format": "#,0"
+              "queryRef": "Measures_Table._trade_balance_p_gdp",
+              "nativeQueryRef": "Trade Balance Shares",
+              "displayName": "Trade Balance Shares"
             }
           ]
         }
@@ -99,7 +97,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_trade_balance_goods"
+                "Property": "_trade_balance_p_gdp"
               }
             },
             "direction": "Descending"
@@ -250,6 +248,39 @@
             }
           }
         }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -259,7 +290,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Goods Trade Balance'"
+                  "Value": "'X-M/GDP'"
                 }
               }
             }
@@ -316,14 +347,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'(For Goods)'"
+                  "Value": "'Goods and Services'"
                 }
               }
             },
@@ -394,6 +425,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "15cde7907d076734bb7a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "d_calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f860ff8365aeae403b04",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_current_gdp"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cc23fb8f3da33e623d60",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_trade_balance_p_gdp"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
