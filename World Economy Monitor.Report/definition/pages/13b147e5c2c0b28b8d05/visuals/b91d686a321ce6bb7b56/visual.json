@@ -1,19 +1,38 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "0faea4368c86adbe0019",
+  "name": "b91d686a321ce6bb7b56",
   "position": {
-    "x": 686.20060790273556,
-    "y": 563.22188449848022,
-    "z": 12000,
-    "height": 150.88145896656536,
-    "width": 659.33130699088144,
-    "tabOrder": 12000
+    "x": 368.95604395604397,
+    "y": 411.92307692307696,
+    "z": 14000,
+    "height": 321.31868131868134,
+    "width": 345.60439560439562,
+    "tabOrder": 14000
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
-        "Data": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "d_country"
+                    }
+                  },
+                  "Property": "country_name"
+                }
+              },
+              "queryRef": "d_country.country_name",
+              "nativeQueryRef": "country_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
           "projections": [
             {
               "field": {
@@ -23,11 +42,11 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_current_trade_balance_goods"
+                  "Property": "_current_export_goods"
                 }
               },
-              "queryRef": "Measures_Table._current_trade_balance",
-              "nativeQueryRef": "_current_trade_balance",
+              "queryRef": "Measures_Table._current_export_goods",
+              "nativeQueryRef": "_current_export",
               "format": "#,0"
             }
           ]
@@ -43,7 +62,7 @@
                     "Entity": "Measures_Table"
                   }
                 },
-                "Property": "_current_trade_balance_goods"
+                "Property": "_current_export_goods"
               }
             },
             "direction": "Descending"
@@ -53,65 +72,61 @@
       }
     },
     "objects": {
-      "value": [
+      "layout": [
+        {
+          "properties": {}
+        }
+      ],
+      "valueAxis": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
                   "Value": "1D"
                 }
               }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            },
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
             }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_trade_balance"
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_trade_balance"
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ]
@@ -132,7 +147,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 0,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }
@@ -140,6 +155,13 @@
               }
             },
             "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            },
+            "width": {
               "expr": {
                 "Literal": {
                   "Value": "2D"
@@ -175,7 +197,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Current Trade Balance'"
+                  "Value": "'Largest Exporters'"
                 }
               }
             },
@@ -189,38 +211,10 @@
           }
         }
       ],
-      "subTitle": [
+      "visualTooltip": [
         {
           "properties": {
             "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'(Millions of Dollars)'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            },
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            },
-            "italic": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -232,5 +226,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4623ee6acb547581d0a0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Measures_Table"
+              }
+            },
+            "Property": "_current_export_goods"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "68dc7e4a40a2bba2ca49",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "d_country"
+              }
+            },
+            "Property": "country_name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

@@ -488,34 +488,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "93d08bf3bb05eaa81665",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_ipi"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "10e85919e0c0847d7ba7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_ipi_subtitle"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

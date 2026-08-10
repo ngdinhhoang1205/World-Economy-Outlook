@@ -4,10 +4,10 @@
   "position": {
     "x": 12.8,
     "y": 252.06153846153848,
-    "z": 6,
+    "z": 5000,
     "height": 331.81538461538463,
-    "width": 627.2,
-    "tabOrder": 6
+    "width": 477.53846153846155,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "areaChart",
@@ -425,48 +425,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "15cde7907d076734bb7a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f860ff8365aeae403b04",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cc23fb8f3da33e623d60",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_trade_balance_p_gdp"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

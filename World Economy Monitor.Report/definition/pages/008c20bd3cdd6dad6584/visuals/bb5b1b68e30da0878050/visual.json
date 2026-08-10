@@ -207,20 +207,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "4d4dbbce0c870a0c1a2c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_country"
-              }
-            },
-            "Property": "continent"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

@@ -13,13 +13,19 @@ table Measures_Table
 		formatString: #,0
 		lineageTag: 771115f7-48f8-4ad6-8232-f48a91ff8e83
 
-	measure _yoy_gdp =
+	measure _yoy_gdp = ```
 			
 			VAR current_year = YEAR(MAX(f_gross_domestic_product[period]))
 			VAR previous_year = current_year-1
 			VAR current_gdp = SUMX(FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = current_year), f_gross_domestic_product[value_usd])
-			VAR previous_gdp = SUMX(FILTER(f_gross_domestic_product, YEAR(f_gross_domestic_product[period]) = previous_year), f_gross_domestic_product[value_usd])
+			VAR previous_gdp = CALCULATE(
+			        SUM(f_gross_domestic_product[value_usd]),
+			        SAMEPERIODLASTYEAR(f_gross_domestic_product[period]),
+			        REMOVEFILTERS(f_gross_domestic_product) 
+			    )
+			
 			RETURN DIVIDE(current_gdp-previous_gdp, previous_gdp, 0)
+			```
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 6910365f-2c5f-4338-8e79-ffe5f05290ba
 
@@ -67,7 +73,7 @@ table Measures_Table
 		formatString: 0
 		lineageTag: f9da6273-8208-45ce-bbf0-58960575012b
 
-	measure _yoy_cpi_overview =
+	measure _yoy_cpi_overview = ```
 			
 			VAR latest_date = MAX(f_consumer_price_index[period])
 			VAR latest_year = YEAR(latest_date)
@@ -75,9 +81,14 @@ table Measures_Table
 			VAR previous_year = YEAR(same_date_previous_year)
 			
 			VAR current_cpi = SUMX(FILTER(f_consumer_price_index, AND(YEAR(f_consumer_price_index[period])=latest_year, f_consumer_price_index[period]<= latest_date)), f_consumer_price_index[value])
-			VAR previous_cpi = SUMX(FILTER(f_consumer_price_index, AND(YEAR(f_consumer_price_index[period])=previous_year, f_consumer_price_index[period]<= same_date_previous_year)), f_consumer_price_index[value])
+			VAR previous_cpi = CALCULATE(
+			        SUM(f_consumer_price_index[value]),
+			        SAMEPERIODLASTYEAR(f_consumer_price_index[period]),
+			        REMOVEFILTERS(f_consumer_price_index) 
+			    )
 			
 			RETURN DIVIDE(current_cpi-previous_cpi, previous_cpi, 0)
+			```
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 459786dc-d6e6-4654-baae-550fd2f6210e
 
@@ -226,8 +237,8 @@ table Measures_Table
 
 	measure _current_unemployment_rate_subtitle =
 			
-			VAR current_year = YEAR(MAX(f_unemployment_rate[period]))
-			RETURN "Latest: " & current_year
+			VAR current_year = MAX(f_unemployment_rate[period])
+			RETURN "Latest In " & FORMAT(current_year, "yyyy")
 		lineageTag: 0c8f5100-f3f4-45af-a9c6-c203fc8d7729
 
 	measure _yoy_unemployment_rate_subtitle =
@@ -380,6 +391,12 @@ table Measures_Table
 		lineageTag: 1f5533eb-6348-4cba-91a3-64c95f8e6593
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _current_policy_rate_year = FORMAT(MAX(f_cb_policy_rates[period]), "yyyy-mm-dd")
+		lineageTag: 24e85c5a-44f4-48fa-bbad-defaa2ceb3d3
+
+	measure _current_policy_rate_subtitle = "Latest: " & [_current_policy_rate_year]
+		lineageTag: 73acb4ba-f915-4881-be93-30a3edef874e
 
 	column Value
 		formatString: 0

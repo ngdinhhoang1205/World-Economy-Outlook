@@ -453,20 +453,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "d00b146ab4c18808305e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_gdp"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

@@ -4,10 +4,10 @@
   "position": {
     "x": 8.9552238805970141,
     "y": 11.940298507462686,
-    "z": 4002,
+    "z": 6000,
     "height": 340.29850746268653,
     "width": 867.16417910447751,
-    "tabOrder": 4002
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "treemap",
@@ -289,20 +289,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "1adb77d29c0ca8450de6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_gdp"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

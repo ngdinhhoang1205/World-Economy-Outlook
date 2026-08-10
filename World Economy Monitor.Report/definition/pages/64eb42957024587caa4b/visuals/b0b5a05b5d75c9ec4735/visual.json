@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b0b5a05b5d75c9ec4735",
   "position": {
-    "x": 649.84615384615381,
+    "x": 499.2,
     "y": 252.06153846153848,
-    "z": 5,
+    "z": 4000,
     "height": 331.81538461538463,
-    "width": 619.32307692307688,
-    "tabOrder": 5
+    "width": 769.96923076923076,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "ribbonChart",
@@ -270,20 +270,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8dca6eb946a630eca12d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_calendar"
-              }
-            },
-            "Property": "Date"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "a2ad8ee3d1bc50703a21",
         "field": {
           "Column": {
@@ -383,20 +369,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "a6338b5c6c086111de70",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_current_export_goods"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

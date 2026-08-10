@@ -266,34 +266,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "68cb48f9046501340b12",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_total_ipi"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b0e44be0b5e363c1696e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_country"
-              }
-            },
-            "Property": "country_name"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

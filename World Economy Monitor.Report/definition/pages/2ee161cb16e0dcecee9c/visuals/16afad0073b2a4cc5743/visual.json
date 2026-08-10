@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "16afad0073b2a4cc5743",
   "position": {
-    "x": 11.018651362984217,
-    "y": 325.96843615494976,
-    "z": 4,
-    "height": 280.05738880918221,
-    "width": 903.52941176470586,
-    "tabOrder": 4
+    "x": 10.830769230769231,
+    "y": 325.90769230769229,
+    "z": 4000,
+    "height": 260.92307692307691,
+    "width": 903.876923076923,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "lineChart",
@@ -46,7 +46,9 @@
                 }
               },
               "queryRef": "Measures_Table._retail_total",
-              "nativeQueryRef": "_retail_total"
+              "nativeQueryRef": "Retail Value",
+              "displayName": "Retail Value",
+              "format": "#,0"
             }
           ]
         }
@@ -398,34 +400,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "64271068c440724a5ca3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "d_calendar"
-              }
-            },
-            "Property": "Date"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a97b8b128c205962e0ca",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_retail_total"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

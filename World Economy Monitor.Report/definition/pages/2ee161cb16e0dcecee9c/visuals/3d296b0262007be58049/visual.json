@@ -4,10 +4,10 @@
   "position": {
     "x": 924.648493543759,
     "y": 13.773314203730273,
-    "z": 5,
+    "z": 5000,
     "height": 695.093256814921,
     "width": 355.351506456241,
-    "tabOrder": 5
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "treemap",
