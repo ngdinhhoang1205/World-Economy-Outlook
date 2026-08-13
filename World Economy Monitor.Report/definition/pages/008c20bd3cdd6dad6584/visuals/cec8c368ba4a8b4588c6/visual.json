@@ -10,7 +10,7 @@
     "tabOrder": 0
   },
   "visual": {
-    "visualType": "lineClusteredColumnComboChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -47,26 +47,8 @@
               },
               "queryRef": "Measures_Table._current_gdp_per_capita",
               "nativeQueryRef": "GDP Per Capita",
-              "displayName": "GDP Per Capita"
-            }
-          ]
-        },
-        "Y2": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures_Table"
-                    }
-                  },
-                  "Property": "_yoy_gdp"
-                }
-              },
-              "queryRef": "Measures_Table._yoy_gdp",
-              "nativeQueryRef": "GDP Growth Rate",
-              "displayName": "GDP Growth Rate"
+              "displayName": "GDP Per Capita",
+              "format": "#,0"
             }
           ]
         }
@@ -97,32 +79,11 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000D"
+                  "Value": "1D"
                 }
               }
             },
             "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "alignZeros": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "secShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "secShowAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -184,7 +145,7 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'InsideBase'"
+                  "Value": "'Auto'"
                 }
               }
             },
@@ -219,53 +180,31 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "10D"
                 }
               }
             },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        {
-          "properties": {
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#ffffff'"
-                    }
-                  }
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             },
-            "transparency": {
+            "labelOrientation": {
               "expr": {
                 "Literal": {
                   "Value": "0D"
                 }
               }
             },
-            "enableBackground": {
+            "labelOverflow": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Measures_Table._yoy_gdp"
           }
         },
         {
@@ -287,40 +226,20 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_gdp_per_capita"
-          }
-        }
-      ],
-      "lineStyles": [
-        {
-          "properties": {
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "1D"
                 }
               }
             },
-            "markerShape": {
-              "expr": {
-                "Literal": {
-                  "Value": "'x'"
-                }
-              }
-            },
-            "markerSize": {
+            "fontSize": {
               "expr": {
                 "Literal": {
                   "Value": "10D"
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Measures_Table._current_gdp_per_capita"
           }
         }
       ]
@@ -332,7 +251,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'GDP By Country'"
+                  "Value": "'GDP Per Capita By Country'"
                 }
               }
             }

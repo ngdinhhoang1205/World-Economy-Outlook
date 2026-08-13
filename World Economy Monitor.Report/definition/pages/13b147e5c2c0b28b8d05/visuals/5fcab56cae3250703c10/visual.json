@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "5fcab56cae3250703c10",
   "position": {
-    "x": 721.08208955223881,
-    "y": 254.6641791044776,
-    "z": 8000,
-    "height": 151.11940298507463,
-    "width": 317.16417910447757,
-    "tabOrder": 8000
+    "x": 720.8955223880597,
+    "y": 194.77611940298507,
+    "z": 4000,
+    "height": 155.59701492537314,
+    "width": 317.91044776119406,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -140,6 +140,33 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -150,7 +177,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -216,6 +243,31 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

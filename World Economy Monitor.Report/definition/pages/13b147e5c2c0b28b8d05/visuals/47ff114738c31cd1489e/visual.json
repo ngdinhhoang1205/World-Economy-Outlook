@@ -2,34 +2,38 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "47ff114738c31cd1489e",
   "position": {
-    "x": 721.09890109890114,
-    "y": 411.92307692307696,
-    "z": 6000,
-    "height": 151.31868131868131,
-    "width": 317.58241758241758,
-    "tabOrder": 6000
+    "x": 722.1848938777124,
+    "y": 360.46006086715943,
+    "z": 3000,
+    "height": 534.99861665546825,
+    "width": 317.457807991779,
+    "tabOrder": 3000
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "barChart",
     "query": {
       "queryState": {
-        "Data": {
+        "Category": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Measures_Table"
+                      "Entity": "d_country"
                     }
                   },
-                  "Property": "_current_policy_rate_overview"
+                  "Property": "country_name"
                 }
               },
-              "queryRef": "Measures_Table._current_policy_rate",
-              "nativeQueryRef": "Current Policy Rate",
-              "displayName": "Current Policy Rate"
-            },
+              "queryRef": "d_country.country_name",
+              "nativeQueryRef": "country_name",
+              "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
             {
               "field": {
                 "Measure": {
@@ -42,7 +46,27 @@
                 }
               },
               "queryRef": "Measures_Table._current_policy_rate_subtitle",
-              "nativeQueryRef": "_current_policy_rate_subtitle"
+              "nativeQueryRef": "Period",
+              "displayName": "Period"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures_Table"
+                    }
+                  },
+                  "Property": "_current_policy_rate_overview"
+                }
+              },
+              "queryRef": "Measures_Table._current_policy_rate_overview",
+              "nativeQueryRef": "i%",
+              "displayName": "i%"
             }
           ]
         }
@@ -67,75 +91,58 @@
       }
     },
     "objects": {
-      "value": [
-        {
-          "properties": {
-            "horizontalAlignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Measures_Table._current_policy_rate_subtitle"
-          }
-        }
-      ],
-      "label": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
       "layout": [
         {
+          "properties": {}
+        }
+      ],
+      "categoryAxis": [
+        {
           "properties": {
-            "orientation": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -150,7 +157,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -208,7 +215,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Current Policy Rate'"
+                  "Value": "'Highest Policy Rate'"
                 }
               }
             },
@@ -253,8 +260,138 @@
             }
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "009cac672de56884040b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "d_country"
+              }
+            },
+            "Property": "country_name"
+          }
+        },
+        "type": "TopN",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "d_country",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "m",
+                        "Entity": "Measures_Table",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "country_name"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Measure": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "m"
+                              }
+                            },
+                            "Property": "_current_policy_rate_overview"
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 20
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "d",
+              "Entity": "d_country",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "country_name"
+                      }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }

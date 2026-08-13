@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "44b9d3ef461201ee7944",
   "position": {
-    "x": 372.69230769230768,
-    "y": 255.93406593406593,
+    "x": 372.76119402985074,
+    "y": 194.77611940298507,
     "z": 1000,
-    "height": 149.45054945054946,
-    "width": 341.86813186813185,
+    "height": 154.47761194029852,
+    "width": 342.53731343283584,
     "tabOrder": 1000
   },
   "visual": {
@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "Measures_Table._yoy_gdp_subtitle",
-              "nativeQueryRef": "_yoy_gdp_subtitle"
+              "nativeQueryRef": "Period",
+              "displayName": "Period"
             }
           ]
         },
@@ -105,6 +106,13 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -181,7 +189,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -260,7 +268,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -269,7 +277,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 0,
                       "Percent": 0
                     }
                   }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "5632690992e8da32c13a",
   "position": {
-    "x": 1045.3416149068323,
-    "y": 79.192546583850941,
-    "z": 16002,
-    "height": 165.77639751552795,
-    "width": 310.43478260869568,
-    "tabOrder": 16002
+    "x": 1044.7017904430656,
+    "y": 21.50112643769021,
+    "z": 9000,
+    "height": 165.68515078455397,
+    "width": 309.86917513141776,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "lineChart",
@@ -32,24 +32,6 @@
             }
           ]
         },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures_Table"
-                    }
-                  },
-                  "Property": "_yoy_cpi_subtitle_overview"
-                }
-              },
-              "queryRef": "Measures_Table._yoy_cpi_subtitle_overview",
-              "nativeQueryRef": "_yoy_cpi_subtitle"
-            }
-          ]
-        },
         "Y": {
           "projections": [
             {
@@ -60,11 +42,12 @@
                       "Entity": "Measures_Table"
                     }
                   },
-                  "Property": "_yoy_cpi_overview"
+                  "Property": "_yoy_cpi_time_series"
                 }
               },
-              "queryRef": "Measures_Table._yoy_cpi_overview",
-              "nativeQueryRef": "_yoy_cpi_overview"
+              "queryRef": "Measures_Table._yoy_cpi_time_series",
+              "nativeQueryRef": "Inflation",
+              "displayName": "Inflation"
             }
           ]
         }
@@ -162,7 +145,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -234,40 +217,37 @@
             }
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "3ed1f630900660236764",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_cpi_subtitle_overview"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b3437e701b00867bcdb9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Measures_Table"
-              }
-            },
-            "Property": "_yoy_cpi_overview"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "e5c1ba39172d64201e32",
         "field": {

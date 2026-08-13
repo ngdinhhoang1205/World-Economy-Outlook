@@ -122,21 +122,6 @@
               "queryRef": "Measures_Table._current_gdp_per_capita",
               "nativeQueryRef": "GDP Per Capita",
               "displayName": "GDP Per Capita"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Measures_Table"
-                    }
-                  },
-                  "Property": "_yoy_gdp"
-                }
-              },
-              "queryRef": "Measures_Table._yoy_gdp",
-              "nativeQueryRef": "YoY GDP",
-              "displayName": "YoY GDP"
             }
           ]
         }
