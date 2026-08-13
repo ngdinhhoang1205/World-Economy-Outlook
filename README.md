@@ -1,72 +1,28 @@
-# 📊 World Economy Monitor — Global Macroeconomic Dashboard
+# World Economy Monitor — Global Macroeconomic Dashboard
 
 This project tracks **core macroeconomic indicators across ~100+ countries**, organized into **4 pillars**, through a Python/Jupyter ETL pipeline (`source.ipynb` + `utils.py` + `config.py`) feeding a Power BI report (`World Economy Monitor.pbip`).
 
 ---
 
-## 🚀 Framework Overview (4 Pillars)
+## Framework Overview (4 Pillars)
 
-| Pillar | Focus | Goal |
-| :--- | :--- | :--- |
-| **Pillar 1** | 📈 **System Health & Growth** | Identify the economic cycle (expansion vs. recession) |
-| **Pillar 2** | 🏦 **Inflation & Monetary Policy** | Track price pressure and investment flow direction |
-| **Pillar 3** | 🛒 **Labor & Consumption** | Assess real consumer purchasing power |
-| **Pillar 4** | 🌐 **Trade & Supply Chain** | Measure trade flows and geopolitical shocks |
+Data is sourced from two pipelines — **DBnomics** (`dbnomics` Python package, a free aggregator mirroring IMF/OECD/BIS series) and the **direct IMF API** (`api.imf.org`, SDMX 3.0), used where DBnomics' mirror has gaps or lag. The direct API requires a free key from `portal.api.imf.org`, stored in `.env` as `IMF_API_KEY` (see [Setup](#setup)).
 
----
+| Pillar | Focus | Goal | Indicators | Data Source |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pillar 1** | System Health & Growth | Identify the economic cycle (expansion vs. recession) | Real GDP (local currency, converted to USD)<br>Industrial Production Index (IPI) | DBnomics `IMF/IFS` (`NGDP_XDC`) merged with `IMF/IFS` exchange rate (`EDNA_USD_XDC_RATE`)<br>IMF API `IMF.STA:PI` (`IND`), falling back to DBnomics `IMF/IFS` (`AIP_IX`) for the ~15 countries the IMF PI dataflow doesn't cover (e.g. UK, Belgium, Sweden) |
+| **Pillar 2** | Inflation & Monetary Policy | Track price pressure and investment flow direction | Headline Consumer Price Index (CPI)<br>Central Bank Policy Rate | DBnomics `IMF/CPI` (`PCPI_IX`, monthly)<br>IMF API `IMF.STA:MFS_IR` (`MFS166_RT_PT_A_PT`, broadest country coverage), falling back to DBnomics `BIS/WS_CBPOL` for countries MFS_IR doesn't report individually (Eurozone members — ECB sets one shared rate — plus UK, Saudi Arabia, Kuwait) |
+| **Pillar 3** | Labor & Consumption | Assess real consumer purchasing power | Unemployment Rate<br>Retail Sales Growth<br>Population *(added — used for per-capita metrics)* | DBnomics `IMF/WEO:latest` (`LUR`, % of total labor force)<br>DBnomics `OECD/MEI` (`SLRTTO02`, monthly retail trade value)<br>IMF API `IMF.RES:WEO` (`LP`), includes forecast years alongside actuals |
+| **Pillar 4** | Trade & Supply Chain | Measure trade flows and geopolitical shocks | Merchandise Imports / Exports<br>Trade in Services *(added)*<br>Global Manufacturing PMI<br>Commodity Price Index | IMF API `IMF.STA:IMTS` (exports `XG_FOB_USD`; imports try `MG_FOB_USD`, fall back to `MG_CIF_USD` per-country) — fetched bilaterally by real ISO3 counterpart country and summed, avoiding regional aggregate codes (`G001`, `GX170`, etc.) that would double-count totals. Migrated from DBnomics' `IMF/DOT` mirror, which only had usable coverage for ~6 countries<br>IMF API `IMF.STA:BOP` (indicator `S`, credits `CD_T` / debits `DB_T`), quarterly, evenly split into monthly<br>DBnomics `OECD/MEI` (`BSCICP02`, Business Confidence Index)<br>Not yet implemented (placeholder cell only) — planned source: World Bank Pink Sheet or IMF `IFS`/PCP via DBnomics |
 
-## 📌 Indicators & Data Sources
+### Supplementary Data (outside the 4-pillar framework)
 
-Data comes from two pipelines:
-- **DBnomics** (`dbnomics` Python package) — a free aggregator that mirrors IMF/OECD/BIS/World Bank series.
-- **Direct IMF API** (`api.imf.org`, SDMX 3.0) — IMF's own data platform, used where DBnomics' mirror has gaps or lag. Requires a free API key from `portal.api.imf.org`, stored in `.env` as `IMF_API_KEY` (see [Setup](#-setup)).
-
-### 📈 Pillar 1: System Health & Growth
-
-* **1. Real GDP** (local currency, converted to USD via exchange rate)
-  * **Source:** DBnomics — `IMF/IFS` (`NGDP_XDC`), merged with `IMF/IFS` exchange rate series (`EDNA_USD_XDC_RATE`) for USD conversion.
-* **2. Industrial Production Index (IPI)**
-  * **Source:** Dual — **primary**: direct IMF API, `IMF.STA:PI` dataflow (indicator `IND`, index level). **Fallback**: DBnomics `IMF/IFS` (`AIP_IX`) for the ~15 countries the IMF PI dataflow doesn't cover (e.g. UK, Belgium, Sweden). Each row is tagged with a `Source` column so both are traceable in the combined dataset.
-
-### 🏦 Pillar 2: Inflation & Monetary Policy
-
-* **3. Headline Consumer Price Index (CPI)**
-  * **Source:** DBnomics — `IMF/CPI` (`PCPI_IX`, monthly).
-* **4. Central Bank Policy Rates**
-  * **Source:** DBnomics — `BIS/WS_CBPOL` (daily policy rates for major central banks: Fed, ECB, BOJ, PBOC, etc.).
-
-### 🛒 Pillar 3: Labor & Consumption
-
-* **5. Unemployment Rate**
-  * **Source:** DBnomics — `IMF/WEO:latest` (`LUR`, % of total labor force).
-* **6. Retail Sales Growth**
-  * **Source:** DBnomics — `OECD/MEI` (`SLRTTO02`, monthly retail trade value).
-* **7. Population** *(added — not in the original 9-indicator scope, used for per-capita metrics)*
-  * **Source:** Direct IMF API — `IMF.RES:WEO` dataflow (indicator `LP`). Includes IMF forecast years alongside actuals.
-
-### 🌐 Pillar 4: Trade & Supply Chain
-
-* **8. Merchandise Imports / Exports**
-  * **Source:** Direct IMF API — `IMF.STA:IMTS` dataflow (formerly *Direction of Trade Statistics / DOT*). Exports use `XG_FOB_USD`; imports try `MG_FOB_USD` first and fall back to `MG_CIF_USD` per-country (most countries only report imports on a CIF basis). Fetched bilaterally (by real ISO3 counterpart country, chunked to stay under the API's URL-length limit) and summed — **not** via `COUNTERPART_COUNTRY=*`, which pulls in regional aggregate codes (`G001`, `GX170`, etc.) that would double-count totals.
-  * *Migrated from DBnomics' `IMF/DOT` mirror, which only had usable coverage for ~6 countries.*
-* **9. Trade in Services** *(added — not in the original 9-indicator scope)*
-  * **Source:** Direct IMF API — `IMF.STA:BOP` (Balance of Payments) dataflow, indicator `S` (Services), credits (`CD_T`) for exports / debits (`DB_T`) for imports. No bilateral breakdown (BOP reports each country vs. rest-of-world). Quarterly, evenly split into monthly for consistency with the goods-trade series.
-* **10. Global Manufacturing PMI**
-  * **Source:** DBnomics — `OECD/MEI` (`BSCICP02`, Business Confidence Index).
-* **11. Commodity Price Index**
-  * **Status:** ⚠️ Not yet implemented (placeholder cell only). Planned source: `WB` (World Bank Pink Sheet) or `IMF` (`IFS`/PCP) via DBnomics.
-
-### 🇺🇸 US Deep-Dive (supplementary, outside the 4-pillar framework)
-
-* CPI, Unemployment Rate, Nonfarm Payrolls, Real GDP, Manufacturing Investment — sourced directly from **FRED** (Federal Reserve Economic Data) via `pandas_datareader`.
-
-### 🗺️ Country Reference Data
-
-* **Country/continent mapping**: built locally from `config.py` (`dict_2_char`/`dict_3_char`, ~108 countries) — no external API. Continent is assigned offline via the `pycountry_convert` library, with manual overrides for the handful of codes it doesn't recognize (historical entities like the former USSR, special territories).
+* **US Deep-Dive**: CPI, Unemployment Rate, Nonfarm Payrolls, Real GDP, Manufacturing Investment — sourced directly from **FRED** (Federal Reserve Economic Data) via `pandas_datareader`.
+* **Country Reference Data**: country/continent mapping built locally from `config.py` (`dict_2_char`/`dict_3_char`, ~108 countries) — no external API. Continent is assigned offline via the `pycountry_convert` library, with manual overrides for the handful of codes it doesn't recognize (historical entities like the former USSR, special territories).
 
 ---
 
-## 🧩 Setup
+## Setup
 
 1. Install dependencies: `pandas`, `dbnomics`, `requests`, `python-dotenv`, `pycountry-convert`, `pandas_datareader`, `matplotlib`.
 2. Register a free account at `portal.api.imf.org`, subscribe to the Data API product, and get your subscription key.
@@ -78,21 +34,21 @@ Data comes from two pipelines:
 
 ---
 
-## 📊 Power BI Report (`World Economy Monitor.pbip`)
+## Power BI Report (`World Economy Monitor.pbip`)
 
-The report has **9 pages** — all 5 content pages built, plus 4 drill-through tooltip pages.
+The report has 9 pages: 5 content pages and 4 drill-through tooltip pages.
 
-| Page | Status | Visuals |
-| :--- | :--- | :--- |
-| **Overview** | ✅ Built | KPI cards (Trade Balance, Imports, Exports — goods only; GDP, YoY/MoM CPI, Unemployment, IPI, Retail Sales, Central Bank Policy Rate), a Current/Previous Month & Year summary table, and a Country slicer |
-| **Economic Growth** | ✅ Built | Map of GDP by country, bar chart of IPI growth rate by country, GDP treemap, YoY GDP line chart over time, GDP combo chart (per-capita + growth rate), with Nation / Date / Continent slicers |
-| **Inflation & Monetary Policy** | ✅ Built | Bar chart of YoY CPI by country, line chart of YoY CPI over time, bar chart of central bank policy rate by country, line chart of policy rate over time, with Nation / Date / Continent slicers |
-| **Labor & Consumption** | ✅ Built | Line chart of retail sales over time, population treemap by country, line chart of unemployment rate over time, with Nation / Date / Continent slicers |
-| **Global Trade** | ✅ Built | Column chart of goods trade balance by year (Import/Export tooltip), column chart of services trade balance by year (Import/Export tooltip), ribbon chart of export value by top counterpart countries over time, with Nation and Date slicers |
-| **GDP_Tooltip** | ✅ Built | Drill-through table: GDP by country |
-| **YoY_GDP_Tooltip** | ✅ Built | Drill-through line chart: GDP over years |
-| **MoM_policyrate_Tooltip** | ✅ Built | Drill-through line chart: policy rate over years |
-| **Country_IPI_Trend_Tooltip** | ✅ Built | Drill-through line chart: IPI trend by country |
+| Page | Description |
+| :--- | :--- |
+| **Overview** | A top-down global snapshot — headline KPIs (GDP, CPI, unemployment, policy rate, trade, industrial production, retail sales) blended across all tracked countries, with current-vs-previous month/year comparisons. The starting point for reading the state of the world economy at a glance. |
+| **Economic Growth** | Compares GDP levels and growth rates across countries and time — map, treemap, and per-capita/growth combo chart — to surface which economies are expanding, contracting, or over/under-sized relative to population. |
+| **Inflation & Monetary Policy** | Places inflation (YoY CPI) and central bank policy rates side by side, by country and over time, to see how monetary policy is responding to price pressure. |
+| **Labor & Consumption** | Reads consumer-side health through unemployment and retail sales trends alongside population, to gauge real purchasing power and labor market slack. |
+| **Global Trade** | Breaks merchandise and services trade apart — goods vs. services trade balance by year, plus a ribbon chart of top trading partners over time — showing what the combined trade figures on Overview hide. |
+| **GDP_Tooltip** | Drill-through table: GDP by country, for detail lookups from other pages. |
+| **YoY_GDP_Tooltip** | Drill-through line chart: a selected country's GDP trend over years. |
+| **MoM_policyrate_Tooltip** | Drill-through line chart: a selected country's policy rate trend over years. |
+| **Country_IPI_Trend_Tooltip** | Drill-through line chart: a selected country's industrial production index trend. |
 
 ### Sample Screenshots
 
